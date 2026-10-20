@@ -1,0 +1,444 @@
+{
+  "revenue": [
+    {
+      "_id": "2026-08-02",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "2065000"
+      }
+    },
+    {
+      "_id": "2026-08-03",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "3875000"
+      }
+    },
+    {
+      "_id": "2026-08-04",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "4015000"
+      }
+    },
+    {
+      "_id": "2026-08-06",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "1260000"
+      }
+    },
+    {
+      "_id": "2026-08-07",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "2810000"
+      }
+    },
+    {
+      "_id": "2026-08-08",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "4745000"
+      }
+    },
+    {
+      "_id": "2026-08-09",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "1045000"
+      }
+    },
+    {
+      "_id": "2026-08-12",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "4300000"
+      }
+    },
+    {
+      "_id": "2026-08-13",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "1465000"
+      }
+    },
+    {
+      "_id": "2026-08-15",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "2925000"
+      }
+    },
+    {
+      "_id": "2026-08-16",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "4115000"
+      }
+    },
+    {
+      "_id": "2026-08-17",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "1020000"
+      }
+    },
+    {
+      "_id": "2026-08-18",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "2115000"
+      }
+    },
+    {
+      "_id": "2026-08-21",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "5165000"
+      }
+    },
+    {
+      "_id": "2026-08-22",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "2570000"
+      }
+    },
+    {
+      "_id": "2026-08-23",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "3295000"
+      }
+    },
+    {
+      "_id": "2026-08-25",
+      "orders": {
+        "$numberInt": "2"
+      },
+      "revenue": {
+        "$numberInt": "6725000"
+      }
+    },
+    {
+      "_id": "2026-08-27",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "4695000"
+      }
+    },
+    {
+      "_id": "2026-08-30",
+      "orders": {
+        "$numberInt": "2"
+      },
+      "revenue": {
+        "$numberInt": "3395000"
+      }
+    },
+    {
+      "_id": "2026-09-01",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "5825000"
+      }
+    },
+    {
+      "_id": "2026-09-02",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "465000"
+      }
+    },
+    {
+      "_id": "2026-09-04",
+      "orders": {
+        "$numberInt": "2"
+      },
+      "revenue": {
+        "$numberInt": "5245000"
+      }
+    },
+    {
+      "_id": "2026-09-08",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "2905000"
+      }
+    },
+    {
+      "_id": "2026-09-09",
+      "orders": {
+        "$numberInt": "2"
+      },
+      "revenue": {
+        "$numberInt": "8150000"
+      }
+    },
+    {
+      "_id": "2026-09-11",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "1775000"
+      }
+    },
+    {
+      "_id": "2026-09-13",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "3830000"
+      }
+    },
+    {
+      "_id": "2026-09-14",
+      "orders": {
+        "$numberInt": "2"
+      },
+      "revenue": {
+        "$numberInt": "5650000"
+      }
+    },
+    {
+      "_id": "2026-09-16",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "3215000"
+      }
+    },
+    {
+      "_id": "2026-09-18",
+      "orders": {
+        "$numberInt": "2"
+      },
+      "revenue": {
+        "$numberInt": "5435000"
+      }
+    },
+    {
+      "_id": "2026-09-19",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "1125000"
+      }
+    },
+    {
+      "_id": "2026-09-21",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "4635000"
+      }
+    },
+    {
+      "_id": "2026-09-23",
+      "orders": {
+        "$numberInt": "2"
+      },
+      "revenue": {
+        "$numberInt": "3515000"
+      }
+    },
+    {
+      "_id": "2026-09-26",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "685000"
+      }
+    },
+    {
+      "_id": "2026-09-28",
+      "orders": {
+        "$numberInt": "2"
+      },
+      "revenue": {
+        "$numberInt": "7165000"
+      }
+    },
+    {
+      "_id": "2026-09-29",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "4680000"
+      }
+    },
+    {
+      "_id": "2026-10-02",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "2285000"
+      }
+    },
+    {
+      "_id": "2026-10-03",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "3555000"
+      }
+    },
+    {
+      "_id": "2026-10-04",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "2340000"
+      }
+    },
+    {
+      "_id": "2026-10-07",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "2350000"
+      }
+    },
+    {
+      "_id": "2026-10-08",
+      "orders": {
+        "$numberInt": "2"
+      },
+      "revenue": {
+        "$numberInt": "4750000"
+      }
+    },
+    {
+      "_id": "2026-10-09",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "1770000"
+      }
+    },
+    {
+      "_id": "2026-10-12",
+      "orders": {
+        "$numberInt": "1"
+      },
+      "revenue": {
+        "$numberInt": "4880000"
+      }
+    }
+  ],
+  "top5": [
+    {
+      "_id": {
+        "$oid": "000000000000000000000069"
+      },
+      "name": "Tai nghe EC 06",
+      "quantity": {
+        "$numberInt": "17"
+      },
+      "revenue": {
+        "$numberInt": "3230000"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "000000000000000000000065"
+      },
+      "name": "Loa Bluetooth EC 02",
+      "quantity": {
+        "$numberInt": "16"
+      },
+      "revenue": {
+        "$numberInt": "2080000"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "000000000000000000000064"
+      },
+      "name": "Tai nghe EC 01",
+      "quantity": {
+        "$numberInt": "16"
+      },
+      "revenue": {
+        "$numberInt": "1690000"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "000000000000000000000067"
+      },
+      "name": "Chuột không dây EC 04",
+      "quantity": {
+        "$numberInt": "15"
+      },
+      "revenue": {
+        "$numberInt": "2390000"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "000000000000000000000066"
+      },
+      "name": "Bàn phím EC 03",
+      "quantity": {
+        "$numberInt": "15"
+      },
+      "revenue": {
+        "$numberInt": "2175000"
+      }
+    }
+  ]
+}

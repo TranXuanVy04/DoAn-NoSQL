@@ -1,0 +1,2922 @@
+[
+  {
+    "_id": {
+      "$oid": "000000000000000000000064"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Tai nghe EC 01",
+    "price": {
+      "$numberLong": "115000"
+    },
+    "sku": "ELECTRONICS-001",
+    "stock": {
+      "$numberInt": "100"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000065"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Loa Bluetooth EC 02",
+    "price": {
+      "$numberLong": "130000"
+    },
+    "sku": "ELECTRONICS-002",
+    "stock": {
+      "$numberInt": "101"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000066"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Bàn phím EC 03",
+    "price": {
+      "$numberLong": "145000"
+    },
+    "sku": "ELECTRONICS-003",
+    "stock": {
+      "$numberInt": "102"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000067"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Chuột không dây EC 04",
+    "price": {
+      "$numberLong": "160000"
+    },
+    "sku": "ELECTRONICS-004",
+    "stock": {
+      "$numberInt": "103"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000068"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Đèn màn hình EC 05",
+    "price": {
+      "$numberLong": "175000"
+    },
+    "sku": "ELECTRONICS-005",
+    "stock": {
+      "$numberInt": "104"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000069"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Tai nghe EC 06",
+    "price": {
+      "$numberLong": "190000"
+    },
+    "sku": "ELECTRONICS-006",
+    "stock": {
+      "$numberInt": "105"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000006a"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Loa Bluetooth EC 07",
+    "price": {
+      "$numberLong": "205000"
+    },
+    "sku": "ELECTRONICS-007",
+    "stock": {
+      "$numberInt": "106"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000006b"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Bàn phím EC 08",
+    "price": {
+      "$numberLong": "220000"
+    },
+    "sku": "ELECTRONICS-008",
+    "stock": {
+      "$numberInt": "107"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000006c"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Chuột không dây EC 09",
+    "price": {
+      "$numberLong": "235000"
+    },
+    "sku": "ELECTRONICS-009",
+    "stock": {
+      "$numberInt": "108"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000006d"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Đèn màn hình EC 10",
+    "price": {
+      "$numberLong": "250000"
+    },
+    "sku": "ELECTRONICS-010",
+    "stock": {
+      "$numberInt": "109"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000006e"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Tai nghe EC 11",
+    "price": {
+      "$numberLong": "265000"
+    },
+    "sku": "ELECTRONICS-011",
+    "stock": {
+      "$numberInt": "110"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000006f"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Loa Bluetooth EC 12",
+    "price": {
+      "$numberLong": "280000"
+    },
+    "sku": "ELECTRONICS-012",
+    "stock": {
+      "$numberInt": "111"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000070"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Bàn phím EC 13",
+    "price": {
+      "$numberLong": "295000"
+    },
+    "sku": "ELECTRONICS-013",
+    "stock": {
+      "$numberInt": "112"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000071"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Chuột không dây EC 14",
+    "price": {
+      "$numberLong": "310000"
+    },
+    "sku": "ELECTRONICS-014",
+    "stock": {
+      "$numberInt": "113"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000072"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Đèn màn hình EC 15",
+    "price": {
+      "$numberLong": "325000"
+    },
+    "sku": "ELECTRONICS-015",
+    "stock": {
+      "$numberInt": "114"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000073"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Tai nghe EC 16",
+    "price": {
+      "$numberLong": "340000"
+    },
+    "sku": "ELECTRONICS-016",
+    "stock": {
+      "$numberInt": "115"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000074"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Loa Bluetooth EC 17",
+    "price": {
+      "$numberLong": "355000"
+    },
+    "sku": "ELECTRONICS-017",
+    "stock": {
+      "$numberInt": "116"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000075"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Bàn phím EC 18",
+    "price": {
+      "$numberLong": "370000"
+    },
+    "sku": "ELECTRONICS-018",
+    "stock": {
+      "$numberInt": "117"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000076"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Chuột không dây EC 19",
+    "price": {
+      "$numberLong": "385000"
+    },
+    "sku": "ELECTRONICS-019",
+    "stock": {
+      "$numberInt": "118"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000077"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Đèn màn hình EC 20",
+    "price": {
+      "$numberLong": "400000"
+    },
+    "sku": "ELECTRONICS-020",
+    "stock": {
+      "$numberInt": "119"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000078"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Tai nghe EC 21",
+    "price": {
+      "$numberLong": "415000"
+    },
+    "sku": "ELECTRONICS-021",
+    "stock": {
+      "$numberInt": "120"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000079"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Loa Bluetooth EC 22",
+    "price": {
+      "$numberLong": "430000"
+    },
+    "sku": "ELECTRONICS-022",
+    "stock": {
+      "$numberInt": "121"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000007a"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Bàn phím EC 23",
+    "price": {
+      "$numberLong": "445000"
+    },
+    "sku": "ELECTRONICS-023",
+    "stock": {
+      "$numberInt": "122"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000007b"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Chuột không dây EC 24",
+    "price": {
+      "$numberLong": "460000"
+    },
+    "sku": "ELECTRONICS-024",
+    "stock": {
+      "$numberInt": "123"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000007c"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Đèn màn hình EC 25",
+    "price": {
+      "$numberLong": "475000"
+    },
+    "sku": "ELECTRONICS-025",
+    "stock": {
+      "$numberInt": "124"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000007d"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Tai nghe EC 26",
+    "price": {
+      "$numberLong": "490000"
+    },
+    "sku": "ELECTRONICS-026",
+    "stock": {
+      "$numberInt": "125"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000007e"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Loa Bluetooth EC 27",
+    "price": {
+      "$numberLong": "505000"
+    },
+    "sku": "ELECTRONICS-027",
+    "stock": {
+      "$numberInt": "126"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000007f"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Bàn phím EC 28",
+    "price": {
+      "$numberLong": "520000"
+    },
+    "sku": "ELECTRONICS-028",
+    "stock": {
+      "$numberInt": "127"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000080"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Chuột không dây EC 29",
+    "price": {
+      "$numberLong": "535000"
+    },
+    "sku": "ELECTRONICS-029",
+    "stock": {
+      "$numberInt": "128"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000081"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Đèn màn hình EC 30",
+    "price": {
+      "$numberLong": "550000"
+    },
+    "sku": "ELECTRONICS-030",
+    "stock": {
+      "$numberInt": "129"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000082"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Tai nghe EC 31",
+    "price": {
+      "$numberLong": "565000"
+    },
+    "sku": "ELECTRONICS-031",
+    "stock": {
+      "$numberInt": "100"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000083"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Loa Bluetooth EC 32",
+    "price": {
+      "$numberLong": "580000"
+    },
+    "sku": "ELECTRONICS-032",
+    "stock": {
+      "$numberInt": "101"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000084"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Bàn phím EC 33",
+    "price": {
+      "$numberLong": "595000"
+    },
+    "sku": "ELECTRONICS-033",
+    "stock": {
+      "$numberInt": "102"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000085"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Chuột không dây EC 34",
+    "price": {
+      "$numberLong": "610000"
+    },
+    "sku": "ELECTRONICS-034",
+    "stock": {
+      "$numberInt": "103"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000086"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Đèn màn hình EC 35",
+    "price": {
+      "$numberLong": "625000"
+    },
+    "sku": "ELECTRONICS-035",
+    "stock": {
+      "$numberInt": "104"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000087"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Tai nghe EC 36",
+    "price": {
+      "$numberLong": "640000"
+    },
+    "sku": "ELECTRONICS-036",
+    "stock": {
+      "$numberInt": "105"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000088"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Loa Bluetooth EC 37",
+    "price": {
+      "$numberLong": "655000"
+    },
+    "sku": "ELECTRONICS-037",
+    "stock": {
+      "$numberInt": "106"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000089"
+    },
+    "attributes": {
+      "brand": "Nova",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "18"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Bàn phím EC 38",
+    "price": {
+      "$numberLong": "670000"
+    },
+    "sku": "ELECTRONICS-038",
+    "stock": {
+      "$numberInt": "107"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000008a"
+    },
+    "attributes": {
+      "brand": "Soundly",
+      "connectivity": "USB-C",
+      "warrantyMonths": {
+        "$numberInt": "24"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Chuột không dây EC 39",
+    "price": {
+      "$numberLong": "685000"
+    },
+    "sku": "ELECTRONICS-039",
+    "stock": {
+      "$numberInt": "108"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000008b"
+    },
+    "attributes": {
+      "brand": "EC Tech",
+      "connectivity": "Bluetooth",
+      "warrantyMonths": {
+        "$numberInt": "12"
+      }
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000001"
+    },
+    "isActive": true,
+    "kind": "electronics",
+    "name": "Đèn màn hình EC 40",
+    "price": {
+      "$numberLong": "700000"
+    },
+    "sku": "ELECTRONICS-040",
+    "stock": {
+      "$numberInt": "109"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000008c"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "S"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo thun EC 01",
+    "price": {
+      "$numberLong": "215000"
+    },
+    "sku": "FASHION-001",
+    "stock": {
+      "$numberInt": "100"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000008d"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "M"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần dài EC 02",
+    "price": {
+      "$numberLong": "230000"
+    },
+    "sku": "FASHION-002",
+    "stock": {
+      "$numberInt": "101"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000008e"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "L"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo khoác EC 03",
+    "price": {
+      "$numberLong": "245000"
+    },
+    "sku": "FASHION-003",
+    "stock": {
+      "$numberInt": "102"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000008f"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "XL"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Váy EC 04",
+    "price": {
+      "$numberLong": "260000"
+    },
+    "sku": "FASHION-004",
+    "stock": {
+      "$numberInt": "103"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000090"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "S"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần ngắn EC 05",
+    "price": {
+      "$numberLong": "275000"
+    },
+    "sku": "FASHION-005",
+    "stock": {
+      "$numberInt": "104"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000091"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "M"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo thun EC 06",
+    "price": {
+      "$numberLong": "290000"
+    },
+    "sku": "FASHION-006",
+    "stock": {
+      "$numberInt": "105"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000092"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "L"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần dài EC 07",
+    "price": {
+      "$numberLong": "305000"
+    },
+    "sku": "FASHION-007",
+    "stock": {
+      "$numberInt": "106"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000093"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "XL"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo khoác EC 08",
+    "price": {
+      "$numberLong": "320000"
+    },
+    "sku": "FASHION-008",
+    "stock": {
+      "$numberInt": "107"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000094"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "S"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Váy EC 09",
+    "price": {
+      "$numberLong": "335000"
+    },
+    "sku": "FASHION-009",
+    "stock": {
+      "$numberInt": "108"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000095"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "M"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần ngắn EC 10",
+    "price": {
+      "$numberLong": "350000"
+    },
+    "sku": "FASHION-010",
+    "stock": {
+      "$numberInt": "109"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000096"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "L"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo thun EC 11",
+    "price": {
+      "$numberLong": "365000"
+    },
+    "sku": "FASHION-011",
+    "stock": {
+      "$numberInt": "110"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000097"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "XL"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần dài EC 12",
+    "price": {
+      "$numberLong": "380000"
+    },
+    "sku": "FASHION-012",
+    "stock": {
+      "$numberInt": "111"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000098"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "S"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo khoác EC 13",
+    "price": {
+      "$numberLong": "395000"
+    },
+    "sku": "FASHION-013",
+    "stock": {
+      "$numberInt": "112"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000099"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "M"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Váy EC 14",
+    "price": {
+      "$numberLong": "410000"
+    },
+    "sku": "FASHION-014",
+    "stock": {
+      "$numberInt": "113"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000009a"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "L"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần ngắn EC 15",
+    "price": {
+      "$numberLong": "425000"
+    },
+    "sku": "FASHION-015",
+    "stock": {
+      "$numberInt": "114"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000009b"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "XL"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo thun EC 16",
+    "price": {
+      "$numberLong": "440000"
+    },
+    "sku": "FASHION-016",
+    "stock": {
+      "$numberInt": "115"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000009c"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "S"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần dài EC 17",
+    "price": {
+      "$numberLong": "455000"
+    },
+    "sku": "FASHION-017",
+    "stock": {
+      "$numberInt": "116"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000009d"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "M"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo khoác EC 18",
+    "price": {
+      "$numberLong": "470000"
+    },
+    "sku": "FASHION-018",
+    "stock": {
+      "$numberInt": "117"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000009e"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "L"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Váy EC 19",
+    "price": {
+      "$numberLong": "485000"
+    },
+    "sku": "FASHION-019",
+    "stock": {
+      "$numberInt": "118"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000009f"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "XL"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần ngắn EC 20",
+    "price": {
+      "$numberLong": "500000"
+    },
+    "sku": "FASHION-020",
+    "stock": {
+      "$numberInt": "119"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000a0"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "S"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo thun EC 21",
+    "price": {
+      "$numberLong": "515000"
+    },
+    "sku": "FASHION-021",
+    "stock": {
+      "$numberInt": "120"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000a1"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "M"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần dài EC 22",
+    "price": {
+      "$numberLong": "530000"
+    },
+    "sku": "FASHION-022",
+    "stock": {
+      "$numberInt": "121"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000a2"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "L"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo khoác EC 23",
+    "price": {
+      "$numberLong": "545000"
+    },
+    "sku": "FASHION-023",
+    "stock": {
+      "$numberInt": "122"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000a3"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "XL"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Váy EC 24",
+    "price": {
+      "$numberLong": "560000"
+    },
+    "sku": "FASHION-024",
+    "stock": {
+      "$numberInt": "123"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000a4"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "S"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần ngắn EC 25",
+    "price": {
+      "$numberLong": "575000"
+    },
+    "sku": "FASHION-025",
+    "stock": {
+      "$numberInt": "124"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000a5"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "M"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo thun EC 26",
+    "price": {
+      "$numberLong": "590000"
+    },
+    "sku": "FASHION-026",
+    "stock": {
+      "$numberInt": "125"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000a6"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "L"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần dài EC 27",
+    "price": {
+      "$numberLong": "605000"
+    },
+    "sku": "FASHION-027",
+    "stock": {
+      "$numberInt": "126"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000a7"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "XL"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo khoác EC 28",
+    "price": {
+      "$numberLong": "620000"
+    },
+    "sku": "FASHION-028",
+    "stock": {
+      "$numberInt": "127"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000a8"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "S"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Váy EC 29",
+    "price": {
+      "$numberLong": "635000"
+    },
+    "sku": "FASHION-029",
+    "stock": {
+      "$numberInt": "128"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000a9"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "M"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần ngắn EC 30",
+    "price": {
+      "$numberLong": "650000"
+    },
+    "sku": "FASHION-030",
+    "stock": {
+      "$numberInt": "129"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000aa"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "L"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo thun EC 31",
+    "price": {
+      "$numberLong": "665000"
+    },
+    "sku": "FASHION-031",
+    "stock": {
+      "$numberInt": "100"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000ab"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "XL"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần dài EC 32",
+    "price": {
+      "$numberLong": "680000"
+    },
+    "sku": "FASHION-032",
+    "stock": {
+      "$numberInt": "101"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000ac"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "S"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo khoác EC 33",
+    "price": {
+      "$numberLong": "695000"
+    },
+    "sku": "FASHION-033",
+    "stock": {
+      "$numberInt": "102"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000ad"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "M"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Váy EC 34",
+    "price": {
+      "$numberLong": "710000"
+    },
+    "sku": "FASHION-034",
+    "stock": {
+      "$numberInt": "103"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000ae"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "L"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần ngắn EC 35",
+    "price": {
+      "$numberLong": "725000"
+    },
+    "sku": "FASHION-035",
+    "stock": {
+      "$numberInt": "104"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000af"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "XL"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo thun EC 36",
+    "price": {
+      "$numberLong": "740000"
+    },
+    "sku": "FASHION-036",
+    "stock": {
+      "$numberInt": "105"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000b0"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "S"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần dài EC 37",
+    "price": {
+      "$numberLong": "755000"
+    },
+    "sku": "FASHION-037",
+    "stock": {
+      "$numberInt": "106"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000b1"
+    },
+    "attributes": {
+      "color": "Trắng",
+      "material": "Denim",
+      "size": "M"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Áo khoác EC 38",
+    "price": {
+      "$numberLong": "770000"
+    },
+    "sku": "FASHION-038",
+    "stock": {
+      "$numberInt": "107"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000b2"
+    },
+    "attributes": {
+      "color": "Xanh",
+      "material": "Linen",
+      "size": "L"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Váy EC 39",
+    "price": {
+      "$numberLong": "785000"
+    },
+    "sku": "FASHION-039",
+    "stock": {
+      "$numberInt": "108"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000b3"
+    },
+    "attributes": {
+      "color": "Đen",
+      "material": "Cotton",
+      "size": "XL"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000002"
+    },
+    "isActive": true,
+    "kind": "fashion",
+    "name": "Quần ngắn EC 40",
+    "price": {
+      "$numberLong": "800000"
+    },
+    "sku": "FASHION-040",
+    "stock": {
+      "$numberInt": "109"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000b4"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "1"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình giữ nhiệt EC 01",
+    "price": {
+      "$numberLong": "315000"
+    },
+    "sku": "HOME-001",
+    "stock": {
+      "$numberInt": "100"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000b5"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "2"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Hộp đựng thực phẩm EC 02",
+    "price": {
+      "$numberLong": "330000"
+    },
+    "sku": "HOME-002",
+    "stock": {
+      "$numberInt": "101"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000b6"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "3"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Nồi inox EC 03",
+    "price": {
+      "$numberLong": "345000"
+    },
+    "sku": "HOME-003",
+    "stock": {
+      "$numberInt": "102"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000b7"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "4"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Kệ bếp EC 04",
+    "price": {
+      "$numberLong": "360000"
+    },
+    "sku": "HOME-004",
+    "stock": {
+      "$numberInt": "103"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000b8"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "5"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình nước EC 05",
+    "price": {
+      "$numberLong": "375000"
+    },
+    "sku": "HOME-005",
+    "stock": {
+      "$numberInt": "104"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000b9"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "1"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình giữ nhiệt EC 06",
+    "price": {
+      "$numberLong": "390000"
+    },
+    "sku": "HOME-006",
+    "stock": {
+      "$numberInt": "105"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000ba"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "2"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Hộp đựng thực phẩm EC 07",
+    "price": {
+      "$numberLong": "405000"
+    },
+    "sku": "HOME-007",
+    "stock": {
+      "$numberInt": "106"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000bb"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "3"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Nồi inox EC 08",
+    "price": {
+      "$numberLong": "420000"
+    },
+    "sku": "HOME-008",
+    "stock": {
+      "$numberInt": "107"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000bc"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "4"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Kệ bếp EC 09",
+    "price": {
+      "$numberLong": "435000"
+    },
+    "sku": "HOME-009",
+    "stock": {
+      "$numberInt": "108"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000bd"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "5"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình nước EC 10",
+    "price": {
+      "$numberLong": "450000"
+    },
+    "sku": "HOME-010",
+    "stock": {
+      "$numberInt": "109"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000be"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "1"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình giữ nhiệt EC 11",
+    "price": {
+      "$numberLong": "465000"
+    },
+    "sku": "HOME-011",
+    "stock": {
+      "$numberInt": "110"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000bf"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "2"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Hộp đựng thực phẩm EC 12",
+    "price": {
+      "$numberLong": "480000"
+    },
+    "sku": "HOME-012",
+    "stock": {
+      "$numberInt": "111"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000c0"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "3"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Nồi inox EC 13",
+    "price": {
+      "$numberLong": "495000"
+    },
+    "sku": "HOME-013",
+    "stock": {
+      "$numberInt": "112"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000c1"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "4"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Kệ bếp EC 14",
+    "price": {
+      "$numberLong": "510000"
+    },
+    "sku": "HOME-014",
+    "stock": {
+      "$numberInt": "113"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000c2"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "5"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình nước EC 15",
+    "price": {
+      "$numberLong": "525000"
+    },
+    "sku": "HOME-015",
+    "stock": {
+      "$numberInt": "114"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000c3"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "1"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình giữ nhiệt EC 16",
+    "price": {
+      "$numberLong": "540000"
+    },
+    "sku": "HOME-016",
+    "stock": {
+      "$numberInt": "115"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000c4"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "2"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Hộp đựng thực phẩm EC 17",
+    "price": {
+      "$numberLong": "555000"
+    },
+    "sku": "HOME-017",
+    "stock": {
+      "$numberInt": "116"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000c5"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "3"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Nồi inox EC 18",
+    "price": {
+      "$numberLong": "570000"
+    },
+    "sku": "HOME-018",
+    "stock": {
+      "$numberInt": "117"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000c6"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "4"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Kệ bếp EC 19",
+    "price": {
+      "$numberLong": "585000"
+    },
+    "sku": "HOME-019",
+    "stock": {
+      "$numberInt": "118"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000c7"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "5"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình nước EC 20",
+    "price": {
+      "$numberLong": "600000"
+    },
+    "sku": "HOME-020",
+    "stock": {
+      "$numberInt": "119"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000c8"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "1"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình giữ nhiệt EC 21",
+    "price": {
+      "$numberLong": "615000"
+    },
+    "sku": "HOME-021",
+    "stock": {
+      "$numberInt": "120"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000c9"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "2"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Hộp đựng thực phẩm EC 22",
+    "price": {
+      "$numberLong": "630000"
+    },
+    "sku": "HOME-022",
+    "stock": {
+      "$numberInt": "121"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000ca"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "3"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Nồi inox EC 23",
+    "price": {
+      "$numberLong": "645000"
+    },
+    "sku": "HOME-023",
+    "stock": {
+      "$numberInt": "122"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000cb"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "4"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Kệ bếp EC 24",
+    "price": {
+      "$numberLong": "660000"
+    },
+    "sku": "HOME-024",
+    "stock": {
+      "$numberInt": "123"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000cc"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "5"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình nước EC 25",
+    "price": {
+      "$numberLong": "675000"
+    },
+    "sku": "HOME-025",
+    "stock": {
+      "$numberInt": "124"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000cd"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "1"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình giữ nhiệt EC 26",
+    "price": {
+      "$numberLong": "690000"
+    },
+    "sku": "HOME-026",
+    "stock": {
+      "$numberInt": "125"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000ce"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "2"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Hộp đựng thực phẩm EC 27",
+    "price": {
+      "$numberLong": "705000"
+    },
+    "sku": "HOME-027",
+    "stock": {
+      "$numberInt": "126"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000cf"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "3"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Nồi inox EC 28",
+    "price": {
+      "$numberLong": "720000"
+    },
+    "sku": "HOME-028",
+    "stock": {
+      "$numberInt": "127"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000d0"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "4"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Kệ bếp EC 29",
+    "price": {
+      "$numberLong": "735000"
+    },
+    "sku": "HOME-029",
+    "stock": {
+      "$numberInt": "128"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000d1"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "5"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình nước EC 30",
+    "price": {
+      "$numberLong": "750000"
+    },
+    "sku": "HOME-030",
+    "stock": {
+      "$numberInt": "129"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000d2"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "1"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình giữ nhiệt EC 31",
+    "price": {
+      "$numberLong": "765000"
+    },
+    "sku": "HOME-031",
+    "stock": {
+      "$numberInt": "100"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000d3"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "2"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Hộp đựng thực phẩm EC 32",
+    "price": {
+      "$numberLong": "780000"
+    },
+    "sku": "HOME-032",
+    "stock": {
+      "$numberInt": "101"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000d4"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "3"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Nồi inox EC 33",
+    "price": {
+      "$numberLong": "795000"
+    },
+    "sku": "HOME-033",
+    "stock": {
+      "$numberInt": "102"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000d5"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "4"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Kệ bếp EC 34",
+    "price": {
+      "$numberLong": "810000"
+    },
+    "sku": "HOME-034",
+    "stock": {
+      "$numberInt": "103"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000d6"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "5"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình nước EC 35",
+    "price": {
+      "$numberLong": "825000"
+    },
+    "sku": "HOME-035",
+    "stock": {
+      "$numberInt": "104"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000d7"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "1"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình giữ nhiệt EC 36",
+    "price": {
+      "$numberLong": "840000"
+    },
+    "sku": "HOME-036",
+    "stock": {
+      "$numberInt": "105"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000d8"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "2"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Hộp đựng thực phẩm EC 37",
+    "price": {
+      "$numberLong": "855000"
+    },
+    "sku": "HOME-037",
+    "stock": {
+      "$numberInt": "106"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000d9"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "3"
+      },
+      "material": "Nhựa PP",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Nồi inox EC 38",
+    "price": {
+      "$numberLong": "870000"
+    },
+    "sku": "HOME-038",
+    "stock": {
+      "$numberInt": "107"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000da"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "4"
+      },
+      "material": "Thủy tinh",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Kệ bếp EC 39",
+    "price": {
+      "$numberLong": "885000"
+    },
+    "sku": "HOME-039",
+    "stock": {
+      "$numberInt": "108"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000000db"
+    },
+    "attributes": {
+      "capacityLiters": {
+        "$numberInt": "5"
+      },
+      "material": "Inox",
+      "origin": "Việt Nam"
+    },
+    "categoryId": {
+      "$oid": "000000000000000000000003"
+    },
+    "isActive": true,
+    "kind": "home",
+    "name": "Bình nước EC 40",
+    "price": {
+      "$numberLong": "900000"
+    },
+    "sku": "HOME-040",
+    "stock": {
+      "$numberInt": "109"
+    }
+  }
+]

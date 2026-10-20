@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>@ViewData["Title"] · EC Market</title><link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/></head>
+<body><a class="skip" href="#main">Đến nội dung</a><header><div class="shell nav"><a class="brand" asp-controller="Catalog" asp-action="Index">EC<span>MARKET</span></a><nav aria-label="Điều hướng chính"><a asp-controller="Catalog" asp-action="Index">Khám phá</a><a asp-controller="Cart" asp-action="Index">Giỏ hàng</a>
+@if(User.Identity?.IsAuthenticated==true){<a asp-controller="Admin" asp-action="Dashboard">Dashboard</a><a asp-controller="Admin" asp-action="Products">Sản phẩm</a><a asp-controller="Admin" asp-action="Categories">Danh mục</a><a asp-controller="Admin" asp-action="Orders">Đơn hàng</a><form asp-controller="Account" asp-action="Logout" method="post"><button class="text-button">Đăng xuất</button></form>}
+else {<a asp-controller="Account" asp-action="Login">Quản trị</a>}</nav></div></header>
+<main id="main" class="shell">@if(TempData["Message"] is string message){<div class="notice" role="status">@message</div>}@if(TempData["Error"] is string error){<div class="alert" role="alert">@error</div>}@RenderBody()</main>
+<footer class="shell">EC Market <span>Điện tử · Thời trang · Gia dụng</span></footer></body></html>

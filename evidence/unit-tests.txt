@@ -1,0 +1,12 @@
+test_canonical_files (test_data.DataTests.test_canonical_files) ... ok
+test_day_boundary_and_status (test_data.DataTests.test_day_boundary_and_status) ... ok
+test_embedded_independence (test_data.DataTests.test_embedded_independence) ... ok
+test_pipeline_no_join_and_deterministic_sort (test_data.DataTests.test_pipeline_no_join_and_deterministic_sort) ... ok
+test_quota_and_integrity (test_data.DataTests.test_quota_and_integrity) ... ok
+test_reproducible (test_data.DataTests.test_reproducible) ... ok
+test_write_guard (test_data.DataTests.test_write_guard) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.071s
+
+OK

@@ -1,0 +1,7910 @@
+[
+  {
+    "_id": {
+      "$oid": "0000000000000000000003e8"
+    },
+    "checkoutKey": "seed-v1-0001",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1785543300000"
+      }
+    },
+    "customer": {
+      "address": "1 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 01",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-0",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "105000"
+        },
+        "name": "Tai nghe EC 01",
+        "productId": {
+          "$oid": "000000000000000000000064"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-001",
+        "unitPrice": {
+          "$numberLong": "105000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "780000"
+        },
+        "name": "Đèn màn hình EC 20",
+        "productId": {
+          "$oid": "000000000000000000000077"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-020",
+        "unitPrice": {
+          "$numberLong": "390000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0001",
+    "status": "Cancelled",
+    "total": {
+      "$numberLong": "885000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003e9"
+    },
+    "checkoutKey": "seed-v1-0002",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1785647700000"
+      }
+    },
+    "customer": {
+      "address": "2 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 02",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-1",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "260000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1515000"
+        },
+        "name": "Loa Bluetooth EC 27",
+        "productId": {
+          "$oid": "00000000000000000000007e"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-027",
+        "unitPrice": {
+          "$numberLong": "505000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "290000"
+        },
+        "name": "Áo thun EC 06",
+        "productId": {
+          "$oid": "000000000000000000000091"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-006",
+        "unitPrice": {
+          "$numberLong": "290000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0002",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2065000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003ea"
+    },
+    "checkoutKey": "seed-v1-0003",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1785752100000"
+      }
+    },
+    "customer": {
+      "address": "3 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 03",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-2",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "435000"
+        },
+        "name": "Bàn phím EC 03",
+        "productId": {
+          "$oid": "000000000000000000000066"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-003",
+        "unitPrice": {
+          "$numberLong": "145000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "610000"
+        },
+        "name": "Chuột không dây EC 34",
+        "productId": {
+          "$oid": "000000000000000000000085"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-034",
+        "unitPrice": {
+          "$numberLong": "610000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "790000"
+        },
+        "name": "Áo khoác EC 13",
+        "productId": {
+          "$oid": "000000000000000000000098"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-013",
+        "unitPrice": {
+          "$numberLong": "395000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "2040000"
+        },
+        "name": "Quần dài EC 32",
+        "productId": {
+          "$oid": "0000000000000000000000ab"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-032",
+        "unitPrice": {
+          "$numberLong": "680000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0003",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "3875000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003eb"
+    },
+    "checkoutKey": "seed-v1-0004",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1785856500000"
+      }
+    },
+    "customer": {
+      "address": "4 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 04",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-3",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "160000"
+        },
+        "name": "Chuột không dây EC 04",
+        "productId": {
+          "$oid": "000000000000000000000067"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-004",
+        "unitPrice": {
+          "$numberLong": "160000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "430000"
+        },
+        "name": "Áo thun EC 01",
+        "productId": {
+          "$oid": "00000000000000000000008c"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-001",
+        "unitPrice": {
+          "$numberLong": "215000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1500000"
+        },
+        "name": "Quần ngắn EC 20",
+        "productId": {
+          "$oid": "00000000000000000000009f"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-020",
+        "unitPrice": {
+          "$numberLong": "500000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "785000"
+        },
+        "name": "Váy EC 39",
+        "productId": {
+          "$oid": "0000000000000000000000b2"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-039",
+        "unitPrice": {
+          "$numberLong": "785000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1140000"
+        },
+        "name": "Nồi inox EC 18",
+        "productId": {
+          "$oid": "0000000000000000000000c5"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-018",
+        "unitPrice": {
+          "$numberLong": "570000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0004",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "4015000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003ec"
+    },
+    "checkoutKey": "seed-v1-0005",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1785960900000"
+      }
+    },
+    "customer": {
+      "address": "5 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 05",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-4",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "330000"
+        },
+        "name": "Đèn màn hình EC 05",
+        "productId": {
+          "$oid": "000000000000000000000068"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-005",
+        "unitPrice": {
+          "$numberLong": "165000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "930000"
+        },
+        "name": "Áo khoác EC 08",
+        "productId": {
+          "$oid": "000000000000000000000093"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-008",
+        "unitPrice": {
+          "$numberLong": "310000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0005",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1260000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003ed"
+    },
+    "checkoutKey": "seed-v1-0006",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1785978900000"
+      }
+    },
+    "customer": {
+      "address": "6 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 06",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-5",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "570000"
+        },
+        "name": "Tai nghe EC 06",
+        "productId": {
+          "$oid": "000000000000000000000069"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-006",
+        "unitPrice": {
+          "$numberLong": "190000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "425000"
+        },
+        "name": "Quần ngắn EC 15",
+        "productId": {
+          "$oid": "00000000000000000000009a"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-015",
+        "unitPrice": {
+          "$numberLong": "425000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1420000"
+        },
+        "name": "Váy EC 34",
+        "productId": {
+          "$oid": "0000000000000000000000ad"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-034",
+        "unitPrice": {
+          "$numberLong": "710000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0006",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "2415000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003ee"
+    },
+    "checkoutKey": "seed-v1-0007",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786083300000"
+      }
+    },
+    "customer": {
+      "address": "7 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 07",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-6",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "205000"
+        },
+        "name": "Loa Bluetooth EC 07",
+        "productId": {
+          "$oid": "00000000000000000000006a"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-007",
+        "unitPrice": {
+          "$numberLong": "205000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1060000"
+        },
+        "name": "Quần dài EC 22",
+        "productId": {
+          "$oid": "0000000000000000000000a1"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-022",
+        "unitPrice": {
+          "$numberLong": "530000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "945000"
+        },
+        "name": "Bình giữ nhiệt EC 01",
+        "productId": {
+          "$oid": "0000000000000000000000b4"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-001",
+        "unitPrice": {
+          "$numberLong": "315000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "600000"
+        },
+        "name": "Bình nước EC 20",
+        "productId": {
+          "$oid": "0000000000000000000000c7"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-020",
+        "unitPrice": {
+          "$numberLong": "600000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0007",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2810000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003ef"
+    },
+    "checkoutKey": "seed-v1-0008",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786187700000"
+      }
+    },
+    "customer": {
+      "address": "8 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 08",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-7",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "440000"
+        },
+        "name": "Bàn phím EC 08",
+        "productId": {
+          "$oid": "00000000000000000000006b"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-008",
+        "unitPrice": {
+          "$numberLong": "220000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1905000"
+        },
+        "name": "Váy EC 29",
+        "productId": {
+          "$oid": "0000000000000000000000a8"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-029",
+        "unitPrice": {
+          "$numberLong": "635000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "420000"
+        },
+        "name": "Nồi inox EC 08",
+        "productId": {
+          "$oid": "0000000000000000000000bb"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-008",
+        "unitPrice": {
+          "$numberLong": "420000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1410000"
+        },
+        "name": "Hộp đựng thực phẩm EC 27",
+        "productId": {
+          "$oid": "0000000000000000000000ce"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-027",
+        "unitPrice": {
+          "$numberLong": "705000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "570000"
+        },
+        "name": "Tai nghe EC 06",
+        "productId": {
+          "$oid": "000000000000000000000069"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-006",
+        "unitPrice": {
+          "$numberLong": "190000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0008",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "4745000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003f0"
+    },
+    "checkoutKey": "seed-v1-0009",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786292100000"
+      }
+    },
+    "customer": {
+      "address": "9 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 09",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-8",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "315000"
+        },
+        "name": "Tai nghe EC 01",
+        "productId": {
+          "$oid": "000000000000000000000064"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-001",
+        "unitPrice": {
+          "$numberLong": "105000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "730000"
+        },
+        "name": "Áo thun EC 36",
+        "productId": {
+          "$oid": "0000000000000000000000af"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-036",
+        "unitPrice": {
+          "$numberLong": "730000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0009",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1045000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003f1"
+    },
+    "checkoutKey": "seed-v1-0010",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786396500000"
+      }
+    },
+    "customer": {
+      "address": "10 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 10",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-9",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "130000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "690000"
+        },
+        "name": "Nồi inox EC 03",
+        "productId": {
+          "$oid": "0000000000000000000000b6"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-003",
+        "unitPrice": {
+          "$numberLong": "345000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1890000"
+        },
+        "name": "Hộp đựng thực phẩm EC 22",
+        "productId": {
+          "$oid": "0000000000000000000000c9"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-022",
+        "unitPrice": {
+          "$numberLong": "630000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0010",
+    "status": "Cancelled",
+    "total": {
+      "$numberLong": "2710000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003f2"
+    },
+    "checkoutKey": "seed-v1-0011",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786414500000"
+      }
+    },
+    "customer": {
+      "address": "11 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 11",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-10",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "290000"
+        },
+        "name": "Bàn phím EC 03",
+        "productId": {
+          "$oid": "000000000000000000000066"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-003",
+        "unitPrice": {
+          "$numberLong": "145000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1350000"
+        },
+        "name": "Bình nước EC 10",
+        "productId": {
+          "$oid": "0000000000000000000000bd"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-010",
+        "unitPrice": {
+          "$numberLong": "450000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "735000"
+        },
+        "name": "Kệ bếp EC 29",
+        "productId": {
+          "$oid": "0000000000000000000000d0"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-029",
+        "unitPrice": {
+          "$numberLong": "735000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "440000"
+        },
+        "name": "Bàn phím EC 08",
+        "productId": {
+          "$oid": "00000000000000000000006b"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-008",
+        "unitPrice": {
+          "$numberLong": "220000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0011",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "2815000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003f3"
+    },
+    "checkoutKey": "seed-v1-0012",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786518900000"
+      }
+    },
+    "customer": {
+      "address": "12 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 12",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-11",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "480000"
+        },
+        "name": "Chuột không dây EC 04",
+        "productId": {
+          "$oid": "000000000000000000000067"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-004",
+        "unitPrice": {
+          "$numberLong": "160000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "555000"
+        },
+        "name": "Hộp đựng thực phẩm EC 17",
+        "productId": {
+          "$oid": "0000000000000000000000c4"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-017",
+        "unitPrice": {
+          "$numberLong": "555000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1680000"
+        },
+        "name": "Bình giữ nhiệt EC 36",
+        "productId": {
+          "$oid": "0000000000000000000000d7"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-036",
+        "unitPrice": {
+          "$numberLong": "840000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "975000"
+        },
+        "name": "Đèn màn hình EC 15",
+        "productId": {
+          "$oid": "000000000000000000000072"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-015",
+        "unitPrice": {
+          "$numberLong": "325000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "610000"
+        },
+        "name": "Chuột không dây EC 34",
+        "productId": {
+          "$oid": "000000000000000000000085"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-034",
+        "unitPrice": {
+          "$numberLong": "610000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0012",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "4300000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003f4"
+    },
+    "checkoutKey": "seed-v1-0013",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786623300000"
+      }
+    },
+    "customer": {
+      "address": "13 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 01",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-0",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "165000"
+        },
+        "name": "Đèn màn hình EC 05",
+        "productId": {
+          "$oid": "000000000000000000000068"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-005",
+        "unitPrice": {
+          "$numberLong": "165000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1300000"
+        },
+        "name": "Kệ bếp EC 24",
+        "productId": {
+          "$oid": "0000000000000000000000cb"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-024",
+        "unitPrice": {
+          "$numberLong": "650000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0013",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1465000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003f5"
+    },
+    "checkoutKey": "seed-v1-0014",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786727700000"
+      }
+    },
+    "customer": {
+      "address": "14 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 02",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-1",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "380000"
+        },
+        "name": "Tai nghe EC 06",
+        "productId": {
+          "$oid": "000000000000000000000069"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-006",
+        "unitPrice": {
+          "$numberLong": "190000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "2295000"
+        },
+        "name": "Bình giữ nhiệt EC 31",
+        "productId": {
+          "$oid": "0000000000000000000000d2"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-031",
+        "unitPrice": {
+          "$numberLong": "765000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "250000"
+        },
+        "name": "Đèn màn hình EC 10",
+        "productId": {
+          "$oid": "00000000000000000000006d"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-010",
+        "unitPrice": {
+          "$numberLong": "250000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0014",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2925000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003f6"
+    },
+    "checkoutKey": "seed-v1-0015",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786832100000"
+      }
+    },
+    "customer": {
+      "address": "15 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 03",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-2",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "615000"
+        },
+        "name": "Loa Bluetooth EC 07",
+        "productId": {
+          "$oid": "00000000000000000000006a"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-007",
+        "unitPrice": {
+          "$numberLong": "205000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "870000"
+        },
+        "name": "Nồi inox EC 38",
+        "productId": {
+          "$oid": "0000000000000000000000d9"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-038",
+        "unitPrice": {
+          "$numberLong": "870000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "710000"
+        },
+        "name": "Loa Bluetooth EC 17",
+        "productId": {
+          "$oid": "000000000000000000000074"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-017",
+        "unitPrice": {
+          "$numberLong": "355000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1920000"
+        },
+        "name": "Tai nghe EC 36",
+        "productId": {
+          "$oid": "000000000000000000000087"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-036",
+        "unitPrice": {
+          "$numberLong": "640000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0015",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "4115000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003f7"
+    },
+    "checkoutKey": "seed-v1-0016",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786850100000"
+      }
+    },
+    "customer": {
+      "address": "16 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 04",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-3",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "220000"
+        },
+        "name": "Bàn phím EC 08",
+        "productId": {
+          "$oid": "00000000000000000000006b"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-008",
+        "unitPrice": {
+          "$numberLong": "220000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "350000"
+        },
+        "name": "Đèn màn hình EC 05",
+        "productId": {
+          "$oid": "000000000000000000000068"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-005",
+        "unitPrice": {
+          "$numberLong": "175000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1380000"
+        },
+        "name": "Chuột không dây EC 24",
+        "productId": {
+          "$oid": "00000000000000000000007b"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-024",
+        "unitPrice": {
+          "$numberLong": "460000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "245000"
+        },
+        "name": "Áo khoác EC 03",
+        "productId": {
+          "$oid": "00000000000000000000008e"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-003",
+        "unitPrice": {
+          "$numberLong": "245000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1060000"
+        },
+        "name": "Quần dài EC 22",
+        "productId": {
+          "$oid": "0000000000000000000000a1"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-022",
+        "unitPrice": {
+          "$numberLong": "530000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0016",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "3255000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003f8"
+    },
+    "checkoutKey": "seed-v1-0017",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1786954500000"
+      }
+    },
+    "customer": {
+      "address": "17 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 05",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-4",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "210000"
+        },
+        "name": "Tai nghe EC 01",
+        "productId": {
+          "$oid": "000000000000000000000064"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-001",
+        "unitPrice": {
+          "$numberLong": "105000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "810000"
+        },
+        "name": "Loa Bluetooth EC 12",
+        "productId": {
+          "$oid": "00000000000000000000006f"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-012",
+        "unitPrice": {
+          "$numberLong": "270000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0017",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1020000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003f9"
+    },
+    "checkoutKey": "seed-v1-0018",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787058900000"
+      }
+    },
+    "customer": {
+      "address": "18 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 06",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-5",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "390000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "385000"
+        },
+        "name": "Chuột không dây EC 19",
+        "productId": {
+          "$oid": "000000000000000000000076"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-019",
+        "unitPrice": {
+          "$numberLong": "385000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1340000"
+        },
+        "name": "Bàn phím EC 38",
+        "productId": {
+          "$oid": "000000000000000000000089"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-038",
+        "unitPrice": {
+          "$numberLong": "670000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0018",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2115000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003fa"
+    },
+    "checkoutKey": "seed-v1-0019",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787163300000"
+      }
+    },
+    "customer": {
+      "address": "19 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 07",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-6",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "145000"
+        },
+        "name": "Bàn phím EC 03",
+        "productId": {
+          "$oid": "000000000000000000000066"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-003",
+        "unitPrice": {
+          "$numberLong": "145000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "980000"
+        },
+        "name": "Tai nghe EC 26",
+        "productId": {
+          "$oid": "00000000000000000000007d"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-026",
+        "unitPrice": {
+          "$numberLong": "490000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "825000"
+        },
+        "name": "Quần ngắn EC 05",
+        "productId": {
+          "$oid": "000000000000000000000090"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-005",
+        "unitPrice": {
+          "$numberLong": "275000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "560000"
+        },
+        "name": "Váy EC 24",
+        "productId": {
+          "$oid": "0000000000000000000000a3"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-024",
+        "unitPrice": {
+          "$numberLong": "560000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0019",
+    "status": "Cancelled",
+    "total": {
+      "$numberLong": "2510000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003fb"
+    },
+    "checkoutKey": "seed-v1-0020",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787267700000"
+      }
+    },
+    "customer": {
+      "address": "20 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 08",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-7",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "320000"
+        },
+        "name": "Chuột không dây EC 04",
+        "productId": {
+          "$oid": "000000000000000000000067"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-004",
+        "unitPrice": {
+          "$numberLong": "160000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1785000"
+        },
+        "name": "Bàn phím EC 33",
+        "productId": {
+          "$oid": "000000000000000000000084"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-033",
+        "unitPrice": {
+          "$numberLong": "595000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "380000"
+        },
+        "name": "Quần dài EC 12",
+        "productId": {
+          "$oid": "000000000000000000000097"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-012",
+        "unitPrice": {
+          "$numberLong": "380000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1330000"
+        },
+        "name": "Áo thun EC 31",
+        "productId": {
+          "$oid": "0000000000000000000000aa"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-031",
+        "unitPrice": {
+          "$numberLong": "665000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1350000"
+        },
+        "name": "Bình nước EC 10",
+        "productId": {
+          "$oid": "0000000000000000000000bd"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-010",
+        "unitPrice": {
+          "$numberLong": "450000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0020",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "5165000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003fc"
+    },
+    "checkoutKey": "seed-v1-0021",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787285700000"
+      }
+    },
+    "customer": {
+      "address": "21 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 09",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-8",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "495000"
+        },
+        "name": "Đèn màn hình EC 05",
+        "productId": {
+          "$oid": "000000000000000000000068"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-005",
+        "unitPrice": {
+          "$numberLong": "165000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "690000"
+        },
+        "name": "Đèn màn hình EC 40",
+        "productId": {
+          "$oid": "00000000000000000000008b"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-040",
+        "unitPrice": {
+          "$numberLong": "690000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0021",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "1185000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003fd"
+    },
+    "checkoutKey": "seed-v1-0022",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787390100000"
+      }
+    },
+    "customer": {
+      "address": "22 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 10",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-9",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "190000"
+        },
+        "name": "Tai nghe EC 06",
+        "productId": {
+          "$oid": "000000000000000000000069"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-006",
+        "unitPrice": {
+          "$numberLong": "190000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "610000"
+        },
+        "name": "Quần dài EC 07",
+        "productId": {
+          "$oid": "000000000000000000000092"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-007",
+        "unitPrice": {
+          "$numberLong": "305000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1770000"
+        },
+        "name": "Áo thun EC 26",
+        "productId": {
+          "$oid": "0000000000000000000000a5"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-026",
+        "unitPrice": {
+          "$numberLong": "590000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0022",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2570000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003fe"
+    },
+    "checkoutKey": "seed-v1-0023",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787494500000"
+      }
+    },
+    "customer": {
+      "address": "23 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 11",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-10",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "410000"
+        },
+        "name": "Loa Bluetooth EC 07",
+        "productId": {
+          "$oid": "00000000000000000000006a"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-007",
+        "unitPrice": {
+          "$numberLong": "205000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1230000"
+        },
+        "name": "Váy EC 14",
+        "productId": {
+          "$oid": "000000000000000000000099"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-014",
+        "unitPrice": {
+          "$numberLong": "410000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "695000"
+        },
+        "name": "Áo khoác EC 33",
+        "productId": {
+          "$oid": "0000000000000000000000ac"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-033",
+        "unitPrice": {
+          "$numberLong": "695000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "960000"
+        },
+        "name": "Hộp đựng thực phẩm EC 12",
+        "productId": {
+          "$oid": "0000000000000000000000bf"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-012",
+        "unitPrice": {
+          "$numberLong": "480000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0023",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "3295000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0000000000000000000003ff"
+    },
+    "checkoutKey": "seed-v1-0024",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787598900000"
+      }
+    },
+    "customer": {
+      "address": "24 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 12",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-11",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "660000"
+        },
+        "name": "Bàn phím EC 08",
+        "productId": {
+          "$oid": "00000000000000000000006b"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-008",
+        "unitPrice": {
+          "$numberLong": "220000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "515000"
+        },
+        "name": "Áo thun EC 21",
+        "productId": {
+          "$oid": "0000000000000000000000a0"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-021",
+        "unitPrice": {
+          "$numberLong": "515000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1600000"
+        },
+        "name": "Quần ngắn EC 40",
+        "productId": {
+          "$oid": "0000000000000000000000b3"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-040",
+        "unitPrice": {
+          "$numberLong": "800000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1755000"
+        },
+        "name": "Kệ bếp EC 19",
+        "productId": {
+          "$oid": "0000000000000000000000c6"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-019",
+        "unitPrice": {
+          "$numberLong": "585000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "870000"
+        },
+        "name": "Nồi inox EC 38",
+        "productId": {
+          "$oid": "0000000000000000000000d9"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-038",
+        "unitPrice": {
+          "$numberLong": "870000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0024",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "5400000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000400"
+    },
+    "checkoutKey": "seed-v1-0025",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787616900000"
+      }
+    },
+    "customer": {
+      "address": "25 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 01",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-0",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "105000"
+        },
+        "name": "Tai nghe EC 01",
+        "productId": {
+          "$oid": "000000000000000000000064"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-001",
+        "unitPrice": {
+          "$numberLong": "105000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1220000"
+        },
+        "name": "Áo khoác EC 28",
+        "productId": {
+          "$oid": "0000000000000000000000a7"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-028",
+        "unitPrice": {
+          "$numberLong": "610000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0025",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1325000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000401"
+    },
+    "checkoutKey": "seed-v1-0026",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787721300000"
+      }
+    },
+    "customer": {
+      "address": "26 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 02",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-1",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "260000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "2175000"
+        },
+        "name": "Quần ngắn EC 35",
+        "productId": {
+          "$oid": "0000000000000000000000ae"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-035",
+        "unitPrice": {
+          "$numberLong": "725000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "510000"
+        },
+        "name": "Kệ bếp EC 14",
+        "productId": {
+          "$oid": "0000000000000000000000c1"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-014",
+        "unitPrice": {
+          "$numberLong": "510000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0026",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "2945000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000402"
+    },
+    "checkoutKey": "seed-v1-0027",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787825700000"
+      }
+    },
+    "customer": {
+      "address": "27 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 03",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-2",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "435000"
+        },
+        "name": "Bàn phím EC 03",
+        "productId": {
+          "$oid": "000000000000000000000066"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-003",
+        "unitPrice": {
+          "$numberLong": "145000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "330000"
+        },
+        "name": "Hộp đựng thực phẩm EC 02",
+        "productId": {
+          "$oid": "0000000000000000000000b5"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-002",
+        "unitPrice": {
+          "$numberLong": "330000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1230000"
+        },
+        "name": "Bình giữ nhiệt EC 21",
+        "productId": {
+          "$oid": "0000000000000000000000c8"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-021",
+        "unitPrice": {
+          "$numberLong": "615000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "2700000"
+        },
+        "name": "Bình nước EC 40",
+        "productId": {
+          "$oid": "0000000000000000000000db"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-040",
+        "unitPrice": {
+          "$numberLong": "900000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0027",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "4695000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000403"
+    },
+    "checkoutKey": "seed-v1-0028",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1787930100000"
+      }
+    },
+    "customer": {
+      "address": "28 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 04",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-3",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "160000"
+        },
+        "name": "Chuột không dây EC 04",
+        "productId": {
+          "$oid": "000000000000000000000067"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-004",
+        "unitPrice": {
+          "$numberLong": "160000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "870000"
+        },
+        "name": "Kệ bếp EC 09",
+        "productId": {
+          "$oid": "0000000000000000000000bc"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-009",
+        "unitPrice": {
+          "$numberLong": "435000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "2160000"
+        },
+        "name": "Nồi inox EC 28",
+        "productId": {
+          "$oid": "0000000000000000000000cf"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-028",
+        "unitPrice": {
+          "$numberLong": "720000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "205000"
+        },
+        "name": "Loa Bluetooth EC 07",
+        "productId": {
+          "$oid": "00000000000000000000006a"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-007",
+        "unitPrice": {
+          "$numberLong": "205000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "980000"
+        },
+        "name": "Tai nghe EC 26",
+        "productId": {
+          "$oid": "00000000000000000000007d"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-026",
+        "unitPrice": {
+          "$numberLong": "490000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0028",
+    "status": "Cancelled",
+    "total": {
+      "$numberLong": "4375000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000404"
+    },
+    "checkoutKey": "seed-v1-0029",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788034500000"
+      }
+    },
+    "customer": {
+      "address": "29 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 05",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-4",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "330000"
+        },
+        "name": "Đèn màn hình EC 05",
+        "productId": {
+          "$oid": "000000000000000000000068"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-005",
+        "unitPrice": {
+          "$numberLong": "165000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1590000"
+        },
+        "name": "Bình giữ nhiệt EC 16",
+        "productId": {
+          "$oid": "0000000000000000000000c3"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-016",
+        "unitPrice": {
+          "$numberLong": "530000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0029",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1920000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000405"
+    },
+    "checkoutKey": "seed-v1-0030",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788052500000"
+      }
+    },
+    "customer": {
+      "address": "30 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 06",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-5",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "570000"
+        },
+        "name": "Tai nghe EC 06",
+        "productId": {
+          "$oid": "000000000000000000000069"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-006",
+        "unitPrice": {
+          "$numberLong": "190000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "645000"
+        },
+        "name": "Nồi inox EC 23",
+        "productId": {
+          "$oid": "0000000000000000000000ca"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-023",
+        "unitPrice": {
+          "$numberLong": "645000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "260000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0030",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1475000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000406"
+    },
+    "checkoutKey": "seed-v1-0031",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788156900000"
+      }
+    },
+    "customer": {
+      "address": "31 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 07",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-6",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "205000"
+        },
+        "name": "Loa Bluetooth EC 07",
+        "productId": {
+          "$oid": "00000000000000000000006a"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-007",
+        "unitPrice": {
+          "$numberLong": "205000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1500000"
+        },
+        "name": "Bình nước EC 30",
+        "productId": {
+          "$oid": "0000000000000000000000d1"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-030",
+        "unitPrice": {
+          "$numberLong": "750000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "705000"
+        },
+        "name": "Chuột không dây EC 09",
+        "productId": {
+          "$oid": "00000000000000000000006c"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-009",
+        "unitPrice": {
+          "$numberLong": "235000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "520000"
+        },
+        "name": "Bàn phím EC 28",
+        "productId": {
+          "$oid": "00000000000000000000007f"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-028",
+        "unitPrice": {
+          "$numberLong": "520000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0031",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "2930000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000407"
+    },
+    "checkoutKey": "seed-v1-0032",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788261300000"
+      }
+    },
+    "customer": {
+      "address": "32 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 08",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-7",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "440000"
+        },
+        "name": "Bàn phím EC 08",
+        "productId": {
+          "$oid": "00000000000000000000006b"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-008",
+        "unitPrice": {
+          "$numberLong": "220000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "2565000"
+        },
+        "name": "Hộp đựng thực phẩm EC 37",
+        "productId": {
+          "$oid": "0000000000000000000000d8"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-037",
+        "unitPrice": {
+          "$numberLong": "855000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "340000"
+        },
+        "name": "Tai nghe EC 16",
+        "productId": {
+          "$oid": "000000000000000000000073"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-016",
+        "unitPrice": {
+          "$numberLong": "340000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1250000"
+        },
+        "name": "Đèn màn hình EC 35",
+        "productId": {
+          "$oid": "000000000000000000000086"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-035",
+        "unitPrice": {
+          "$numberLong": "625000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1230000"
+        },
+        "name": "Váy EC 14",
+        "productId": {
+          "$oid": "000000000000000000000099"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-014",
+        "unitPrice": {
+          "$numberLong": "410000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0032",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "5825000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000408"
+    },
+    "checkoutKey": "seed-v1-0033",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788365700000"
+      }
+    },
+    "customer": {
+      "address": "33 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 09",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-8",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "315000"
+        },
+        "name": "Tai nghe EC 01",
+        "productId": {
+          "$oid": "000000000000000000000064"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-001",
+        "unitPrice": {
+          "$numberLong": "105000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "150000"
+        },
+        "name": "Chuột không dây EC 04",
+        "productId": {
+          "$oid": "000000000000000000000067"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-004",
+        "unitPrice": {
+          "$numberLong": "150000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0033",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "465000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000409"
+    },
+    "checkoutKey": "seed-v1-0034",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788470100000"
+      }
+    },
+    "customer": {
+      "address": "34 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 10",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-9",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "130000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "530000"
+        },
+        "name": "Tai nghe EC 11",
+        "productId": {
+          "$oid": "00000000000000000000006e"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-011",
+        "unitPrice": {
+          "$numberLong": "265000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1650000"
+        },
+        "name": "Đèn màn hình EC 30",
+        "productId": {
+          "$oid": "000000000000000000000081"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-030",
+        "unitPrice": {
+          "$numberLong": "550000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0034",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2310000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000040a"
+    },
+    "checkoutKey": "seed-v1-0035",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788488100000"
+      }
+    },
+    "customer": {
+      "address": "35 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 11",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-10",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "290000"
+        },
+        "name": "Bàn phím EC 03",
+        "productId": {
+          "$oid": "000000000000000000000066"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-003",
+        "unitPrice": {
+          "$numberLong": "145000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1110000"
+        },
+        "name": "Bàn phím EC 18",
+        "productId": {
+          "$oid": "000000000000000000000075"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-018",
+        "unitPrice": {
+          "$numberLong": "370000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "655000"
+        },
+        "name": "Loa Bluetooth EC 37",
+        "productId": {
+          "$oid": "000000000000000000000088"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-037",
+        "unitPrice": {
+          "$numberLong": "655000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "880000"
+        },
+        "name": "Áo thun EC 16",
+        "productId": {
+          "$oid": "00000000000000000000009b"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-016",
+        "unitPrice": {
+          "$numberLong": "440000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0035",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2935000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000040b"
+    },
+    "checkoutKey": "seed-v1-0036",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788592500000"
+      }
+    },
+    "customer": {
+      "address": "36 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 12",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-11",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "480000"
+        },
+        "name": "Chuột không dây EC 04",
+        "productId": {
+          "$oid": "000000000000000000000067"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-004",
+        "unitPrice": {
+          "$numberLong": "160000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "475000"
+        },
+        "name": "Đèn màn hình EC 25",
+        "productId": {
+          "$oid": "00000000000000000000007c"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-025",
+        "unitPrice": {
+          "$numberLong": "475000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "520000"
+        },
+        "name": "Váy EC 04",
+        "productId": {
+          "$oid": "00000000000000000000008f"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-004",
+        "unitPrice": {
+          "$numberLong": "260000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1635000"
+        },
+        "name": "Áo khoác EC 23",
+        "productId": {
+          "$oid": "0000000000000000000000a2"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-023",
+        "unitPrice": {
+          "$numberLong": "545000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "330000"
+        },
+        "name": "Hộp đựng thực phẩm EC 02",
+        "productId": {
+          "$oid": "0000000000000000000000b5"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-002",
+        "unitPrice": {
+          "$numberLong": "330000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0036",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "3440000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000040c"
+    },
+    "checkoutKey": "seed-v1-0037",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788696900000"
+      }
+    },
+    "customer": {
+      "address": "37 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 01",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-0",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "165000"
+        },
+        "name": "Đèn màn hình EC 05",
+        "productId": {
+          "$oid": "000000000000000000000068"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-005",
+        "unitPrice": {
+          "$numberLong": "165000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1140000"
+        },
+        "name": "Loa Bluetooth EC 32",
+        "productId": {
+          "$oid": "000000000000000000000083"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-032",
+        "unitPrice": {
+          "$numberLong": "570000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0037",
+    "status": "Cancelled",
+    "total": {
+      "$numberLong": "1305000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000040d"
+    },
+    "checkoutKey": "seed-v1-0038",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788801300000"
+      }
+    },
+    "customer": {
+      "address": "38 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 02",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-1",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "380000"
+        },
+        "name": "Tai nghe EC 06",
+        "productId": {
+          "$oid": "000000000000000000000069"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-006",
+        "unitPrice": {
+          "$numberLong": "190000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "2055000"
+        },
+        "name": "Chuột không dây EC 39",
+        "productId": {
+          "$oid": "00000000000000000000008a"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-039",
+        "unitPrice": {
+          "$numberLong": "685000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "470000"
+        },
+        "name": "Áo khoác EC 18",
+        "productId": {
+          "$oid": "00000000000000000000009d"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-018",
+        "unitPrice": {
+          "$numberLong": "470000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0038",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2905000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000040e"
+    },
+    "checkoutKey": "seed-v1-0039",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788905700000"
+      }
+    },
+    "customer": {
+      "address": "39 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 03",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-2",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "615000"
+        },
+        "name": "Loa Bluetooth EC 07",
+        "productId": {
+          "$oid": "00000000000000000000006a"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-007",
+        "unitPrice": {
+          "$numberLong": "205000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "290000"
+        },
+        "name": "Áo thun EC 06",
+        "productId": {
+          "$oid": "000000000000000000000091"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-006",
+        "unitPrice": {
+          "$numberLong": "290000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1150000"
+        },
+        "name": "Quần ngắn EC 25",
+        "productId": {
+          "$oid": "0000000000000000000000a4"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-025",
+        "unitPrice": {
+          "$numberLong": "575000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1080000"
+        },
+        "name": "Kệ bếp EC 04",
+        "productId": {
+          "$oid": "0000000000000000000000b7"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-004",
+        "unitPrice": {
+          "$numberLong": "360000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0039",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "3135000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000040f"
+    },
+    "checkoutKey": "seed-v1-0040",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1788923700000"
+      }
+    },
+    "customer": {
+      "address": "40 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 04",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-3",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "220000"
+        },
+        "name": "Bàn phím EC 08",
+        "productId": {
+          "$oid": "00000000000000000000006b"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-008",
+        "unitPrice": {
+          "$numberLong": "220000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "790000"
+        },
+        "name": "Áo khoác EC 13",
+        "productId": {
+          "$oid": "000000000000000000000098"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-013",
+        "unitPrice": {
+          "$numberLong": "395000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "2040000"
+        },
+        "name": "Quần dài EC 32",
+        "productId": {
+          "$oid": "0000000000000000000000ab"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-032",
+        "unitPrice": {
+          "$numberLong": "680000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "465000"
+        },
+        "name": "Bình giữ nhiệt EC 11",
+        "productId": {
+          "$oid": "0000000000000000000000be"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-011",
+        "unitPrice": {
+          "$numberLong": "465000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1500000"
+        },
+        "name": "Bình nước EC 30",
+        "productId": {
+          "$oid": "0000000000000000000000d1"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-030",
+        "unitPrice": {
+          "$numberLong": "750000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0040",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "5015000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000410"
+    },
+    "checkoutKey": "seed-v1-0041",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789028100000"
+      }
+    },
+    "customer": {
+      "address": "41 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 05",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-4",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "210000"
+        },
+        "name": "Tai nghe EC 01",
+        "productId": {
+          "$oid": "000000000000000000000064"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-001",
+        "unitPrice": {
+          "$numberLong": "105000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1470000"
+        },
+        "name": "Quần ngắn EC 20",
+        "productId": {
+          "$oid": "00000000000000000000009f"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-020",
+        "unitPrice": {
+          "$numberLong": "490000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0041",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "1680000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000411"
+    },
+    "checkoutKey": "seed-v1-0042",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789132500000"
+      }
+    },
+    "customer": {
+      "address": "42 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 06",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-5",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "390000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "605000"
+        },
+        "name": "Quần dài EC 27",
+        "productId": {
+          "$oid": "0000000000000000000000a6"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-027",
+        "unitPrice": {
+          "$numberLong": "605000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "780000"
+        },
+        "name": "Bình giữ nhiệt EC 06",
+        "productId": {
+          "$oid": "0000000000000000000000b9"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-006",
+        "unitPrice": {
+          "$numberLong": "390000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0042",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1775000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000412"
+    },
+    "checkoutKey": "seed-v1-0043",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789236900000"
+      }
+    },
+    "customer": {
+      "address": "43 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 07",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-6",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "145000"
+        },
+        "name": "Bàn phím EC 03",
+        "productId": {
+          "$oid": "000000000000000000000066"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-003",
+        "unitPrice": {
+          "$numberLong": "145000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1420000"
+        },
+        "name": "Váy EC 34",
+        "productId": {
+          "$oid": "0000000000000000000000ad"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-034",
+        "unitPrice": {
+          "$numberLong": "710000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1485000"
+        },
+        "name": "Nồi inox EC 13",
+        "productId": {
+          "$oid": "0000000000000000000000c0"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-013",
+        "unitPrice": {
+          "$numberLong": "495000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "780000"
+        },
+        "name": "Hộp đựng thực phẩm EC 32",
+        "productId": {
+          "$oid": "0000000000000000000000d3"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-032",
+        "unitPrice": {
+          "$numberLong": "780000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0043",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "3830000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000413"
+    },
+    "checkoutKey": "seed-v1-0044",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789341300000"
+      }
+    },
+    "customer": {
+      "address": "44 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 08",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-7",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "320000"
+        },
+        "name": "Chuột không dây EC 04",
+        "productId": {
+          "$oid": "000000000000000000000067"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-004",
+        "unitPrice": {
+          "$numberLong": "160000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "945000"
+        },
+        "name": "Bình giữ nhiệt EC 01",
+        "productId": {
+          "$oid": "0000000000000000000000b4"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-001",
+        "unitPrice": {
+          "$numberLong": "315000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "600000"
+        },
+        "name": "Bình nước EC 20",
+        "productId": {
+          "$oid": "0000000000000000000000c7"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-020",
+        "unitPrice": {
+          "$numberLong": "600000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1770000"
+        },
+        "name": "Kệ bếp EC 39",
+        "productId": {
+          "$oid": "0000000000000000000000da"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-039",
+        "unitPrice": {
+          "$numberLong": "885000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1110000"
+        },
+        "name": "Bàn phím EC 18",
+        "productId": {
+          "$oid": "000000000000000000000075"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-018",
+        "unitPrice": {
+          "$numberLong": "370000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0044",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "4745000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000414"
+    },
+    "checkoutKey": "seed-v1-0045",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789359300000"
+      }
+    },
+    "customer": {
+      "address": "45 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 09",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-8",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "495000"
+        },
+        "name": "Đèn màn hình EC 05",
+        "productId": {
+          "$oid": "000000000000000000000068"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-005",
+        "unitPrice": {
+          "$numberLong": "165000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "410000"
+        },
+        "name": "Nồi inox EC 08",
+        "productId": {
+          "$oid": "0000000000000000000000bb"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-008",
+        "unitPrice": {
+          "$numberLong": "410000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0045",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "905000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000415"
+    },
+    "checkoutKey": "seed-v1-0046",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789463700000"
+      }
+    },
+    "customer": {
+      "address": "46 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 10",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-9",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "190000"
+        },
+        "name": "Tai nghe EC 06",
+        "productId": {
+          "$oid": "000000000000000000000069"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-006",
+        "unitPrice": {
+          "$numberLong": "190000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1050000"
+        },
+        "name": "Bình nước EC 15",
+        "productId": {
+          "$oid": "0000000000000000000000c2"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-015",
+        "unitPrice": {
+          "$numberLong": "525000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "2430000"
+        },
+        "name": "Kệ bếp EC 34",
+        "productId": {
+          "$oid": "0000000000000000000000d5"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-034",
+        "unitPrice": {
+          "$numberLong": "810000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0046",
+    "status": "Cancelled",
+    "total": {
+      "$numberLong": "3670000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000416"
+    },
+    "checkoutKey": "seed-v1-0047",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789568100000"
+      }
+    },
+    "customer": {
+      "address": "47 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 11",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-10",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "410000"
+        },
+        "name": "Loa Bluetooth EC 07",
+        "productId": {
+          "$oid": "00000000000000000000006a"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-007",
+        "unitPrice": {
+          "$numberLong": "205000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1890000"
+        },
+        "name": "Hộp đựng thực phẩm EC 22",
+        "productId": {
+          "$oid": "0000000000000000000000c9"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-022",
+        "unitPrice": {
+          "$numberLong": "630000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "115000"
+        },
+        "name": "Tai nghe EC 01",
+        "productId": {
+          "$oid": "000000000000000000000064"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-001",
+        "unitPrice": {
+          "$numberLong": "115000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "800000"
+        },
+        "name": "Đèn màn hình EC 20",
+        "productId": {
+          "$oid": "000000000000000000000077"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-020",
+        "unitPrice": {
+          "$numberLong": "400000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0047",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "3215000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000417"
+    },
+    "checkoutKey": "seed-v1-0048",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789672500000"
+      }
+    },
+    "customer": {
+      "address": "48 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 12",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-11",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "660000"
+        },
+        "name": "Bàn phím EC 08",
+        "productId": {
+          "$oid": "00000000000000000000006b"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-008",
+        "unitPrice": {
+          "$numberLong": "220000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "735000"
+        },
+        "name": "Kệ bếp EC 29",
+        "productId": {
+          "$oid": "0000000000000000000000d0"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-029",
+        "unitPrice": {
+          "$numberLong": "735000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "470000"
+        },
+        "name": "Chuột không dây EC 09",
+        "productId": {
+          "$oid": "00000000000000000000006c"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-009",
+        "unitPrice": {
+          "$numberLong": "235000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1515000"
+        },
+        "name": "Loa Bluetooth EC 27",
+        "productId": {
+          "$oid": "00000000000000000000007e"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-027",
+        "unitPrice": {
+          "$numberLong": "505000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "290000"
+        },
+        "name": "Áo thun EC 06",
+        "productId": {
+          "$oid": "000000000000000000000091"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-006",
+        "unitPrice": {
+          "$numberLong": "290000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0048",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "3670000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000418"
+    },
+    "checkoutKey": "seed-v1-0049",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789690500000"
+      }
+    },
+    "customer": {
+      "address": "49 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 01",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-0",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "105000"
+        },
+        "name": "Tai nghe EC 01",
+        "productId": {
+          "$oid": "000000000000000000000064"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-001",
+        "unitPrice": {
+          "$numberLong": "105000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1660000"
+        },
+        "name": "Bình giữ nhiệt EC 36",
+        "productId": {
+          "$oid": "0000000000000000000000d7"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-036",
+        "unitPrice": {
+          "$numberLong": "830000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0049",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1765000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000419"
+    },
+    "checkoutKey": "seed-v1-0050",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789794900000"
+      }
+    },
+    "customer": {
+      "address": "50 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 02",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-1",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "260000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "435000"
+        },
+        "name": "Bàn phím EC 03",
+        "productId": {
+          "$oid": "000000000000000000000066"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-003",
+        "unitPrice": {
+          "$numberLong": "145000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "430000"
+        },
+        "name": "Loa Bluetooth EC 22",
+        "productId": {
+          "$oid": "000000000000000000000079"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-022",
+        "unitPrice": {
+          "$numberLong": "430000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0050",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1125000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000041a"
+    },
+    "checkoutKey": "seed-v1-0051",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1789899300000"
+      }
+    },
+    "customer": {
+      "address": "51 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 03",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-2",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "435000"
+        },
+        "name": "Bàn phím EC 03",
+        "productId": {
+          "$oid": "000000000000000000000066"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-003",
+        "unitPrice": {
+          "$numberLong": "145000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "250000"
+        },
+        "name": "Đèn màn hình EC 10",
+        "productId": {
+          "$oid": "00000000000000000000006d"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-010",
+        "unitPrice": {
+          "$numberLong": "250000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1070000"
+        },
+        "name": "Chuột không dây EC 29",
+        "productId": {
+          "$oid": "000000000000000000000080"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-029",
+        "unitPrice": {
+          "$numberLong": "535000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "960000"
+        },
+        "name": "Áo khoác EC 08",
+        "productId": {
+          "$oid": "000000000000000000000093"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-008",
+        "unitPrice": {
+          "$numberLong": "320000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0051",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "2715000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000041b"
+    },
+    "checkoutKey": "seed-v1-0052",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790003700000"
+      }
+    },
+    "customer": {
+      "address": "52 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 04",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-3",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "160000"
+        },
+        "name": "Chuột không dây EC 04",
+        "productId": {
+          "$oid": "000000000000000000000067"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-004",
+        "unitPrice": {
+          "$numberLong": "160000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "710000"
+        },
+        "name": "Loa Bluetooth EC 17",
+        "productId": {
+          "$oid": "000000000000000000000074"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-017",
+        "unitPrice": {
+          "$numberLong": "355000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1920000"
+        },
+        "name": "Tai nghe EC 36",
+        "productId": {
+          "$oid": "000000000000000000000087"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-036",
+        "unitPrice": {
+          "$numberLong": "640000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "425000"
+        },
+        "name": "Quần ngắn EC 15",
+        "productId": {
+          "$oid": "00000000000000000000009a"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-015",
+        "unitPrice": {
+          "$numberLong": "425000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1420000"
+        },
+        "name": "Váy EC 34",
+        "productId": {
+          "$oid": "0000000000000000000000ad"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-034",
+        "unitPrice": {
+          "$numberLong": "710000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0052",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "4635000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000041c"
+    },
+    "checkoutKey": "seed-v1-0053",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790108100000"
+      }
+    },
+    "customer": {
+      "address": "53 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 05",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-4",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "330000"
+        },
+        "name": "Đèn màn hình EC 05",
+        "productId": {
+          "$oid": "000000000000000000000068"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-005",
+        "unitPrice": {
+          "$numberLong": "165000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1350000"
+        },
+        "name": "Chuột không dây EC 24",
+        "productId": {
+          "$oid": "00000000000000000000007b"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-024",
+        "unitPrice": {
+          "$numberLong": "450000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0053",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1680000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000041d"
+    },
+    "checkoutKey": "seed-v1-0054",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790126100000"
+      }
+    },
+    "customer": {
+      "address": "54 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 06",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-5",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "570000"
+        },
+        "name": "Tai nghe EC 06",
+        "productId": {
+          "$oid": "000000000000000000000069"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-006",
+        "unitPrice": {
+          "$numberLong": "190000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "565000"
+        },
+        "name": "Tai nghe EC 31",
+        "productId": {
+          "$oid": "000000000000000000000082"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-031",
+        "unitPrice": {
+          "$numberLong": "565000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "700000"
+        },
+        "name": "Quần ngắn EC 10",
+        "productId": {
+          "$oid": "000000000000000000000095"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-010",
+        "unitPrice": {
+          "$numberLong": "350000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0054",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1835000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000041e"
+    },
+    "checkoutKey": "seed-v1-0055",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790230500000"
+      }
+    },
+    "customer": {
+      "address": "55 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 07",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-6",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "205000"
+        },
+        "name": "Loa Bluetooth EC 07",
+        "productId": {
+          "$oid": "00000000000000000000006a"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-007",
+        "unitPrice": {
+          "$numberLong": "205000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1340000"
+        },
+        "name": "Bàn phím EC 38",
+        "productId": {
+          "$oid": "000000000000000000000089"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-038",
+        "unitPrice": {
+          "$numberLong": "670000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1365000"
+        },
+        "name": "Quần dài EC 17",
+        "productId": {
+          "$oid": "00000000000000000000009c"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-017",
+        "unitPrice": {
+          "$numberLong": "455000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "740000"
+        },
+        "name": "Áo thun EC 36",
+        "productId": {
+          "$oid": "0000000000000000000000af"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-036",
+        "unitPrice": {
+          "$numberLong": "740000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0055",
+    "status": "Cancelled",
+    "total": {
+      "$numberLong": "3650000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000041f"
+    },
+    "checkoutKey": "seed-v1-0056",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790334900000"
+      }
+    },
+    "customer": {
+      "address": "56 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 08",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-7",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "440000"
+        },
+        "name": "Bàn phím EC 08",
+        "productId": {
+          "$oid": "00000000000000000000006b"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-008",
+        "unitPrice": {
+          "$numberLong": "220000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "825000"
+        },
+        "name": "Quần ngắn EC 05",
+        "productId": {
+          "$oid": "000000000000000000000090"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-005",
+        "unitPrice": {
+          "$numberLong": "275000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "560000"
+        },
+        "name": "Váy EC 24",
+        "productId": {
+          "$oid": "0000000000000000000000a3"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-024",
+        "unitPrice": {
+          "$numberLong": "560000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "690000"
+        },
+        "name": "Nồi inox EC 03",
+        "productId": {
+          "$oid": "0000000000000000000000b6"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-003",
+        "unitPrice": {
+          "$numberLong": "345000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1890000"
+        },
+        "name": "Hộp đựng thực phẩm EC 22",
+        "productId": {
+          "$oid": "0000000000000000000000c9"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-022",
+        "unitPrice": {
+          "$numberLong": "630000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0056",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "4405000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000420"
+    },
+    "checkoutKey": "seed-v1-0057",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790439300000"
+      }
+    },
+    "customer": {
+      "address": "57 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 09",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-8",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "315000"
+        },
+        "name": "Tai nghe EC 01",
+        "productId": {
+          "$oid": "000000000000000000000064"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-001",
+        "unitPrice": {
+          "$numberLong": "105000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "370000"
+        },
+        "name": "Quần dài EC 12",
+        "productId": {
+          "$oid": "000000000000000000000097"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-012",
+        "unitPrice": {
+          "$numberLong": "370000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0057",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "685000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000421"
+    },
+    "checkoutKey": "seed-v1-0058",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790543700000"
+      }
+    },
+    "customer": {
+      "address": "58 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 10",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-9",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "130000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "970000"
+        },
+        "name": "Váy EC 19",
+        "productId": {
+          "$oid": "00000000000000000000009e"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-019",
+        "unitPrice": {
+          "$numberLong": "485000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "2310000"
+        },
+        "name": "Áo khoác EC 38",
+        "productId": {
+          "$oid": "0000000000000000000000b1"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-038",
+        "unitPrice": {
+          "$numberLong": "770000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0058",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "3410000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000422"
+    },
+    "checkoutKey": "seed-v1-0059",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790561700000"
+      }
+    },
+    "customer": {
+      "address": "59 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 11",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-10",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "290000"
+        },
+        "name": "Bàn phím EC 03",
+        "productId": {
+          "$oid": "000000000000000000000066"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-003",
+        "unitPrice": {
+          "$numberLong": "145000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1770000"
+        },
+        "name": "Áo thun EC 26",
+        "productId": {
+          "$oid": "0000000000000000000000a5"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-026",
+        "unitPrice": {
+          "$numberLong": "590000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "375000"
+        },
+        "name": "Bình nước EC 05",
+        "productId": {
+          "$oid": "0000000000000000000000b8"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-005",
+        "unitPrice": {
+          "$numberLong": "375000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1320000"
+        },
+        "name": "Kệ bếp EC 24",
+        "productId": {
+          "$oid": "0000000000000000000000cb"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-024",
+        "unitPrice": {
+          "$numberLong": "660000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0059",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "3755000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000423"
+    },
+    "checkoutKey": "seed-v1-0060",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790666100000"
+      }
+    },
+    "customer": {
+      "address": "60 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 12",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-11",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "480000"
+        },
+        "name": "Chuột không dây EC 04",
+        "productId": {
+          "$oid": "000000000000000000000067"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-004",
+        "unitPrice": {
+          "$numberLong": "160000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "695000"
+        },
+        "name": "Áo khoác EC 33",
+        "productId": {
+          "$oid": "0000000000000000000000ac"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-033",
+        "unitPrice": {
+          "$numberLong": "695000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "960000"
+        },
+        "name": "Hộp đựng thực phẩm EC 12",
+        "productId": {
+          "$oid": "0000000000000000000000bf"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-012",
+        "unitPrice": {
+          "$numberLong": "480000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "2295000"
+        },
+        "name": "Bình giữ nhiệt EC 31",
+        "productId": {
+          "$oid": "0000000000000000000000d2"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-031",
+        "unitPrice": {
+          "$numberLong": "765000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "250000"
+        },
+        "name": "Đèn màn hình EC 10",
+        "productId": {
+          "$oid": "00000000000000000000006d"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-010",
+        "unitPrice": {
+          "$numberLong": "250000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0060",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "4680000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000424"
+    },
+    "checkoutKey": "seed-v1-0061",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790770500000"
+      }
+    },
+    "customer": {
+      "address": "61 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 01",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-0",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "165000"
+        },
+        "name": "Đèn màn hình EC 05",
+        "productId": {
+          "$oid": "000000000000000000000068"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-005",
+        "unitPrice": {
+          "$numberLong": "165000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1580000"
+        },
+        "name": "Quần ngắn EC 40",
+        "productId": {
+          "$oid": "0000000000000000000000b3"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-040",
+        "unitPrice": {
+          "$numberLong": "790000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0061",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "1745000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000425"
+    },
+    "checkoutKey": "seed-v1-0062",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790874900000"
+      }
+    },
+    "customer": {
+      "address": "62 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 02",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-1",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "380000"
+        },
+        "name": "Tai nghe EC 06",
+        "productId": {
+          "$oid": "000000000000000000000069"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-006",
+        "unitPrice": {
+          "$numberLong": "190000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "2"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1215000"
+        },
+        "name": "Hộp đựng thực phẩm EC 07",
+        "productId": {
+          "$oid": "0000000000000000000000ba"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-007",
+        "unitPrice": {
+          "$numberLong": "405000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "690000"
+        },
+        "name": "Bình giữ nhiệt EC 26",
+        "productId": {
+          "$oid": "0000000000000000000000cd"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-026",
+        "unitPrice": {
+          "$numberLong": "690000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0062",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2285000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000426"
+    },
+    "checkoutKey": "seed-v1-0063",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790979300000"
+      }
+    },
+    "customer": {
+      "address": "63 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 03",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-2",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "615000"
+        },
+        "name": "Loa Bluetooth EC 07",
+        "productId": {
+          "$oid": "00000000000000000000006a"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-007",
+        "unitPrice": {
+          "$numberLong": "205000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "510000"
+        },
+        "name": "Kệ bếp EC 14",
+        "productId": {
+          "$oid": "0000000000000000000000c1"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-014",
+        "unitPrice": {
+          "$numberLong": "510000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1590000"
+        },
+        "name": "Nồi inox EC 33",
+        "productId": {
+          "$oid": "0000000000000000000000d4"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-033",
+        "unitPrice": {
+          "$numberLong": "795000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "840000"
+        },
+        "name": "Loa Bluetooth EC 12",
+        "productId": {
+          "$oid": "00000000000000000000006f"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-012",
+        "unitPrice": {
+          "$numberLong": "280000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0063",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "3555000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000427"
+    },
+    "checkoutKey": "seed-v1-0064",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1790997300000"
+      }
+    },
+    "customer": {
+      "address": "64 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 04",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-3",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "220000"
+        },
+        "name": "Bàn phím EC 08",
+        "productId": {
+          "$oid": "00000000000000000000006b"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-008",
+        "unitPrice": {
+          "$numberLong": "220000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "1"
+          },
+          "material": "Thủy tinh",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "1230000"
+        },
+        "name": "Bình giữ nhiệt EC 21",
+        "productId": {
+          "$oid": "0000000000000000000000c8"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "HOME-021",
+        "unitPrice": {
+          "$numberLong": "615000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "2700000"
+        },
+        "name": "Bình nước EC 40",
+        "productId": {
+          "$oid": "0000000000000000000000db"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-040",
+        "unitPrice": {
+          "$numberLong": "900000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "385000"
+        },
+        "name": "Chuột không dây EC 19",
+        "productId": {
+          "$oid": "000000000000000000000076"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-019",
+        "unitPrice": {
+          "$numberLong": "385000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1340000"
+        },
+        "name": "Bàn phím EC 38",
+        "productId": {
+          "$oid": "000000000000000000000089"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-038",
+        "unitPrice": {
+          "$numberLong": "670000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0064",
+    "status": "Cancelled",
+    "total": {
+      "$numberLong": "5875000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000428"
+    },
+    "checkoutKey": "seed-v1-0065",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1791101700000"
+      }
+    },
+    "customer": {
+      "address": "65 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 05",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-4",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "210000"
+        },
+        "name": "Tai nghe EC 01",
+        "productId": {
+          "$oid": "000000000000000000000064"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-001",
+        "unitPrice": {
+          "$numberLong": "105000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "3"
+          },
+          "material": "Inox",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "2130000"
+        },
+        "name": "Nồi inox EC 28",
+        "productId": {
+          "$oid": "0000000000000000000000cf"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "HOME-028",
+        "unitPrice": {
+          "$numberLong": "710000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0065",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2340000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000429"
+    },
+    "checkoutKey": "seed-v1-0066",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1791206100000"
+      }
+    },
+    "customer": {
+      "address": "66 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 06",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-5",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "390000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "5"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "825000"
+        },
+        "name": "Bình nước EC 35",
+        "productId": {
+          "$oid": "0000000000000000000000d6"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-035",
+        "unitPrice": {
+          "$numberLong": "825000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "620000"
+        },
+        "name": "Chuột không dây EC 14",
+        "productId": {
+          "$oid": "000000000000000000000071"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-014",
+        "unitPrice": {
+          "$numberLong": "310000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0066",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "1835000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000042a"
+    },
+    "checkoutKey": "seed-v1-0067",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1791310500000"
+      }
+    },
+    "customer": {
+      "address": "67 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 07",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-6",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "145000"
+        },
+        "name": "Bàn phím EC 03",
+        "productId": {
+          "$oid": "000000000000000000000066"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-003",
+        "unitPrice": {
+          "$numberLong": "145000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "260000"
+        },
+        "name": "Loa Bluetooth EC 02",
+        "productId": {
+          "$oid": "000000000000000000000065"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-002",
+        "unitPrice": {
+          "$numberLong": "130000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1245000"
+        },
+        "name": "Tai nghe EC 21",
+        "productId": {
+          "$oid": "000000000000000000000078"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-021",
+        "unitPrice": {
+          "$numberLong": "415000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "700000"
+        },
+        "name": "Đèn màn hình EC 40",
+        "productId": {
+          "$oid": "00000000000000000000008b"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-040",
+        "unitPrice": {
+          "$numberLong": "700000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0067",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "2350000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000042b"
+    },
+    "checkoutKey": "seed-v1-0068",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1791414900000"
+      }
+    },
+    "customer": {
+      "address": "68 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 08",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-7",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "320000"
+        },
+        "name": "Chuột không dây EC 04",
+        "productId": {
+          "$oid": "000000000000000000000067"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-004",
+        "unitPrice": {
+          "$numberLong": "160000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "705000"
+        },
+        "name": "Chuột không dây EC 09",
+        "productId": {
+          "$oid": "00000000000000000000006c"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-009",
+        "unitPrice": {
+          "$numberLong": "235000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "520000"
+        },
+        "name": "Bàn phím EC 28",
+        "productId": {
+          "$oid": "00000000000000000000007f"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-028",
+        "unitPrice": {
+          "$numberLong": "520000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "610000"
+        },
+        "name": "Quần dài EC 07",
+        "productId": {
+          "$oid": "000000000000000000000092"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-007",
+        "unitPrice": {
+          "$numberLong": "305000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1770000"
+        },
+        "name": "Áo thun EC 26",
+        "productId": {
+          "$oid": "0000000000000000000000a5"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-026",
+        "unitPrice": {
+          "$numberLong": "590000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0068",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "3925000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000042c"
+    },
+    "checkoutKey": "seed-v1-0069",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1791432900000"
+      }
+    },
+    "customer": {
+      "address": "69 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 09",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-8",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "495000"
+        },
+        "name": "Đèn màn hình EC 05",
+        "productId": {
+          "$oid": "000000000000000000000068"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-005",
+        "unitPrice": {
+          "$numberLong": "165000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "330000"
+        },
+        "name": "Tai nghe EC 16",
+        "productId": {
+          "$oid": "000000000000000000000073"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-016",
+        "unitPrice": {
+          "$numberLong": "330000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0069",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "825000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000042d"
+    },
+    "checkoutKey": "seed-v1-0070",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1791537300000"
+      }
+    },
+    "customer": {
+      "address": "70 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 10",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-9",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "190000"
+        },
+        "name": "Tai nghe EC 06",
+        "productId": {
+          "$oid": "000000000000000000000069"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-006",
+        "unitPrice": {
+          "$numberLong": "190000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "890000"
+        },
+        "name": "Bàn phím EC 23",
+        "productId": {
+          "$oid": "00000000000000000000007a"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-023",
+        "unitPrice": {
+          "$numberLong": "445000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "M"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "690000"
+        },
+        "name": "Quần dài EC 02",
+        "productId": {
+          "$oid": "00000000000000000000008d"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-002",
+        "unitPrice": {
+          "$numberLong": "230000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0070",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "1770000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000042e"
+    },
+    "checkoutKey": "seed-v1-0071",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1791641700000"
+      }
+    },
+    "customer": {
+      "address": "71 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 11",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-10",
+    "items": [
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "410000"
+        },
+        "name": "Loa Bluetooth EC 07",
+        "productId": {
+          "$oid": "00000000000000000000006a"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "ELECTRONICS-007",
+        "unitPrice": {
+          "$numberLong": "205000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "Soundly",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "24"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "1650000"
+        },
+        "name": "Đèn màn hình EC 30",
+        "productId": {
+          "$oid": "000000000000000000000081"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-030",
+        "unitPrice": {
+          "$numberLong": "550000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Xanh",
+          "material": "Linen",
+          "size": "S"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "335000"
+        },
+        "name": "Váy EC 09",
+        "productId": {
+          "$oid": "000000000000000000000094"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "FASHION-009",
+        "unitPrice": {
+          "$numberLong": "335000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "1240000"
+        },
+        "name": "Áo khoác EC 28",
+        "productId": {
+          "$oid": "0000000000000000000000a7"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-028",
+        "unitPrice": {
+          "$numberLong": "620000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0071",
+    "status": "Pending",
+    "total": {
+      "$numberLong": "3635000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "00000000000000000000042f"
+    },
+    "checkoutKey": "seed-v1-0072",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1791746100000"
+      }
+    },
+    "customer": {
+      "address": "72 Đường Mẫu, TP. Hồ Chí Minh",
+      "name": "Khách hàng mẫu 12",
+      "phone": "0900000000"
+    },
+    "customerToken": "seed-customer-11",
+    "items": [
+      {
+        "attributes": {
+          "brand": "Nova",
+          "connectivity": "Bluetooth",
+          "warrantyMonths": {
+            "$numberInt": "18"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "660000"
+        },
+        "name": "Bàn phím EC 08",
+        "productId": {
+          "$oid": "00000000000000000000006b"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "ELECTRONICS-008",
+        "unitPrice": {
+          "$numberLong": "220000"
+        }
+      },
+      {
+        "attributes": {
+          "brand": "EC Tech",
+          "connectivity": "USB-C",
+          "warrantyMonths": {
+            "$numberInt": "12"
+          }
+        },
+        "categoryName": "Điện tử",
+        "kind": "electronics",
+        "lineTotal": {
+          "$numberLong": "655000"
+        },
+        "name": "Loa Bluetooth EC 37",
+        "productId": {
+          "$oid": "000000000000000000000088"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "ELECTRONICS-037",
+        "unitPrice": {
+          "$numberLong": "655000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Đen",
+          "material": "Cotton",
+          "size": "XL"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "880000"
+        },
+        "name": "Áo thun EC 16",
+        "productId": {
+          "$oid": "00000000000000000000009b"
+        },
+        "quantity": {
+          "$numberInt": "2"
+        },
+        "sku": "FASHION-016",
+        "unitPrice": {
+          "$numberLong": "440000"
+        }
+      },
+      {
+        "attributes": {
+          "color": "Trắng",
+          "material": "Denim",
+          "size": "L"
+        },
+        "categoryName": "Thời trang",
+        "kind": "fashion",
+        "lineTotal": {
+          "$numberLong": "2175000"
+        },
+        "name": "Quần ngắn EC 35",
+        "productId": {
+          "$oid": "0000000000000000000000ae"
+        },
+        "quantity": {
+          "$numberInt": "3"
+        },
+        "sku": "FASHION-035",
+        "unitPrice": {
+          "$numberLong": "725000"
+        }
+      },
+      {
+        "attributes": {
+          "capacityLiters": {
+            "$numberInt": "4"
+          },
+          "material": "Nhựa PP",
+          "origin": "Việt Nam"
+        },
+        "categoryName": "Gia dụng",
+        "kind": "home",
+        "lineTotal": {
+          "$numberLong": "510000"
+        },
+        "name": "Kệ bếp EC 14",
+        "productId": {
+          "$oid": "0000000000000000000000c1"
+        },
+        "quantity": {
+          "$numberInt": "1"
+        },
+        "sku": "HOME-014",
+        "unitPrice": {
+          "$numberLong": "510000"
+        }
+      }
+    ],
+    "number": "SEED-2026-0072",
+    "status": "Completed",
+    "total": {
+      "$numberLong": "4880000"
+    }
+  }
+]

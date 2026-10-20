@@ -1,0 +1,81 @@
+PASS: rs0 writable primary sẵn sàng.
+PASS: 3 danh mục, 120 sản phẩm, 72 đơn; mỗi đơn 2–5 dòng. Đã xuất Extended JSON canonical.
+test_canonical_files (test_data.DataTests.test_canonical_files) ... ok
+test_day_boundary_and_status (test_data.DataTests.test_day_boundary_and_status) ... ok
+test_embedded_independence (test_data.DataTests.test_embedded_independence) ... ok
+test_pipeline_no_join_and_deterministic_sort (test_data.DataTests.test_pipeline_no_join_and_deterministic_sort) ... ok
+test_quota_and_integrity (test_data.DataTests.test_quota_and_integrity) ... ok
+test_reproducible (test_data.DataTests.test_reproducible) ... ok
+test_write_guard (test_data.DataTests.test_write_guard) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.073s
+
+OK
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Ecommerce.Web -> /workspace/scratch/5a23da510e12/Ecommerce-SV3/src/Ecommerce.Web/bin/Release/net10.0/Ecommerce.Web.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:06.81
+danhmuc: 3
+sanpham: 120
+hoadon: 72
+PASS: seed transaction hoàn tất, validators và indexes đã thiết lập.
+NO-OP: bộ seed v1 đã có nguyên vẹn; không ghi đè.
+PASS: Đăng nhập Admin
+PASS: Admin yêu cầu xác thực
+PASS: POST thiếu anti-forgery bị chặn
+PASS: Tạo danh mục qua MVC
+PASS: Chặn danh mục trùng tên
+PASS: Sửa danh mục qua MVC
+PASS: Xóa danh mục rỗng qua MVC
+PASS: Phân trang catalog hoạt động
+PASS: Catalog rỗng hiển thị rõ
+PASS: Tạo sản phẩm từ form MVC ghi DB thật
+PASS: Validation thuộc tính theo ngành
+PASS: JSON sai định dạng trả lỗi form
+PASS: SKU trùng bị chặn
+PASS: Không xóa danh mục còn sản phẩm
+PASS: Checkout nhúng giá/thuộc tính và trừ kho
+PASS: Bấm lại checkout không tạo trùng
+PASS: Khách khác không xem được đơn
+PASS: Form cũ không ghi đè tồn kho vừa mua
+PASS: Sửa giá và thuộc tính sản phẩm thành công
+PASS: Đơn cũ giữ nguyên snapshot
+PASS: Hoàn tất đơn
+PASS: Aggregation revenue/day khớp tính độc lập
+PASS: Aggregation top5/day khớp tính độc lập
+PASS: Aggregation revenue/month khớp tính độc lập
+PASS: Aggregation top5/month khớp tính độc lập
+PASS: Dashboard doanh thu khớp DB
+PASS: Dashboard số đơn khớp DB
+PASS: Dashboard Top 5 khớp DB
+PASS: Dashboard khoảng rỗng
+PASS: Dashboard chặn khoảng ngày đảo
+PASS: Hủy đơn hoàn kho đúng một lần
+PASS: Hai checkout đồng thời không bán vượt tồn
+PASS: Hết kho một dòng rollback toàn bộ đơn và kho
+PASS: Ngừng bán ẩn khỏi catalog, giữ đơn cũ
+ALL PASS: 34 kiểm tra với HTTP + MongoDB thật.
+danhmuc: 3
+sanpham: 120
+hoadon: 72
+PASS: seed transaction hoàn tất, validators và indexes đã thiết lập.
+Export: /workspace/scratch/5a23da510e12/Ecommerce-SV3/exports/20261019_093420_857d
+PASS danhmuc: 3 documents; BSON/content exact
+PASS sanpham: 120 documents; BSON/content exact
+PASS hoadon: 72 documents; BSON/content exact
+PASS roundtrip: count, ObjectId, Date, Int64 và toàn bộ nội dung không đổi.
+before revenue median=7.494ms p95=15.766ms
+before top5    median=18.713ms p95=25.918ms
+after  revenue median=9.195ms p95=14.187ms
+after  top5    median=19.464ms p95=23.553ms
+PASS: kết quả trước/sau giống nhau; DB nguồn không đổi. Report: /workspace/scratch/5a23da510e12/Ecommerce-SV3/evidence/benchmark.json
+ALL CHECKS PASSED. DB thử được giữ để kiểm tra lại: sv3_20261019_093420_857d_test sv3_20261019_093420_857d_dev sv3_20261019_093420_857d_bench sv3_20261019_093420_857d_restore_test
+Không có DB/index nguồn dùng chung nào bị xóa. Xem evidence/e2e.json và evidence/benchmark.json.
+  Ecommerce.Web -> /workspace/scratch/5a23da510e12/Ecommerce-SV3/publish/
+PASS: published DLL serves MVC catalog and CSS.

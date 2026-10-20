@@ -1,0 +1,3 @@
+@model List<Category>
+@{ViewData["Title"]="Danh mục";}
+<div class="section-head"><h1>Quản lý danh mục</h1><a class="button" asp-action="CategoryEdit">+ Thêm danh mục</a></div><div class="table-wrap"><table><thead><tr><th>Tên</th><th>Ngành</th><th>Thao tác</th></tr></thead><tbody>@foreach(var c in Model){<tr><td>@c.Name</td><td>@c.Kind</td><td><a asp-action="CategoryEdit" asp-route-id="@c.Id">Sửa</a><form asp-action="CategoryDelete" method="post" class="inline"><input type="hidden" name="id" value="@c.Id"/><button class="text-button">Xóa danh mục rỗng</button></form></td></tr>}</tbody></table></div>

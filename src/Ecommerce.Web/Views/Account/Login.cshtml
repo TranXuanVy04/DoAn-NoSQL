@@ -1,0 +1,3 @@
+@model LoginForm
+@{ViewData["Title"]="Đăng nhập quản trị";}
+<div class="login panel"><p class="eyebrow">EC MARKET ADMIN</p><h1>Đăng nhập quản trị</h1><form method="post"><div asp-validation-summary="All" class="alert validation"></div><label asp-for="Username">Tài khoản</label><input asp-for="Username" autocomplete="username" required/><label asp-for="Password">Mật khẩu</label><input asp-for="Password" autocomplete="current-password" required/><button>Đăng nhập</button></form></div>

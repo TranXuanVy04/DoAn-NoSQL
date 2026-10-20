@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+.venv/
+__pycache__/
+*.pyc
+.env
+*.user
+exports/
+artifacts/
+publish/

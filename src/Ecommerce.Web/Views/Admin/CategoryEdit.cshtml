@@ -1,0 +1,3 @@
+@model CategoryForm
+@{ViewData["Title"]="Thông tin danh mục";}
+<h1>Thông tin danh mục</h1><form method="post" class="panel form-wide"><div asp-validation-summary="All" class="alert validation"></div><input type="hidden" asp-for="Id"/><label asp-for="Name">Tên danh mục</label><input asp-for="Name" required maxlength="80"/><label asp-for="Kind">Ngành hàng</label><select asp-for="Kind"><option value="electronics">Điện tử</option><option value="fashion">Thời trang</option><option value="home">Gia dụng</option></select><button>Lưu danh mục</button></form>

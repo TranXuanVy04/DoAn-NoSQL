@@ -1,0 +1,9 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Ecommerce.Web -> /workspace/scratch/5a23da510e12/Ecommerce-SV3/src/Ecommerce.Web/bin/Release/net10.0/Ecommerce.Web.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:06.81
