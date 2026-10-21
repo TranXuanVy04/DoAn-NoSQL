@@ -4,7 +4,7 @@
 
 Các sản phẩm chia sẻ SKU, tên, danh mục, giá, tồn kho nhưng thuộc tính riêng khác nhau: điện tử có hãng/bảo hành/kết nối; thời trang có size/chất liệu/màu; gia dụng có xuất xứ/dung tích. Một collection với `kind` + `attributes` cho phép cùng truy vấn catalog mà không tạo nhiều cột rỗng hoặc nhiều bảng nối thuộc tính. Khi thêm ngành mới cần bổ sung rule validator/form, không phải thay tất cả document cũ.
 
-MongoDB linh hoạt không có nghĩa bỏ kiểm soát dữ liệu. `tools/validators.json` khai báo `$jsonSchema` và `oneOf` theo ngành để từ chối giá sai kiểu, thiếu thuộc tính bắt buộc hoặc trạng thái sai. Service cũng kiểm tra input để trả thông báo cho form.
+MongoDB linh hoạt không có nghĩa bỏ kiểm soát dữ liệu. `database/validators.json` khai báo `$jsonSchema` và `oneOf` theo ngành để từ chối giá sai kiểu, thiếu thuộc tính bắt buộc hoặc trạng thái sai. Service cũng kiểm tra input để trả thông báo cho form.
 
 ## Collections
 
@@ -48,9 +48,9 @@ Ví dụ ý nghĩa (trong DB các chuỗi id/ngày bên dưới là ObjectId/Dat
 
 ## Dữ liệu và nạp lại
 
-`generate_data.py` deterministic, ID cố định, 40 sản phẩm/ngành. 72 đơn có nhiều ngày và trạng thái; Top 5 có hàng lặp. Tiền Int64, ngày Date, ID ObjectId được ghi trong **Extended JSON canonical**. Không dùng JSON thường rồi kỳ vọng Compass tự đoán kiểu long/date.
+Bộ JSON mẫu có ID cố định, 40 sản phẩm/ngành. 72 đơn có nhiều ngày và trạng thái; Top 5 có hàng lặp. Tiền Int64, ngày Date, ID ObjectId được ghi trong **Extended JSON canonical**. Không dùng JSON thường rồi kỳ vọng Compass tự đoán kiểu long/date.
 
-`seed.py`: chỉ cho DB `_dev`, `_test`, `_bench`; kiểm tra DB trống; tạo validator/index trước; insert cả bộ trong transaction. Chạy lại dữ liệu seed nguyên vẹn báo NO-OP, DB đã chỉnh sửa thì dừng. Không có cờ reset/drop gây mất dữ liệu.
+`database/seed.mongosh.js`: chỉ cho DB `_dev`, `_test`, `_bench`; kiểm tra DB trống; tạo validator/index trước; insert cả bộ trong transaction. Chạy lại dữ liệu seed nguyên vẹn báo NO-OP, DB đã chỉnh sửa thì dừng. Không có cờ reset/drop gây mất dữ liệu.
 
 Validator xác nhận kiểu/required/range nhưng không tự kiểm tra được mọi bất biến như total bằng tổng dòng; service và bộ test chịu trách nhiệm đối chiếu các phép tính đó.
 

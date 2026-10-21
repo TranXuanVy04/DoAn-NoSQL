@@ -11,7 +11,7 @@ Chưa có core/repo chung khi xây dựng. Đây là **đề xuất chạy đư�
 | `IOrderService`, `MongoOrderService` | SV1 | Tạo đơn, snapshot, tồn kho, chuyển trạng thái |
 | `IDashboardService`, `MongoDashboardService` | SV2 | Báo cáo thật từ Aggregation |
 | `Controllers/`, `Views/`, `wwwroot/css/` | SV3 chủ trì tích hợp | Catalog, form Admin, cart session, checkout và báo cáo |
-| `tools/`, `tests/`, `.github/`, tài liệu demo | SV3 | Seed, đo, đối chiếu, đóng gói |
+| `database/`, `tests/`, `.github/`, tài liệu demo | SV3 | Seed, đo, đối chiếu, đóng gói |
 
 Các interface nằm trong `Services/Contracts.cs`. Đăng ký DI ở `Program.cs`; thay implementation tại đây nếu SV1/SV2 phát triển module riêng. Không thay View chỉ để làm khớp field khác mà bỏ qua việc thống nhất contract.
 

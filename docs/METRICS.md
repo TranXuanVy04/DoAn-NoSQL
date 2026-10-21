@@ -19,7 +19,7 @@
 
 `$match` → `$sort` để tên snapshot ổn định → `$unwind: "$items"` → `$group` productId, sum quantity và sum unitPrice×quantity → `$sort` quantity/revenue/id → `$limit: 5`.
 
-Bản C#: `Services/MongoDashboardService.cs`. Bản Python dùng kiểm chứng/benchmark: `tools/common.py`. Kiểm thử so sánh cả kết quả Mongo và HTML Dashboard với phép cộng độc lập từ document đơn (`expected`), không chỉ so hai pipeline giống nhau.
+Bản C#: `Services/MongoDashboardService.cs`. Query plan tham khảo: `database/explain.mongosh.js`. Node tests đối chiếu fixture với phép cộng độc lập từ snapshot; kiểm chứng DB/HTML thật cần chạy lại trên database test.
 
 ## Index
 
