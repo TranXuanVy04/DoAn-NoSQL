@@ -1,0 +1,11 @@
+// Copy to src/storefront/src/features/<feature>/useProducts.ts; adjust imports.
+'use client';
+import { useEffect, useState } from 'react';
+import { getProducts } from '../catalog/service';
+import type { ProductPage } from '../../shared/api/client';
+export function useProducts() {
+  const [data, setData] = useState<ProductPage>();
+  const [error, setError] = useState<Error>();
+  useEffect(() => { let mounted = true; getProducts().then(x => { if (mounted) setData(x); }).catch(e => { if (mounted) setError(e); }); return () => { mounted = false; }; }, []);
+  return { data, error, loading: !data && !error };
+}
