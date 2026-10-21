@@ -1,4 +1,0 @@
-  Ecommerce.Web -> /workspace/scratch/5a23da510e12/Ecommerce-SV3/src/Ecommerce.Web/bin/Release/net10.0/Ecommerce.Web.dll
-  Ecommerce.Web -> /workspace/scratch/5a23da510e12/Ecommerce-SV3/publish/
-
-PASS: final published DLL serves MVC catalog and CSS.
