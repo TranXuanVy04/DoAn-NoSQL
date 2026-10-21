@@ -1,0 +1,52 @@
+{
+  "page": 1,
+  "pageSize": 12,
+  "total": 3,
+  "items": [
+    {
+      "id": "000000000000000000000064",
+      "sku": "ELECTRONICS-001",
+      "name": "Tai nghe EC 01",
+      "categoryId": "000000000000000000000001",
+      "kind": "electronics",
+      "price": 115000,
+      "stock": 100,
+      "isActive": true,
+      "attributes": {
+        "brand": "EC Tech",
+        "warrantyMonths": 12,
+        "connectivity": "USB-C"
+      }
+    },
+    {
+      "id": "00000000000000000000008c",
+      "sku": "FASHION-001",
+      "name": "Áo thun EC 01",
+      "categoryId": "000000000000000000000002",
+      "kind": "fashion",
+      "price": 215000,
+      "stock": 100,
+      "isActive": true,
+      "attributes": {
+        "size": "S",
+        "material": "Cotton",
+        "color": "Đen"
+      }
+    },
+    {
+      "id": "0000000000000000000000b4",
+      "sku": "HOME-001",
+      "name": "Bình giữ nhiệt EC 01",
+      "categoryId": "000000000000000000000003",
+      "kind": "home",
+      "price": 315000,
+      "stock": 100,
+      "isActive": true,
+      "attributes": {
+        "material": "Inox",
+        "origin": "Việt Nam",
+        "capacityLiters": 1
+      }
+    }
+  ]
+}

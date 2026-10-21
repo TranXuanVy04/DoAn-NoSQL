@@ -1,0 +1,15 @@
+{
+  "id": "0000000000000000000000b4",
+  "sku": "HOME-001",
+  "name": "Bình giữ nhiệt EC 01",
+  "categoryId": "000000000000000000000003",
+  "kind": "home",
+  "price": 315000,
+  "stock": 100,
+  "isActive": true,
+  "attributes": {
+    "material": "Inox",
+    "origin": "Việt Nam",
+    "capacityLiters": 1
+  }
+}
