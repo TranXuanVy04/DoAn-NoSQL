@@ -51,10 +51,10 @@ public sealed class FakeDashboard : IDashboardService {
 }
 public sealed class FakeCatalog : ICatalogService {
     private static Product Sample() => new() { Id = "000000000000000000000064", Sku = "ELEC-001", Name = "Tai nghe Nova", CategoryId = "000000000000000000000001", Price = 350000, Stock = 20, Attributes = new BsonDocument { { "brand", "Nova" }, { "warrantyMonths", 12 } } };
-    public Task<List<Category>> Categories() => Task.FromResult(new List<Category> { new() { Id = "000000000000000000000001", Name = "Điện tử", Kind = "electronics" } });
+    public Task<List<Category>> Categories() => Task.FromResult(new List<Category> { new() { Id = "000000000000000000000001", Name = "Điện tử", ParentId = null } });
     public Task<ProductPage> Products(string? query, string? categoryId, int page, bool admin = false) => Task.FromResult(new ProductPage([Sample()], 1, page, 12));
     public Task<Product?> Product(string id) => Task.FromResult<Product?>(id == Sample().Id ? Sample() : null);
-    public Task SaveCategory(CategoryForm input) => throw new NotSupportedException();
+    public Task<Category> SaveCategory(CategoryForm input) => throw new NotSupportedException();
     public Task DeleteCategory(string id) => throw new NotSupportedException();
     public Task SaveProduct(ProductForm input) => throw new NotSupportedException();
     public Task DeleteProduct(string id) => throw new NotSupportedException();

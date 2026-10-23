@@ -1,15 +1,14 @@
-# Templates
+# Template thực tế
 
-Copy mẫu, đổi feature/namespace và cập nhật contract trước đăng ký DI. PascalCase cho C#, camelCase cho TS/JSON.
+- Razor page/layout: src/Ecommerce.Web/Views/Catalog/Index.cshtml và Views/Shared/_Layout.cshtml.
+- MVC Controller: Controllers/AdminController.cs; form/ViewModel: Models/Forms.cs.
+- API Controller: Modules/Catalog/ProductsController.cs.
+- Interface/service/model: Services/ICatalogService.cs, IOrderService.cs, IDashboardService.cs, MongoCatalogService.cs và Models/Domain.cs.
+- Repository cụ thể: Repositories/CategoryRepository.cs, ProductRepository.cs, OrderRepository.cs và AnalyticsRepository.cs (không có interface Repository).
+- Read-model mẫu: backend/Feature.cs.txt.
+- Fake và HTTP test: tests/Ecommerce.UnitTests/.
+- JSON request/response mẫu: contracts/examples/.
+- Mongo validator/seed/index/explain: database/; data/: Extended JSON mẫu.
+- Feature specification: documentation/feature.md.
 
-- Backend controller: src/Ecommerce.Web/Modules/Catalog/CatalogApiController.cs.
-- Interface/service/model/validation: Services/Contracts.cs, MongoCatalogService.cs, Models/Domain.cs và Forms.cs.
-- Repository/read-model mẫu: backend/Feature.cs.txt.
-- Unit/HTTP test: tests/Ecommerce.UnitTests/.
-- Feature/component/page/service/client/types: src/storefront/src/.
-- Hook: frontend/useProducts.ts.txt.
-- Mock và fixtures: src/storefront/src/mocks/ và contracts/examples/.
-- Mongo validator/seed/index/explain: database/; Extended JSON mẫu: data/.
-- Feature specification: documentation/feature.md; PR/bug: .github/.
-
-Xem docs/COMPASS.md và BENCHMARK.md cho import/export/query plan. Component tests/MSW và Mongo integration còn cần triển khai. Không đăng ký fake production.
+Copy mẫu, đổi namespace/feature, cập nhật contract và đăng ký DI khi cần. Fake không đăng ký production. Giữ cookie auth và antiforgery cho thao tác ghi từ Razor.

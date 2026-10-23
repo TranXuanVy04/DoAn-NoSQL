@@ -2,16 +2,16 @@
   {
     "id": "000000000000000000000001",
     "name": "Điện tử",
-    "kind": "electronics"
+    "parentId": null
   },
   {
     "id": "000000000000000000000002",
     "name": "Thời trang",
-    "kind": "fashion"
+    "parentId": null
   },
   {
     "id": "000000000000000000000003",
     "name": "Gia dụng",
-    "kind": "home"
+    "parentId": null
   }
 ]

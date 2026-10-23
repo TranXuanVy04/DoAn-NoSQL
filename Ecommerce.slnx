@@ -35,6 +35,7 @@
     <File Path="data/sanpham.json" />
   </Folder>
   <Folder Name="/docs/">
+    <File Path="docs/CATEGORY_API.md" />
     <File Path="docs/AGGREGATION.md" />
     <File Path="docs/API_CONTRACT.md" />
     <File Path="docs/ARCHITECTURE.md" />
@@ -66,9 +67,6 @@
   <Folder Name="/templates/documentation/">
     <File Path="templates/documentation/feature.md" />
   </Folder>
-  <Folder Name="/templates/frontend/">
-    <File Path="templates/frontend/useProducts.ts.txt" />
-  </Folder>
   <Folder Name="/database/">
     <File Path="database/explain.mongosh.js" />
     <File Path="database/indexes.mongosh.js" />
@@ -77,4 +75,8 @@
   </Folder>
   <Project Path="tests/Ecommerce.UnitTests/Ecommerce.UnitTests.csproj" />
   <Project Path="src/Ecommerce.Web/Ecommerce.Web.csproj" />
+  <Folder Name="/tests/data/">
+    <File Path="tests/data/contract.test.mjs" />
+    <File Path="tests/data/data.test.mjs" />
+  </Folder>
 </Solution>

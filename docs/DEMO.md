@@ -5,4 +5,4 @@
 3. SV2 mở Admin Dashboard, lọc 2026-08-01 đến 2026-10-31 và so sánh doanh thu Completed với data/expected_report.json.
 4. Chạy database/explain.mongosh.js, giải thích compound index và executionStats. Chưa có benchmark định lượng mới.
 
-Trước demo: kiểm tra kết nối Atlas/server, quyền DB, mật khẩu Admin, seed và build. Next.js mới có catalog; dùng MVC cho luồng đầy đủ. Không reset dữ liệu nhóm trong lúc demo.
+Trước demo: kiểm tra kết nối Atlas/server, quyền DB, mật khẩu Admin, seed và build. Dùng Razor MVC cho toàn bộ giao diện. Không reset dữ liệu nhóm trong lúc demo.

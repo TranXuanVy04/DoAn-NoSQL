@@ -9,7 +9,7 @@ function revive(_key, value) {
   if ('$date' in value) return new Date(typeof value.$date === 'bigint' ? Number(value.$date) : value.$date);
   return value;
 }
-async function load(name) { return JSON.parse(await readFile(new URL('../../../data/'+name+'.json',import.meta.url),'utf8'),revive); }
+async function load(name) { return JSON.parse(await readFile(new URL('../../data/'+name+'.json',import.meta.url),'utf8'),revive); }
 const [categories,products,orders,expected] = await Promise.all(['danhmuc','sanpham','hoadon','expected_report'].map(load));
 test('Dataset meets quota and has unique identifiers', () => {
   assert.ok(products.length >= 100);

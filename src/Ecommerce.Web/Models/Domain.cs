@@ -3,10 +3,13 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Ecommerce.Web.Models;
 
+[BsonIgnoreExtraElements]
 public sealed class Category {
-    [BsonId, BsonRepresentation(BsonType.ObjectId)] public string Id { get; set; } = ObjectId.GenerateNewId().ToString();
+    [BsonId, BsonRepresentation(BsonType.ObjectId)] 
+    public string Id { get; set; } = ObjectId.GenerateNewId().ToString();
     public string Name { get; set; } = "";
-    public string Kind { get; set; } = "electronics";
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string? ParentId { get; set; }
 }
 public sealed class Product {
     [BsonId, BsonRepresentation(BsonType.ObjectId)] public string Id { get; set; } = ObjectId.GenerateNewId().ToString();

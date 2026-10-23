@@ -13,7 +13,7 @@ Chưa có core/repo chung khi xây dựng. Đây là **đề xuất chạy đư�
 | `Controllers/`, `Views/`, `wwwroot/css/` | SV3 chủ trì tích hợp | Catalog, form Admin, cart session, checkout và báo cáo |
 | `database/`, `tests/`, `.github/`, tài liệu demo | SV3 | Seed, đo, đối chiếu, đóng gói |
 
-Các interface nằm trong `Services/Contracts.cs`. Đăng ký DI ở `Program.cs`; thay implementation tại đây nếu SV1/SV2 phát triển module riêng. Không thay View chỉ để làm khớp field khác mà bỏ qua việc thống nhất contract.
+Các interface nằm trong `Services/ICatalogService.cs`, `Services/IOrderService.cs` và `Services/IDashboardService.cs`. Đăng ký DI ở `Program.cs`; thay implementation tại đây nếu SV1/SV2 phát triển module riêng. Không thay View chỉ để làm khớp field khác mà bỏ qua việc thống nhất contract.
 
 ## Quy ước dữ liệu
 

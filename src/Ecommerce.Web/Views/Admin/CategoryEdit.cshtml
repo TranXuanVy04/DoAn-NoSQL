@@ -1,3 +1,21 @@
 @model CategoryForm
-@{ViewData["Title"]="Thông tin danh mục";}
-<h1>Thông tin danh mục</h1><form method="post" class="panel form-wide"><div asp-validation-summary="All" class="alert validation"></div><input type="hidden" asp-for="Id"/><label asp-for="Name">Tên danh mục</label><input asp-for="Name" required maxlength="80"/><label asp-for="Kind">Ngành hàng</label><select asp-for="Kind"><option value="electronics">Điện tử</option><option value="fashion">Thời trang</option><option value="home">Gia dụng</option></select><button>Lưu danh mục</button></form>
+@{
+    ViewData["Title"] = "Thông tin danh mục";
+    var categories = (List<Category>)ViewBag.Categories;
+}
+<h1>Thông tin danh mục</h1>
+<form method="post" class="panel form-wide">
+    <div asp-validation-summary="All" class="alert validation"></div>
+    <input type="hidden" asp-for="Id" />
+    <label asp-for="Name">Tên danh mục</label>
+    <input asp-for="Name" required maxlength="80" />
+    <label asp-for="ParentId">Danh mục cha</label>
+    <select asp-for="ParentId">
+        <option value="">Không có — danh mục gốc</option>
+        @foreach (var category in categories.Where(x => x.Id != Model.Id))
+        {
+            <option value="@category.Id">@category.Name</option>
+        }
+    </select>
+    <button>Lưu danh mục</button>
+</form>

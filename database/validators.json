@@ -5,7 +5,7 @@
       "required": [
         "_id",
         "name",
-        "kind"
+        "parentId"
       ],
       "properties": {
         "_id": {
@@ -15,11 +15,10 @@
           "bsonType": "string",
           "minLength": 1
         },
-        "kind": {
-          "enum": [
-            "electronics",
-            "fashion",
-            "home"
+        "parentId": {
+          "bsonType": [
+            "objectId",
+            "null"
           ]
         }
       }
@@ -55,11 +54,8 @@
           "bsonType": "objectId"
         },
         "kind": {
-          "enum": [
-            "electronics",
-            "fashion",
-            "home"
-          ]
+          "bsonType": "string",
+          "minLength": 1
         },
         "price": {
           "bsonType": "long",
@@ -151,6 +147,22 @@
                   "bsonType": "string"
                 }
               }
+            }
+          }
+        },
+        {
+          "properties": {
+            "kind": {
+              "not": {
+                "enum": [
+                  "electronics",
+                  "fashion",
+                  "home"
+                ]
+              }
+            },
+            "attributes": {
+              "bsonType": "object"
             }
           }
         }

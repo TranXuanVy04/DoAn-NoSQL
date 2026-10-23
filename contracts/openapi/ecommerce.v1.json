@@ -2,8 +2,8 @@
   "openapi": "3.0.3",
   "info": {
     "title": "EC Market API — proposed v1",
-    "version": "0.1.0",
-    "description": "Contract-first draft. x-implementation-status identifies real endpoints. Legacy MVC remains supported. Completed is the current recognized revenue status; this is not a payment gateway confirmation."
+    "version": "0.2.0",
+    "description": "Contract-first draft. x-implementation-status identifies real endpoints. Legacy MVC remains supported. Completed is the current recognized revenue status; this is not a payment gateway confirmation. Categories now use parentId instead of kind (breaking change). Product/order kind remains an independent discriminator."
   },
   "servers": [
     {
@@ -102,7 +102,7 @@
           "categories"
         ],
         "summary": "Admin: POST /api/categories",
-        "x-implementation-status": "planned",
+        "x-implementation-status": "implemented",
         "responses": {
           "201": {
             "description": "Thành công",
@@ -190,7 +190,17 @@
             }
           }
         },
-        "description": "Planned. Cookie/session + CSRF header required for writes; no write API is exposed yet."
+        "description": "Admin cookie required. GET /api/categories/csrf after login, then send token in X-CSRF-TOKEN and retain cookies. Duplicate names/referenced categories return 409.",
+        "parameters": [
+          {
+            "name": "X-CSRF-TOKEN",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
       }
     },
     "/api/categories/{id}": {
@@ -292,7 +302,7 @@
           "categories"
         ],
         "summary": "Admin: PUT /api/categories/{id}",
-        "x-implementation-status": "planned",
+        "x-implementation-status": "implemented",
         "responses": {
           "200": {
             "description": "Thành công",
@@ -379,6 +389,14 @@
               "type": "string",
               "pattern": "^[a-fA-F0-9]{24}$"
             }
+          },
+          {
+            "name": "X-CSRF-TOKEN",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -391,7 +409,7 @@
             }
           }
         },
-        "description": "Planned. Cookie/session + CSRF header required for writes; no write API is exposed yet."
+        "description": "Admin cookie required. GET /api/categories/csrf after login, then send token in X-CSRF-TOKEN and retain cookies. Duplicate names/referenced categories return 409."
       },
       "delete": {
         "operationId": "delete_api_categories_id",
@@ -399,7 +417,7 @@
           "categories"
         ],
         "summary": "Admin: DELETE /api/categories/{id}",
-        "x-implementation-status": "planned",
+        "x-implementation-status": "implemented",
         "responses": {
           "204": {
             "description": "Thành công"
@@ -479,8 +497,17 @@
               "type": "string",
               "pattern": "^[a-fA-F0-9]{24}$"
             }
+          },
+          {
+            "name": "X-CSRF-TOKEN",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
-        ]
+        ],
+        "description": "Admin cookie required. GET /api/categories/csrf after login, then send token in X-CSRF-TOKEN and retain cookies. Duplicate names/referenced categories return 409."
       }
     },
     "/api/products": {
@@ -1742,6 +1769,54 @@
           }
         ]
       }
+    },
+    "/api/categories/csrf": {
+      "get": {
+        "operationId": "getCategoryCsrfToken",
+        "tags": [
+          "categories"
+        ],
+        "summary": "Get CSRF token for Admin API writes",
+        "x-implementation-status": "implemented",
+        "security": [
+          {
+            "adminCookie": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Store cookie and send token in X-CSRF-TOKEN",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "token",
+                    "headerName"
+                  ],
+                  "properties": {
+                    "token": {
+                      "type": "string"
+                    },
+                    "headerName": {
+                      "type": "string",
+                      "enum": [
+                        "X-CSRF-TOKEN"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not authenticated"
+          },
+          "403": {
+            "description": "Admin role required"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1777,19 +1852,17 @@
           "name": {
             "type": "string"
           },
-          "kind": {
+          "parentId": {
             "type": "string",
-            "enum": [
-              "electronics",
-              "fashion",
-              "home"
-            ]
+            "nullable": true,
+            "pattern": "^[a-fA-F0-9]{24}$",
+            "description": "null = root; otherwise references an existing category. Self/descendant parents are rejected."
           }
         },
         "required": [
           "id",
           "name",
-          "kind"
+          "parentId"
         ]
       },
       "CategoryInput": {
@@ -1800,18 +1873,15 @@
             "minLength": 1,
             "maxLength": 80
           },
-          "kind": {
+          "parentId": {
             "type": "string",
-            "enum": [
-              "electronics",
-              "fashion",
-              "home"
-            ]
+            "nullable": true,
+            "pattern": "^[a-fA-F0-9]{24}$",
+            "description": "null = root; otherwise references an existing category. Self/descendant parents are rejected."
           }
         },
         "required": [
-          "name",
-          "kind"
+          "name"
         ]
       },
       "Product": {
@@ -2238,7 +2308,7 @@
         "type": "apiKey",
         "in": "cookie",
         "name": ".AspNetCore.Cookies",
-        "description": "Existing /Account/Login form with antiforgery. Browser uses credentials: include. Writes require future CSRF endpoint/header design."
+        "description": "Login using /Account/Login form and antiforgery. Category writes additionally require Admin role and X-CSRF-TOKEN from GET /api/categories/csrf."
       }
     }
   }

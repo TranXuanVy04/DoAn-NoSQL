@@ -1,3 +1,4 @@
+using Ecommerce.Web.Repositories;
 using Ecommerce.Web.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -17,10 +18,9 @@ if (builder.Environment.IsDevelopment()) {
         builder.Configuration.AddCommandLine(args);
     }
 }
-var origins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>() ?? ["http://localhost:3000"];
-builder.Services.AddCors(options => options.AddPolicy("Storefront", policy => policy.WithOrigins(origins).AllowAnyHeader().AllowAnyMethod().AllowCredentials()));
 if (string.IsNullOrWhiteSpace(builder.Configuration["Mongo:ConnectionString"]) || string.IsNullOrWhiteSpace(builder.Configuration["Mongo:Database"]))
     throw new InvalidOperationException("Mongo configuration is required.");
+builder.Services.AddAntiforgery(options => options.HeaderName = "X-CSRF-TOKEN");
 builder.Services.AddControllersWithViews(o => o.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(o => {
@@ -35,10 +35,20 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
             await context.Response.WriteAsJsonAsync(new { title = "Chưa đăng nhập", status = 401 }, options: (System.Text.Json.JsonSerializerOptions?)null, contentType: "application/problem+json");
         } else context.Response.Redirect(context.RedirectUri);
     };
+    o.Events.OnRedirectToAccessDenied = context => {
+        if (context.Request.Path.StartsWithSegments("/api"))
+            return Results.Problem(statusCode: 403, title: "Bạn không có quyền quản trị.").ExecuteAsync(context.HttpContext);
+        context.Response.Redirect(context.RedirectUri);
+        return Task.CompletedTask;
+    };
     o.LoginPath = "/Account/Login"; o.ExpireTimeSpan = TimeSpan.FromHours(2); });
 builder.Services.AddAuthorization();
 builder.Services.AddSingleton<IMongoClient>(_ => new MongoClient(builder.Configuration["Mongo:ConnectionString"]));
 builder.Services.AddSingleton(sp => sp.GetRequiredService<IMongoClient>().GetDatabase(builder.Configuration["Mongo:Database"] ?? "ecommerce_dev"));
+builder.Services.AddScoped<CategoryRepository>();
+builder.Services.AddScoped<ProductRepository>();
+builder.Services.AddScoped<OrderRepository>();
+builder.Services.AddScoped<AnalyticsRepository>();
 builder.Services.AddScoped<ICatalogService, MongoCatalogService>();
 builder.Services.AddScoped<IOrderService, MongoOrderService>();
 builder.Services.AddScoped<IDashboardService, MongoDashboardService>();
@@ -51,7 +61,6 @@ app.UseWhen(context => context.Request.Path.StartsWithSegments("/api"), branch =
 app.UseWhen(context => !context.Request.Path.StartsWithSegments("/api"), branch => branch.UseExceptionHandler("/Home/Error"));
 app.UseStaticFiles();
 app.UseRouting();
-app.UseCors("Storefront");
 app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();

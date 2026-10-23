@@ -8,13 +8,8 @@ artifacts/
 publish/
 
 node_modules/
-.next/
-out/
 coverage/
 .env.*
 !.env.example
-!.env.local.example
 appsettings.*.local.json
 TestResults/
-
-*.tsbuildinfo

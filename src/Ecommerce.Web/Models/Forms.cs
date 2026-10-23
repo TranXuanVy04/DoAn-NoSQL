@@ -4,8 +4,12 @@ namespace Ecommerce.Web.Models;
 
 public sealed class CategoryForm {
     public string? Id { get; set; }
-    [Required, StringLength(80)] public string Name { get; set; } = "";
-    [Required, RegularExpression("^(electronics|fashion|home)$")] public string Kind { get; set; } = "electronics";
+
+    [Required, StringLength(80)] 
+    public string Name { get; set; } = "";
+
+    [RegularExpression("^[0-9a-fA-F]{24}$")]
+    public string? ParentId { get; set; }
 }
 public sealed class ProductForm {
     public string? Id { get; set; }

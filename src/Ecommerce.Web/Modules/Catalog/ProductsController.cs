@@ -4,20 +4,12 @@ using MongoDB.Bson;
 namespace Ecommerce.Web.Modules.Catalog;
 
 [ApiController, Route("api")]
-public sealed class CatalogApiController(ICatalogService catalog) : ControllerBase
+public sealed class ProductsController(ICatalogService catalog) : ControllerBase
 {
     public static object ProductDto(Ecommerce.Web.Models.Product p) => new {
         p.Id, p.Sku, p.Name, p.CategoryId, p.Kind, p.Price, p.Stock, p.IsActive,
         Attributes = System.Text.Json.JsonSerializer.Deserialize<System.Text.Json.JsonElement>(p.Attributes.ToJson(new MongoDB.Bson.IO.JsonWriterSettings { OutputMode = MongoDB.Bson.IO.JsonOutputMode.RelaxedExtendedJson }))
     };
-    [HttpGet("categories")]
-    public async Task<IActionResult> Categories() => Ok(await catalog.Categories());
-    [HttpGet("categories/{id}")]
-    public async Task<IActionResult> Category(string id) {
-        if (!ObjectId.TryParse(id, out _)) return Problem(statusCode:400, title:"ID không hợp lệ");
-        var category = (await catalog.Categories()).FirstOrDefault(x => x.Id == id);
-        return category is null ? Problem(statusCode:404, title:"Không tìm thấy") : Ok(category);
-    }
     [HttpGet("products")]
     public async Task<IActionResult> Products(string? q, string? categoryId, int page = 1) {
         if (page < 1 || (categoryId is not null && !ObjectId.TryParse(categoryId, out _)))
@@ -27,6 +19,7 @@ public sealed class CatalogApiController(ICatalogService catalog) : ControllerBa
             return Ok(new { Items = result.Items.Select(ProductDto), result.Total, result.Page, result.PageSize });
         } catch (Ecommerce.Web.Models.BusinessException ex) { return Problem(statusCode:400, title:ex.Message); }
     }
+
     [HttpGet("products/{id}")]
     public async Task<IActionResult> Product(string id) {
         if (!ObjectId.TryParse(id, out _)) return Problem(statusCode:400, title:"ID không hợp lệ");
