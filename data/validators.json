@@ -1,0 +1,313 @@
+{
+  "danhmuc": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": [
+        "_id",
+        "name",
+        "parentId"
+      ],
+      "properties": {
+        "_id": {
+          "bsonType": "objectId"
+        },
+        "name": {
+          "bsonType": "string",
+          "minLength": 1
+        },
+        "parentId": {
+          "bsonType": [
+            "objectId",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "sanpham": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": [
+        "_id",
+        "name",
+        "categoryId",
+        "isActive",
+        "attributes",
+        "variants",
+        "sku"
+      ],
+      "properties": {
+        "_id": {
+          "bsonType": "objectId"
+        },
+        "name": {
+          "bsonType": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "categoryId": {
+          "bsonType": "objectId"
+        },
+        "imageUrl": {
+          "bsonType": "string",
+          "maxLength": 2000
+        },
+        "isActive": {
+          "bsonType": "bool"
+        },
+        "attributes": {
+          "bsonType": "object"
+        },
+        "variants": {
+          "bsonType": "array",
+          "maxItems": 100,
+          "items": {
+            "bsonType": "object",
+            "required": [
+              "id",
+              "sku",
+              "options",
+              "price",
+              "stock",
+              "isActive"
+            ],
+            "properties": {
+              "id": {
+                "bsonType": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "sku": {
+                "bsonType": "string",
+                "minLength": 1,
+                "maxLength": 40
+              },
+              "options": {
+                "bsonType": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                  "bsonType": "string",
+                  "minLength": 1
+                }
+              },
+              "price": {
+                "bsonType": "long",
+                "minimum": 1,
+                "maximum": 1000000000000
+              },
+              "stock": {
+                "bsonType": "int",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "isActive": {
+                "bsonType": "bool"
+              }
+            }
+          }
+        },
+        "sku": {
+          "bsonType": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "revision": {
+          "bsonType": [
+            "int",
+            "long"
+          ],
+          "minimum": 0
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "sku",
+            "price",
+            "stock"
+          ],
+          "properties": {
+            "variants": {
+              "maxItems": 0
+            },
+            "sku": {
+              "bsonType": "string",
+              "minLength": 1,
+              "maxLength": 40
+            },
+            "price": {
+              "bsonType": "long",
+              "minimum": 1,
+              "maximum": 1000000000000
+            },
+            "stock": {
+              "bsonType": "int",
+              "minimum": 0,
+              "maximum": 1000000
+            }
+          }
+        },
+        {
+          "properties": {
+            "variants": {
+              "minItems": 1
+            }
+          },
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "price"
+                ]
+              },
+              {
+                "required": [
+                  "stock"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "hoadon": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": [
+        "_id",
+        "number",
+        "checkoutKey",
+        "customerToken",
+        "customer",
+        "createdAt",
+        "status",
+        "items",
+        "total"
+      ],
+      "properties": {
+        "_id": {
+          "bsonType": "objectId"
+        },
+        "number": {
+          "bsonType": "string"
+        },
+        "checkoutKey": {
+          "bsonType": "string"
+        },
+        "customerToken": {
+          "bsonType": "string"
+        },
+        "customer": {
+          "bsonType": "object",
+          "required": [
+            "name",
+            "phone",
+            "address"
+          ],
+          "properties": {
+            "name": {
+              "bsonType": "string"
+            },
+            "phone": {
+              "bsonType": "string"
+            },
+            "address": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "createdAt": {
+          "bsonType": "date"
+        },
+        "status": {
+          "enum": [
+            "Pending",
+            "Completed",
+            "Cancelled"
+          ]
+        },
+        "items": {
+          "bsonType": "array",
+          "minItems": 1,
+          "maxItems": 50,
+          "items": {
+            "bsonType": "object",
+            "required": [
+              "productId",
+              "sku",
+              "name",
+              "categoryName",
+              "attributes",
+              "unitPrice",
+              "quantity",
+              "lineTotal"
+            ],
+            "properties": {
+              "productId": {
+                "bsonType": "objectId"
+              },
+              "sku": {
+                "bsonType": "string"
+              },
+              "name": {
+                "bsonType": "string"
+              },
+              "categoryName": {
+                "bsonType": "string"
+              },
+              "attributes": {
+                "bsonType": "object"
+              },
+              "unitPrice": {
+                "bsonType": "long",
+                "minimum": 1
+              },
+              "quantity": {
+                "bsonType": "int",
+                "minimum": 1,
+                "maximum": 99
+              },
+              "lineTotal": {
+                "bsonType": "long",
+                "minimum": 1
+              },
+              "variant": {
+                "bsonType": [
+                  "object",
+                  "null"
+                ],
+                "required": [
+                  "id",
+                  "sku",
+                  "options"
+                ],
+                "properties": {
+                  "id": {
+                    "bsonType": "string",
+                    "minLength": 1
+                  },
+                  "sku": {
+                    "bsonType": "string",
+                    "minLength": 1
+                  },
+                  "options": {
+                    "bsonType": "object",
+                    "minProperties": 1,
+                    "additionalProperties": {
+                      "bsonType": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "total": {
+          "bsonType": "long",
+          "minimum": 1
+        }
+      }
+    }
+  }
+}

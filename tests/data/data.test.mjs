@@ -14,17 +14,27 @@ const [categories,products,orders,expected] = await Promise.all(['danhmuc','sanp
 test('Dataset meets quota and has unique identifiers', () => {
   assert.ok(products.length >= 100);
   assert.ok(orders.length >= 50 && orders.length <= 100);
-  assert.ok(new Set(products.map(p=>p.kind)).size >= 3);
+  assert.ok(new Set(products.map(p=>p.categoryId)).size >= 3);
   for (const rows of [categories,products,orders]) assert.equal(new Set(rows.map(x=>x._id)).size,rows.length);
-  assert.equal(new Set(products.map(p=>p.sku)).size,products.length);
+  const skus = products.flatMap(p => p.variants.length ? p.variants.map(v => v.sku) : [p.sku]);
+  assert.equal(new Set(skus).size, skus.length);
   assert.equal(new Set(orders.map(o=>o.checkoutKey)).size,orders.length);
 });
 test('Seed has valid BSON money, stock and product references', () => {
   const ids = new Set(products.map(p=>p._id));
   const categoryIds = new Set(categories.map(c=>c._id));
   for (const p of products) {
-    assert.equal(typeof p.price,'bigint'); assert.ok(p.price > 0n);
-    assert.ok(Number.isInteger(p.stock) && p.stock >= 0); assert.ok(categoryIds.has(p.categoryId));
+    assert.ok(Array.isArray(p.variants));
+    assert.ok(categoryIds.has(p.categoryId));
+    if (p.variants.length) {
+      assert.ok(typeof p.sku === 'string' && p.sku.length > 0);
+      for (const field of ['price', 'stock']) assert.ok(!Object.hasOwn(p, field));
+      assert.equal(new Set(p.variants.map(v => v.id)).size, p.variants.length);
+    }
+    for (const row of p.variants.length ? p.variants : [p]) {
+      assert.equal(typeof row.price, 'bigint'); assert.ok(row.price > 0n);
+      assert.ok(Number.isInteger(row.stock) && row.stock >= 0);
+    }
   }
   for (const o of orders) {
     assert.ok(o.items.length >= 2 && o.items.length <= 5);
@@ -66,4 +76,17 @@ test('Completed revenue matches expected report in UTC+7', () => {
 });
 test('Snapshot top 5 and deterministic tie breaks match expected report', () => {
   assert.deepEqual(report().top5,expected.top5.map(x=>({...x,revenue:BigInt(x.revenue)})));
+});
+
+test('Category parents are valid and never cyclic', () => {
+  const byId = new Map(categories.map(c=>[c._id,c]));
+  for(const category of categories) {
+    assert.ok(!Object.hasOwn(category,'kind'));
+    const visited = new Set([category._id]);
+    let parent = category.parentId;
+    while(parent != null) {
+      assert.ok(byId.has(parent)); assert.ok(!visited.has(parent)); visited.add(parent);
+      parent = byId.get(parent).parentId;
+    }
+  }
 });

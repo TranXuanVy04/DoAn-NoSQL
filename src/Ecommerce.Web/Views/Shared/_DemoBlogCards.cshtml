@@ -1,0 +1,15 @@
+<div class="row">
+    @foreach (var article in StorefrontDemo.Articles)
+    {
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <article class="blog__item">
+                <div class="blog__item__pic"><a asp-controller="Storefront" asp-action="Article" asp-route-id="@article.Id"><img src="/vendor/ogani/img/blog/@article.Image" alt="Ảnh minh họa bài viết" loading="lazy" /></a></div>
+                <div class="blog__item__text">
+                    <ul><li><i class="fa fa-calendar-o" aria-hidden="true"></i> 22/10/2026</li><li>Nội dung mẫu</li></ul>
+                    <h5><a asp-controller="Storefront" asp-action="Article" asp-route-id="@article.Id">@article.Title</a></h5>
+                    <p>@article.Description</p>
+                </div>
+            </article>
+        </div>
+    }
+</div>

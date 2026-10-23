@@ -2,7 +2,7 @@
 
 ## Vì sao MongoDB phù hợp đa ngành
 
-Các sản phẩm chia sẻ SKU, tên, danh mục, giá, tồn kho nhưng thuộc tính riêng khác nhau: điện tử có hãng/bảo hành/kết nối; thời trang có size/chất liệu/màu; gia dụng có xuất xứ/dung tích. Một collection với `kind` + `attributes` cho phép cùng truy vấn catalog mà không tạo nhiều cột rỗng hoặc nhiều bảng nối thuộc tính. Khi thêm ngành mới cần bổ sung rule validator/form, không phải thay tất cả document cũ.
+Các sản phẩm chia sẻ SKU, tên, danh mục, giá, tồn kho nhưng thuộc tính riêng khác nhau: điện tử có hãng/bảo hành/kết nối; thời trang có size/chất liệu/màu; gia dụng có xuất xứ/dung tích. Một collection với `kind` + `attributes` cho phép cùng truy vấn catalog mà không tạo nhiều cột rỗng hoặc nhiều bảng nối thuộc tính. Danh mục mới được thêm bằng ParentId, không sửa enum ngành. Sản phẩm mới dùng kiểu general với attributes linh hoạt; các kiểu mẫu cũ vẫn giữ validation chuyên biệt.
 
 MongoDB linh hoạt không có nghĩa bỏ kiểm soát dữ liệu. `database/validators.json` khai báo `$jsonSchema` và `oneOf` theo ngành để từ chối giá sai kiểu, thiếu thuộc tính bắt buộc hoặc trạng thái sai. Service cũng kiểm tra input để trả thông báo cho form.
 
@@ -10,7 +10,7 @@ MongoDB linh hoạt không có nghĩa bỏ kiểm soát dữ liệu. `database/v
 
 | Collection | Field chính | Kiểu / mục đích |
 |---|---|---|
-| danhmuc | _id, name, kind | ObjectId, string, enum ngành |
+| danhmuc | _id, name, parentId | ObjectId, string, ObjectId hoặc null |
 | sanpham | _id, sku, name, categoryId, kind, price, stock, isActive, attributes | ObjectId; Int64 tiền; Int32 kho; BSON document thuộc tính |
 | hoadon | _id, number, checkoutKey, customerToken, customer, createdAt, status, items, total | Khách và các dòng đơn được nhúng, giá lưu tại lúc mua |
 
@@ -55,3 +55,5 @@ Bộ JSON mẫu có ID cố định, 40 sản phẩm/ngành. 72 đơn có nhiề
 Validator xác nhận kiểu/required/range nhưng không tự kiểm tra được mọi bất biến như total bằng tổng dòng; service và bộ test chịu trách nhiệm đối chiếu các phép tính đó.
 
 Nguồn kỹ thuật: https://www.mongodb.com/docs/manual/data-modeling/design-patterns/polymorphic-data/polymorphic-schema-pattern/ ; https://www.mongodb.com/docs/manual/core/schema-validation/ ; https://www.mongodb.com/docs/drivers/csharp/current/crud/transactions/
+
+Danh mục đã chuyển sang ParentId, xem CATEGORY_HIERARCHY.md cho quan hệ cha–con và migration Atlas. Kind còn lại trên sản phẩm/snapshot là discriminator tương thích, không phải trường danh mục.

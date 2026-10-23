@@ -8,41 +8,23 @@
     <File Path="README.md" />
     <File Path="global.json" />
   </Folder>
-  <Folder Name="/contracts/" />
-  <Folder Name="/contracts/examples/">
-    <File Path="contracts/examples/categories.json" />
-    <File Path="contracts/examples/empty-products.json" />
-    <File Path="contracts/examples/order.json" />
-    <File Path="contracts/examples/orders.json" />
-    <File Path="contracts/examples/product-electronics.json" />
-    <File Path="contracts/examples/product-fashion.json" />
-    <File Path="contracts/examples/product-home.json" />
-    <File Path="contracts/examples/products.json" />
-    <File Path="contracts/examples/revenue.json" />
-    <File Path="contracts/examples/server-error.json" />
-    <File Path="contracts/examples/summary.json" />
-    <File Path="contracts/examples/top-products.json" />
-    <File Path="contracts/examples/validation-error.json" />
-  </Folder>
-  <Folder Name="/contracts/openapi/">
-    <File Path="contracts/openapi/README.md" />
-    <File Path="contracts/openapi/ecommerce.v1.json" />
-  </Folder>
   <Folder Name="/data/">
     <File Path="data/danhmuc.json" />
     <File Path="data/expected_report.json" />
     <File Path="data/hoadon.json" />
     <File Path="data/sanpham.json" />
+    <File Path="data/setup-variants.mongosh.js" />
+    <File Path="data/validators.json" />
   </Folder>
   <Folder Name="/docs/">
-    <File Path="docs/CATEGORY_API.md" />
+    <File Path="docs/OGANI_TEMPLATE.md" />
+    <File Path="docs/CATEGORY_HIERARCHY.md" />
     <File Path="docs/AGGREGATION.md" />
-    <File Path="docs/API_CONTRACT.md" />
     <File Path="docs/ARCHITECTURE.md" />
     <File Path="docs/BENCHMARK.md" />
     <File Path="docs/COMPASS.md" />
-    <File Path="docs/CONTRACTS.md" />
     <File Path="docs/DATA_MODEL.md" />
+    <File Path="docs/PRODUCT_VARIANTS.md" />
     <File Path="docs/DEMO.md" />
     <File Path="docs/DEMO_SCRIPT.md" />
     <File Path="docs/DUMMY_DATA.md" />
@@ -68,6 +50,7 @@
     <File Path="templates/documentation/feature.md" />
   </Folder>
   <Folder Name="/database/">
+    <File Path="database/migrate-category-parent.mongosh.js" />
     <File Path="database/explain.mongosh.js" />
     <File Path="database/indexes.mongosh.js" />
     <File Path="database/seed.mongosh.js" />
@@ -76,7 +59,6 @@
   <Project Path="tests/Ecommerce.UnitTests/Ecommerce.UnitTests.csproj" />
   <Project Path="src/Ecommerce.Web/Ecommerce.Web.csproj" />
   <Folder Name="/tests/data/">
-    <File Path="tests/data/contract.test.mjs" />
     <File Path="tests/data/data.test.mjs" />
   </Folder>
 </Solution>

@@ -16,90 +16,51 @@ using Xunit;
 
 public class CategoryCrudTests
 {
-    [Fact]
-    public async Task AdminCanCreateReadUpdateAndDelete()
+    private static async Task<string> Token(HttpClient client)
     {
-        using var factory = new CategoryCrudFactory();
-        using var client = await AdminClient(factory);
-        var response = await client.PostAsJsonAsync("/api/categories", new { name = "Danh mục mới", parentId = (string?)null });
-        Assert.Equal(HttpStatusCode.Created, response.StatusCode);
-        var category = (await response.Content.ReadFromJsonAsync<Category>())!;
-        Assert.EndsWith("/api/categories/" + category.Id, response.Headers.Location!.ToString());
-        Assert.Equal(HttpStatusCode.OK, (await client.GetAsync(response.Headers.Location)).StatusCode);
-        var updated = await client.PutAsJsonAsync("/api/categories/" + category.Id, new { name = "Tên đã sửa", parentId = (string?)null });
-        Assert.Equal(HttpStatusCode.OK, updated.StatusCode);
-        Assert.Equal("Tên đã sửa", (await updated.Content.ReadFromJsonAsync<Category>())!.Name);
-        Assert.Equal(HttpStatusCode.NoContent, (await client.DeleteAsync("/api/categories/" + category.Id)).StatusCode);
-        Assert.Equal(HttpStatusCode.NotFound, (await client.GetAsync("/api/categories/" + category.Id)).StatusCode);
-    }
-
-    [Theory]
-    [InlineData("POST", "/api/categories")]
-    [InlineData("PUT", "/api/categories/000000000000000000000001")]
-    [InlineData("DELETE", "/api/categories/000000000000000000000001")]
-    public async Task GuestCannotWrite(string method, string path)
-    {
-        using var factory = new CategoryCrudFactory();
-        using var client = factory.CreateClient();
-        var request = new HttpRequestMessage(new HttpMethod(method), path);
-        request.Content = JsonContent.Create(new { name = "Test", parentId = (string?)null });
-        Assert.Equal(HttpStatusCode.Unauthorized, (await client.SendAsync(request)).StatusCode);
+        var html = await client.GetStringAsync("/Admin/CategoryEdit");
+        var match = System.Text.RegularExpressions.Regex.Match(html, "name=\"__RequestVerificationToken\"[^>]*value=\"([^\"]+)\"");
+        Assert.True(match.Success);
+        return WebUtility.HtmlDecode(match.Groups[1].Value);
     }
 
     [Fact]
-    public async Task AdminStillNeedsCsrfToken()
+    public async Task AdminCanCreateUpdateAndDeleteUsingRazorForms()
+    {
+        using var factory = new CategoryCrudFactory();
+        using var client = factory.CreateClient(new() { BaseAddress = new Uri("https://localhost"), AllowAutoRedirect = false });
+        client.DefaultRequestHeaders.Add("X-Test-Admin", "yes");
+        string token = await Token(client);
+        async Task<HttpResponseMessage> Post(string path, Dictionary<string,string> values) {
+            values["__RequestVerificationToken"] = token;
+            return await client.PostAsync(path, new FormUrlEncodedContent(values));
+        }
+        Assert.Equal(HttpStatusCode.Redirect, (await Post("/Admin/CategoryEdit", new() { ["Name"] = "Sách" })).StatusCode);
+        var service = factory.Services.GetRequiredService<ICatalogService>();
+        var created = (await service.Categories()).Single(c => c.Name == "Sách");
+        Assert.Equal(HttpStatusCode.Redirect, (await Post("/Admin/CategoryEdit", new() { ["Id"] = created.Id, ["Name"] = "Sách mới" })).StatusCode);
+        Assert.Contains("Sách mới", WebUtility.HtmlDecode(await client.GetStringAsync("/Admin/Categories")));
+        Assert.Equal(HttpStatusCode.Redirect, (await Post("/Admin/CategoryDelete", new() { ["id"] = created.Id })).StatusCode);
+        Assert.DoesNotContain(await service.Categories(), c => c.Id == created.Id);
+    }
+
+    [Fact]
+    public async Task AdminFormStillRequiresAntiforgery()
     {
         using var factory = new CategoryCrudFactory();
         using var client = factory.CreateClient();
         client.DefaultRequestHeaders.Add("X-Test-Admin", "yes");
-        var response = await client.PostAsJsonAsync("/api/categories", new { name = "Test", parentId = (string?)null });
-        Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
-    }
-
-    [Theory]
-    [InlineData("", null)]
-    [InlineData("Test", "bad-id")]
-    public async Task InvalidInputIsRejected(string name, string? parentId)
-    {
-        using var factory = new CategoryCrudFactory();
-        using var client = await AdminClient(factory);
-        var response = await client.PostAsJsonAsync("/api/categories", new { name, parentId });
-        Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+        Assert.Equal(HttpStatusCode.BadRequest, (await client.PostAsync("/Admin/CategoryEdit", new FormUrlEncodedContent(new Dictionary<string,string> { ["Name"] = "Sách" }))).StatusCode);
     }
 
     [Fact]
-    public async Task DuplicateNameAndReferencedCategoryReturnConflict()
+    public async Task GuestCannotOpenAdminForm()
     {
-        using var factory = new CategoryCrudFactory();
-        using var client = await AdminClient(factory);
-        var response = await client.PostAsJsonAsync("/api/categories", new { name = "Điện tử", parentId = (string?)null });
-        Assert.Equal(HttpStatusCode.Conflict, response.StatusCode);
-        Assert.Equal(HttpStatusCode.Conflict, (await client.DeleteAsync("/api/categories/000000000000000000000001")).StatusCode);
-        response = await client.PutAsJsonAsync("/api/categories/000000000000000000000001", new { name = "Điện tử", parentId = (string?)null });
-        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-    }
-
-    [Theory]
-    [InlineData("bad-id", 400)]
-    [InlineData("000000000000000000000099", 404)]
-    public async Task UpdateAndDeleteCheckId(string id, int status)
-    {
-        using var factory = new CategoryCrudFactory();
-        using var client = await AdminClient(factory);
-        var response = await client.PutAsJsonAsync("/api/categories/" + id, new { name = "Test", parentId = (string?)null });
-        Assert.Equal(status, (int)response.StatusCode);
-        Assert.Equal(status, (int)(await client.DeleteAsync("/api/categories/" + id)).StatusCode);
-    }
-
-    private static async Task<HttpClient> AdminClient(CategoryCrudFactory factory)
-    {
-        var client = factory.CreateClient(new() { BaseAddress = new Uri("https://localhost"), AllowAutoRedirect = false });
-        client.DefaultRequestHeaders.Add("X-Test-Admin", "yes");
-        var response = await client.GetAsync("/api/categories/csrf");
-        response.EnsureSuccessStatusCode();
-        using var json = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
-        client.DefaultRequestHeaders.Add("X-CSRF-TOKEN", json.RootElement.GetProperty("token").GetString());
-        return client;
+        using var factory = new StorefrontFactory();
+        using var client = factory.CreateClient(new() { AllowAutoRedirect = false });
+        var response = await client.GetAsync("/Admin/CategoryEdit");
+        Assert.Equal(HttpStatusCode.Redirect, response.StatusCode);
+        Assert.Contains("/Account/Login", response.Headers.Location!.ToString());
     }
 }
 
@@ -126,9 +87,9 @@ public class CategoryTestAuth : AuthenticationHandler<AuthenticationSchemeOption
 
     protected override Task<AuthenticateResult> HandleAuthenticateAsync()
     {
-        if (Request.Headers["X-Test-Admin"] != "yes")
+        if (Request.Headers["X-Test-Admin"] != "yes" && Request.Headers["X-Test-Customer"] != "yes")
             return Task.FromResult(AuthenticateResult.NoResult());
-        var identity = new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, "test-admin"), new Claim(ClaimTypes.Role, "Admin") }, "Test");
+        var identity = new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, "test-admin"), new Claim(ClaimTypes.Role, Request.Headers["X-Test-Customer"] == "yes" ? "Customer" : "Admin") }, "Test");
         return Task.FromResult(AuthenticateResult.Success(new AuthenticationTicket(new ClaimsPrincipal(identity), "Test")));
     }
 }

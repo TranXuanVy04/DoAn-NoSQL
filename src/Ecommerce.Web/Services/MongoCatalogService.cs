@@ -7,11 +7,13 @@ public sealed class MongoCatalogService : ICatalogService
 {
     private readonly CategoryRepository categories;
     private readonly ProductRepository products;
+    private readonly IConfiguration configuration;
 
-    public MongoCatalogService(CategoryRepository categories, ProductRepository products)
+    public MongoCatalogService(CategoryRepository categories, ProductRepository products, IConfiguration configuration)
     {
         this.categories = categories;
         this.products = products;
+        this.configuration = configuration;
     }
 
     public Task<List<Category>> Categories()
@@ -70,41 +72,39 @@ existing.Name = name;
         return products.GetById(id);
     }
 
-    public async Task SaveProduct(ProductForm f) {
-        if (!ObjectId.TryParse(f.CategoryId,out _)) throw new BusinessException("Hãy chọn danh mục.");
-        var category=await categories.GetById(f.CategoryId) ?? throw new BusinessException("Danh mục không tồn tại.");
-        BsonDocument attributes;
-        try { attributes=BsonDocument.Parse(f.AttributesJson); }
-        catch (Exception ex) when (ex is FormatException or System.Text.Json.JsonException) { throw new BusinessException("Thuộc tính phải là một JSON object hợp lệ."); }
-        string productKind = "general";
-        if (f.Id != null)
+    public async Task SaveProduct(ProductForm form)
+    {
+        if (!ObjectId.TryParse(form.CategoryId,out _)) throw new BusinessException("Hãy chọn danh mục.");
+        Product? existing=null;
+        if (form.Id != null)
         {
-            if (!ObjectId.TryParse(f.Id, out _))
-                throw new BusinessException("Mã sản phẩm không hợp lệ.");
-            var existingProduct = await products.GetById(f.Id);
-            if (existingProduct == null)
-                throw new BusinessException("Sản phẩm không tồn tại.");
-            productKind = existingProduct.Kind;
+            if (!ObjectId.TryParse(form.Id,out _)) throw new BusinessException("Mã sản phẩm không hợp lệ.");
+            existing=await products.GetById(form.Id) ?? throw new BusinessException("Sản phẩm không tồn tại.");
+            if (existing.Revision != form.OriginalRevision)
+                throw new BusinessException("Sản phẩm hoặc tồn kho vừa thay đổi. Hãy tải lại form.");
         }
-        ValidateAttributes(productKind, attributes);
-        if (await products.SkuExists(f.Sku, f.Id)) throw new BusinessException("SKU đã tồn tại.");
-        if (f.Price is <1 or >1000000000000 || f.Stock is <0 or >1000000) throw new BusinessException("Giá/tồn kho không hợp lệ.");
-        var p=new Product {Sku=f.Sku.Trim(),Name=f.Name.Trim(),CategoryId=f.CategoryId,Kind=productKind,Price=f.Price,Stock=f.Stock,IsActive=f.IsActive,Attributes=attributes};
-        if (f.Id is null) await products.Create(p);
-        else {
-            if (!ObjectId.TryParse(f.Id,out _)) throw new BusinessException("Mã sản phẩm không hợp lệ.");
-            p.Id=f.Id;
-            bool updated = await products.Update(p, f.OriginalStock);
-            if (!updated) throw new BusinessException("Sản phẩm đã thay đổi tồn kho hoặc không tồn tại. Hãy tải lại form trước khi sửa.");
-        }
+        var root=CategoryHierarchy.GetRoot(form.CategoryId, await categories.GetAll());
+        var rules=configuration.GetSection("CategoryAttributeRules:"+root.Id).Get<Dictionary<string,string>>() ?? new();
+        var product=ProductFormMapper.Build(form,existing,rules);
+        var skus=product.Variants.Select(v=>v.Sku).Append(product.Sku).Distinct().ToArray();
+        if (await products.AnySkuExists(skus,form.Id)) throw new BusinessException("SKU sản phẩm hoặc biến thể đã được sản phẩm khác sử dụng.");
+        if (existing == null) await products.Create(product);
+        else if (!await products.Update(product,form.OriginalRevision))
+            throw new BusinessException("Sản phẩm hoặc tồn kho vừa thay đổi. Hãy tải lại form trước khi sửa.");
     }
-    public static void ValidateAttributes(string kind,BsonDocument a) {
-        string[] required=kind switch {"electronics"=>["brand","warrantyMonths"],"fashion"=>["size","material"],"home"=>["material","origin"],_=>[]};
-        foreach(var field in required) if (!a.TryGetValue(field,out var value) || value.IsBsonNull || (value.IsString && string.IsNullOrWhiteSpace(value.AsString)))
-            throw new BusinessException($"Thiếu thuộc tính {field} cho ngành {kind}.");
-        if(kind=="electronics" && (!a["warrantyMonths"].IsNumeric || a["warrantyMonths"].ToDouble()<0)) throw new BusinessException("warrantyMonths phải là số không âm.");
-        foreach(var field in required.Where(x=>x!="warrantyMonths")) if (!a[field].IsString) throw new BusinessException($"{field} phải là chuỗi.");
-        if(a.ToJson().Length>6000 || ContainsUnsafe(a)) throw new BusinessException("Thuộc tính quá dài hoặc chứa khóa không hợp lệ.");
+    public static void ValidateAttributes(IReadOnlyDictionary<string, string> rules, BsonDocument attributes)
+    {
+        foreach (var rule in rules)
+        {
+            if (!attributes.TryGetValue(rule.Key, out var value) || value.IsBsonNull)
+                throw new BusinessException($"Thiếu thuộc tính {rule.Key} theo danh mục gốc.");
+            if (rule.Value == "string" && (!value.IsString || string.IsNullOrWhiteSpace(value.AsString)))
+                throw new BusinessException($"{rule.Key} phải là chuỗi không rỗng.");
+            if (rule.Value == "nonNegativeNumber" && (!value.IsNumeric || !double.IsFinite(value.ToDouble()) || value.ToDouble() < 0))
+                throw new BusinessException($"{rule.Key} phải là số không âm.");
+        }
+        if (attributes.ToJson().Length > 6000 || ContainsUnsafe(attributes))
+            throw new BusinessException("Thuộc tính quá dài hoặc chứa khóa không hợp lệ.");
     }
     private static bool ContainsUnsafe(BsonValue v) => v switch {
         BsonDocument d => d.Elements.Any(e=>e.Name.StartsWith('$') || e.Name.Contains('.') || ContainsUnsafe(e.Value)),

@@ -19,6 +19,8 @@ public sealed class MongoOrderService : IOrderService
         this.client = client;
     }
 
+    public Task<OrderPage> ListForCustomer(string token, int page) => orders.GetCustomerPage(token,page);
+
     public Task<Order?> Get(string id)
     {
         if (!ObjectId.TryParse(id, out _))
@@ -38,7 +40,7 @@ public sealed class MongoOrderService : IOrderService
 
     public async Task<Order> Place(IReadOnlyList<CartLine> cart,Customer customer,string key,string token) {
         var existing=await FindCheckout(key,token); if(existing is not null) return existing;
-        if(cart.Count is <1 or >50 || cart.Any(x=>x.Quantity is <1 or >99 || !ObjectId.TryParse(x.ProductId,out _)) || cart.Select(x=>x.ProductId).Distinct().Count()!=cart.Count)
+        if(cart.Count is <1 or >50 || cart.Any(x=>x.Quantity is <1 or >99 || !ObjectId.TryParse(x.ProductId,out _)) || cart.Select(x=>(x.ProductId,x.VariantId)).Distinct().Count()!=cart.Count)
             throw new BusinessException("Giỏ hàng không hợp lệ (1–50 dòng, mỗi dòng 1–99 sản phẩm).");
         using var session=await client.StartSessionAsync();
         try {
@@ -50,12 +52,13 @@ public sealed class MongoOrderService : IOrderService
                 foreach(var row in cart.OrderBy(x=>x.ProductId,StringComparer.Ordinal)) {
                     var p=await products.GetById(row.ProductId, s, ct);
                     if(p is null || !p.IsActive) throw new BusinessException("Một sản phẩm trong giỏ đã ngừng bán.");
+                    ProductSelection.Variant(p,row.VariantId);
+
                     var cat=await categories.GetById(p.CategoryId, s, ct);
                     if(cat is null) throw new BusinessException("Danh mục sản phẩm không còn tồn tại.");
-                    bool stockChanged = await products.DecreaseStock(p.Id, row.Quantity, s, ct);
+                    bool stockChanged = await products.DecreaseStock(p.Id, row.Quantity, s, ct, row.VariantId);
                     if(!stockChanged) throw new BusinessException($"{p.Name} không đủ tồn kho. Hãy cập nhật giỏ hàng.");
-                    order.Items.Add(new OrderItem {ProductId=p.Id,Sku=p.Sku,Name=p.Name,CategoryName=cat.Name,Kind=p.Kind,
-                        Attributes=p.Attributes.DeepClone().AsBsonDocument,UnitPrice=p.Price,Quantity=row.Quantity,LineTotal=checked(p.Price*row.Quantity)});
+                    order.Items.Add(ProductSelection.Snapshot(p,cat,row.Quantity,row.VariantId));
                 }
                 order.Total=order.Items.Sum(x=>x.LineTotal);
                 await orders.Create(order, s, ct);
@@ -75,7 +78,7 @@ public sealed class MongoOrderService : IOrderService
             bool changed = await orders.ChangePendingStatus(id, status, s, ct);
             if(!changed) throw new BusinessException("Đơn vừa được cập nhật. Hãy tải lại.");
             if(status=="Cancelled") foreach(var item in order.Items) {
-                bool restored = await products.RestoreStock(item.ProductId, item.Quantity, s, ct);
+                bool restored = await products.RestoreStock(item.ProductId, item.Quantity, s, ct, item.Variant?.Id);
                 if(!restored) throw new BusinessException("Không tìm thấy sản phẩm để hoàn kho; transaction được hủy.");
             }
             return true;

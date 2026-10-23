@@ -24,6 +24,13 @@ public class ProductRepository
         return products.Find(x => x.Sku == sku && x.Id != excludedId).AnyAsync();
     }
 
+    public Task<bool> AnySkuExists(string[] skus, string? excludedId)
+    {
+        var filter=Builders<Product>.Filter.Ne(x=>x.Id,excludedId)
+            & (Builders<Product>.Filter.In(x=>x.Sku,skus) | Builders<Product>.Filter.In("variants.sku",skus));
+        return products.Find(filter).AnyAsync();
+    }
+
     public async Task<ProductPage> GetPage(string? query, string? categoryId, int page, bool includeInactive)
     {
         var builder = Builders<Product>.Filter;
@@ -58,30 +65,47 @@ public class ProductRepository
         return products.InsertOneAsync(product);
     }
 
-    public async Task<bool> Update(Product product, int originalStock)
+    public async Task<bool> Update(Product product, long originalRevision)
     {
-        var result = await products.ReplaceOneAsync(x => x.Id == product.Id && x.Stock == originalStock, product);
+        var filter=Builders<Product>.Filter.Eq(x=>x.Id,product.Id);
+        var version=Builders<Product>.Filter.Eq(x=>x.Revision,originalRevision);
+        if(originalRevision == 0) version |= Builders<Product>.Filter.Exists("revision",false);
+        var result = await products.ReplaceOneAsync(filter & version, product);
         return result.MatchedCount == 1;
     }
 
     public async Task Deactivate(string id)
     {
-        await products.UpdateOneAsync(x => x.Id == id, Builders<Product>.Update.Set(x => x.IsActive, false));
+        await products.UpdateOneAsync(x => x.Id == id, Builders<Product>.Update.Set(x => x.IsActive, false).Inc(x=>x.Revision,1));
     }
 
     // Các thao tác tồn kho dùng cùng session với đơn hàng để rollback cùng nhau.
-    public async Task<bool> DecreaseStock(string id, int quantity, IClientSessionHandle session, CancellationToken cancellationToken)
+    public async Task<bool> DecreaseStock(string id, int quantity, IClientSessionHandle session, CancellationToken cancellationToken, string? variantId = null)
     {
+        if (variantId != null)
+        {
+            var filter = Builders<Product>.Filter.Eq(x => x.Id, id) & Builders<Product>.Filter.Eq(x => x.IsActive, true)
+                & Builders<Product>.Filter.ElemMatch(x => x.Variants, v => v.Id == variantId && v.IsActive && v.Stock >= quantity);
+            var changed = await products.UpdateOneAsync(session, filter, Builders<Product>.Update.Inc("variants.$.stock", -quantity).Inc(x=>x.Revision,1), cancellationToken: cancellationToken);
+            return changed.ModifiedCount == 1;
+        }
         var result = await products.UpdateOneAsync(session,
             x => x.Id == id && x.IsActive && x.Stock >= quantity,
-            Builders<Product>.Update.Inc(x => x.Stock, -quantity), cancellationToken: cancellationToken);
+            Builders<Product>.Update.Inc(x => x.Stock, -quantity).Inc(x=>x.Revision,1), cancellationToken: cancellationToken);
         return result.ModifiedCount == 1;
     }
 
-    public async Task<bool> RestoreStock(string id, int quantity, IClientSessionHandle session, CancellationToken cancellationToken)
+    public async Task<bool> RestoreStock(string id, int quantity, IClientSessionHandle session, CancellationToken cancellationToken, string? variantId = null)
     {
+        if (variantId != null)
+        {
+            var filter = Builders<Product>.Filter.Eq(x => x.Id, id)
+                & Builders<Product>.Filter.ElemMatch(x => x.Variants, v => v.Id == variantId);
+            var changed = await products.UpdateOneAsync(session, filter, Builders<Product>.Update.Inc("variants.$.stock", quantity).Inc(x=>x.Revision,1), cancellationToken: cancellationToken);
+            return changed.MatchedCount == 1;
+        }
         var result = await products.UpdateOneAsync(session, x => x.Id == id,
-            Builders<Product>.Update.Inc(x => x.Stock, quantity), cancellationToken: cancellationToken);
+            Builders<Product>.Update.Inc(x => x.Stock, quantity).Inc(x=>x.Revision,1), cancellationToken: cancellationToken);
         return result.MatchedCount == 1;
     }
 }

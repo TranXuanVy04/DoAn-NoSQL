@@ -1,3 +1,63 @@
 @model ProductForm
-@{ViewData["Title"]=Model.Id is null?"Thêm sản phẩm":"Sửa sản phẩm";var cats=(List<Category>)ViewBag.Categories;}
-<a class="back" asp-action="Products">← Quản lý sản phẩm</a><h1>@ViewData["Title"]</h1><form method="post" class="panel form-wide"><div asp-validation-summary="All" class="alert validation"></div><input asp-for="Id" type="hidden"/><input asp-for="OriginalStock" type="hidden"/><label asp-for="Sku">SKU</label><input asp-for="Sku" required maxlength="40"/><label asp-for="Name">Tên sản phẩm</label><input asp-for="Name" required maxlength="160"/><label asp-for="CategoryId">Danh mục</label><select asp-for="CategoryId" required><option value="">Chọn danh mục</option>@foreach(var c in cats){<option value="@c.Id">@c.Name</option>}</select><div class="two-col"><div><label asp-for="Price">Giá (VND)</label><input asp-for="Price" type="number" min="1" max="1000000000000" required/></div><div><label asp-for="Stock">Tồn kho</label><input asp-for="Stock" type="number" min="0" max="1000000" required/></div></div><label class="check"><input asp-for="IsActive"/> Đang bán</label><label asp-for="AttributesJson">Thuộc tính theo ngành (JSON)</label><textarea asp-for="AttributesJson" rows="7" maxlength="6000" required spellcheck="false"></textarea><details><summary>Ví dụ thuộc tính</summary><p>Điện tử: <code>{"brand":"Demo","warrantyMonths":12,"ramGB":8}</code></p><p>Thời trang: <code>{"size":"M","material":"Cotton","color":"Đen"}</code></p><p>Gia dụng: <code>{"material":"Inox","origin":"Việt Nam","capacityLiters":2}</code></p></details><button>Lưu sản phẩm</button></form>
+@{ ViewData["Title"] = Model.Id == null ? "Thêm sản phẩm" : "Sửa sản phẩm"; var categories = (List<Category>)ViewBag.Categories; }
+<a class="back" asp-action="Products">← Quản lý sản phẩm</a>
+<h1>@ViewData["Title"]</h1>
+<form method="post" class="panel form-wide" id="product-editor">
+    <div asp-validation-summary="All" class="alert validation"></div>
+    <input asp-for="Id" type="hidden" />
+    <input asp-for="OriginalRevision" type="hidden" />
+    <label asp-for="Sku">SKU sản phẩm</label><input asp-for="Sku" required maxlength="40" />
+    <label asp-for="Name">Tên sản phẩm</label><input asp-for="Name" required maxlength="160" />
+    <label asp-for="ImageUrl">Đường dẫn ảnh</label><input asp-for="ImageUrl" type="url" maxlength="2000" placeholder="https://example.com/anh.jpg" />
+    <label asp-for="CategoryId">Danh mục</label>
+    <select asp-for="CategoryId" required><option value="">Chọn danh mục</option>@foreach (var category in categories) { <option value="@category.Id">@category.Name</option> }</select>
+    <label class="check"><input asp-for="IsActive" /> Đang bán</label>
+    @if (Model.Id == null) {
+        <label class="check"><input asp-for="HasVariants" id="has-variants" /> Sản phẩm có biến thể</label>
+    } else {
+        <input asp-for="HasVariants" type="hidden" id="has-variants" />
+        <p>@(Model.HasVariants ? "Sản phẩm có biến thể" : "Sản phẩm không có biến thể")</p>
+    }
+    <div id="simple-product-fields" hidden="@Model.HasVariants">
+        <div class="two-col">
+            <div><label asp-for="Price">Giá (VND)</label><input asp-for="Price" type="number" min="1" max="1000000000000" /></div>
+            <div><label asp-for="Stock">Tồn kho</label><input asp-for="Stock" type="number" min="0" max="1000000" /></div>
+        </div>
+    </div>
+    <section id="variant-editor" hidden="@(!Model.HasVariants)">
+        <h2>Biến thể sản phẩm</h2>
+        <p>Mỗi dòng là một tổ hợp màu, size có SKU, giá và tồn kho riêng. Biến thể đã lưu chỉ ngừng bán, không xóa.</p>
+        <div id="variant-rows">
+            @for (int i = 0; i < Model.Variants.Count; i++) {
+                <div class="variant-edit-row">
+                    <input type="hidden" name="Variants.Index" value="@i" />
+                    <input asp-for="Variants[i].Id" type="hidden" data-variant-id />
+                    <div class="two-col"><label>SKU<input asp-for="Variants[i].Sku" maxlength="40" required /></label><label>Màu sắc<input asp-for="Variants[i].Color" maxlength="80" /></label></div>
+                    <div class="two-col"><label>Kích cỡ<input asp-for="Variants[i].Size" maxlength="80" /></label><label>Giá (VND)<input asp-for="Variants[i].Price" type="number" min="1" max="1000000000000" required /></label></div>
+                    <label>Tồn kho<input asp-for="Variants[i].Stock" type="number" min="0" max="1000000" required /></label>
+                    <details><summary>Thuộc tính lựa chọn khác</summary><textarea asp-for="Variants[i].OptionsJson" rows="2" maxlength="2000"></textarea></details>
+                    <label class="check"><input asp-for="Variants[i].IsActive" /> Đang bán</label>
+                    @if (string.IsNullOrEmpty(Model.Variants[i].Id)) { <button type="button" class="text-button" data-remove-variant>Xóa dòng</button> }
+                </div>
+            }
+        </div>
+        <button type="button" id="add-variant">+ Thêm biến thể</button>
+    </section>
+    <label asp-for="AttributesJson">Thuộc tính chung (JSON)</label>
+    <textarea asp-for="AttributesJson" rows="5" maxlength="6000" required spellcheck="false"></textarea>
+    <small>Ví dụ áo có biến thể: {"material":"Cotton"}. Màu và size nhập ở từng biến thể.</small>
+    <div class="actions"><button type="submit">Lưu sản phẩm</button><a asp-action="Products">Hủy</a></div>
+</form>
+<template id="variant-row-template">
+    <div class="variant-edit-row">
+        <input type="hidden" name="Variants.Index" value="__key__" />
+        <input type="hidden" name="Variants[__key__].Id" value="" data-variant-id />
+        <div class="two-col"><label>SKU<input name="Variants[__key__].Sku" maxlength="40" required /></label><label>Màu sắc<input name="Variants[__key__].Color" maxlength="80" /></label></div>
+        <div class="two-col"><label>Kích cỡ<input name="Variants[__key__].Size" maxlength="80" /></label><label>Giá (VND)<input name="Variants[__key__].Price" type="number" min="1" max="1000000000000" required /></label></div>
+        <label>Tồn kho<input name="Variants[__key__].Stock" type="number" min="0" max="1000000" value="0" required /></label>
+        <details><summary>Thuộc tính lựa chọn khác</summary><textarea name="Variants[__key__].OptionsJson" rows="2" maxlength="2000">{}</textarea></details>
+        <label class="check"><input type="checkbox" name="Variants[__key__].IsActive" value="true" checked /> Đang bán</label><input type="hidden" name="Variants[__key__].IsActive" value="false" />
+        <button type="button" class="text-button" data-remove-variant>Xóa dòng</button>
+    </div>
+</template>
+@section Scripts { <script src="~/js/product-editor.js" asp-append-version="true"></script> }

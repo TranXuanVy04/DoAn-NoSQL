@@ -1,0 +1,20 @@
+@model Product
+@{ bool isDemo = StorefrontDemo.IsDemo(Model); }
+<div class="featured__item ec-editorial-card">
+    <div class="featured__item__pic">
+        <a class="ec-card-image" asp-controller="Catalog" asp-action="Details" asp-route-id="@Model.Id">
+            <img src="@StorefrontDemo.ProductImage(Model)" alt="@Model.Name" loading="lazy" />
+        </a>
+        <ul class="featured__item__pic__hover">
+            <li><a asp-controller="Catalog" asp-action="Details" asp-route-id="@Model.Id" aria-label="Xem @Model.Name"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+            @if (!isDemo && Model.Variants.Count == 0)
+            {
+                <li><form asp-controller="Cart" asp-action="Add" method="post"><input type="hidden" name="productId" value="@Model.Id" /><input type="hidden" name="quantity" value="1" /><button type="submit" disabled="@(Model.Stock == 0)" aria-label="Thêm @Model.Name vào giỏ"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></form></li>
+            }
+        </ul>
+    </div>
+    <div class="featured__item__text">
+        <h6><a asp-controller="Catalog" asp-action="Details" asp-route-id="@Model.Id">@Model.Name</a></h6>
+        @if (isDemo) { <small class="ec-muted">Sản phẩm mẫu</small> }
+    </div>
+</div>

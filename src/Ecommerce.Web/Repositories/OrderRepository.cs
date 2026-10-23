@@ -37,6 +37,17 @@ public class OrderRepository
         return new OrderPage(items, total, page, pageSize);
     }
 
+    public async Task<OrderPage> GetCustomerPage(string token,int page)
+    {
+        const int pageSize=15;
+        var filter=Builders<Order>.Filter.Eq(x=>x.CustomerToken,token);
+        long total=await orders.CountDocumentsAsync(filter);
+        page=Math.Clamp(page,1,Math.Max(1,(int)Math.Ceiling(total/(double)pageSize)));
+        var items=await orders.Find(filter).SortByDescending(x=>x.CreatedAt).ThenByDescending(x=>x.Id)
+            .Skip((page-1)*pageSize).Limit(pageSize).ToListAsync();
+        return new OrderPage(items,total,page,pageSize);
+    }
+
     public Task Create(Order order, IClientSessionHandle session, CancellationToken cancellationToken)
     {
         return orders.InsertOneAsync(session, order, cancellationToken: cancellationToken);

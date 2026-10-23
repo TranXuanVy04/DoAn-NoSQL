@@ -5,7 +5,7 @@ Owner: SV1/SV2/SV3. Branch: feature/name. Status: Todo.
 Ví dụ: khách đổi số lượng giỏ từ 1 thành 2; checkout đọc lại giá DB và trả snapshot đã lưu.
 
 ## Contract và dependency
-Operation: POST /api/orders. Fake: contracts/examples/order.json. Không nhận giá từ client.
+Luồng: form POST /Cart/Checkout → IOrderService → Repository. Không nhận giá từ client.
 
 ## Acceptance criteria
 - Hàng inactive/thiếu kho bị từ chối.

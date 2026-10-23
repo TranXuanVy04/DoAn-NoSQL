@@ -1,0 +1,9 @@
+@{
+    string controller = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+    string action = ViewContext.RouteData.Values["action"]?.ToString() ?? "";
+}
+<ul>
+    <li class="@(controller == "Catalog" && action == "Index" ? "active" : "")"><a asp-controller="Catalog" asp-action="Index">Trang chủ</a></li>
+    <li class="@(controller == "Catalog" && action != "Index" ? "active" : "")"><a asp-controller="Catalog" asp-action="Shop">Cửa hàng</a></li>
+    <li><a asp-controller="Orders" asp-action="Index">Đơn hàng của tôi</a></li>
+</ul>

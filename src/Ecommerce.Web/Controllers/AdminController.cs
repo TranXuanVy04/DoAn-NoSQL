@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 namespace Ecommerce.Web.Controllers;
 
-[Authorize] public sealed class AdminController(ICatalogService catalog,IOrderService orders,IDashboardService dashboard) : Controller {
+[Authorize(Roles = "Admin")] public sealed class AdminController(ICatalogService catalog,IOrderService orders,IDashboardService dashboard) : Controller {
     [HttpGet] public async Task<IActionResult> Products(string? q,string? categoryId,int page=1) {
         ViewBag.Categories=await catalog.Categories(); ViewBag.Query=q; ViewBag.CategoryId=categoryId;
         try { return View(await catalog.Products(q,categoryId,page,true)); } catch(BusinessException ex) {return BadRequest(ex.Message);}

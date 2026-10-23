@@ -1,0 +1,103 @@
+/* Thanh điều hướng dùng chung cho storefront Razor và Admin. */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #fff;
+    box-shadow: 0 3px 18px #182f3505;
+}
+.header-main {
+    min-height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+.site-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ink);
+    text-decoration: none;
+    flex-shrink: 0;
+}
+.brand-mark {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 16px 16px 5px 16px;
+    background: var(--teal);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 850;
+    letter-spacing: -2px;
+}
+.brand-mark > span { color: var(--warm); }
+.brand-name { font-size: 14px; font-weight: 800; letter-spacing: 3px; }
+.brand-name small { display: block; margin-top: 1px; color: var(--muted); font-size: 10px; font-weight: 500; letter-spacing: .5px; }
+.site-navigation { display: flex; align-items: center; gap: 12px; }
+.site-navigation .nav-link {
+    padding: 11px 15px;
+    border-radius: 7px;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background .15s, color .15s;
+}
+.site-navigation .nav-link:hover { background: #f2f5f1; color: var(--teal); }
+.site-navigation .nav-link[aria-current="page"] { color: var(--teal); background: #e9f1eb; }
+.nav-divider { height: 22px; width: 1px; background: var(--line); margin: 0 3px; }
+.site-header svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+.cart-link, .admin-login { display: inline-flex; align-items: center; gap: 8px; }
+.admin-login { padding: 11px 16px; border: 1px solid var(--line); border-radius: 7px; font-size: 13px; font-weight: 600; text-decoration: none; }
+.admin-login:hover, .admin-login[aria-current="page"] { border-color: var(--teal); background: #f2f5f1; }
+.account-menu { position: relative; margin: 0 0 0 6px; color: var(--ink); }
+.account-menu summary { display: flex; align-items: center; gap: 9px; padding: 5px 9px 5px 5px; border: 1px solid var(--line); border-radius: 24px; cursor: pointer; list-style: none; font-size: 12px; font-weight: 600; }
+.account-menu summary::-webkit-details-marker { display: none; }
+.account-menu summary:focus-visible { outline: 3px solid #ed9948; outline-offset: 3px; }
+.account-menu[open] summary { background: #f2f5f1; border-color: var(--teal); }
+.account-avatar { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; background: var(--teal); color: white; font-size: 12px; }
+.account-panel { position: absolute; top: calc(100% + 12px); right: 0; min-width: 235px; padding: 8px; border: 1px solid var(--line); border-radius: 12px; background: white; box-shadow: 0 14px 40px #182f351a; }
+.account-panel p { margin: 0 0 6px; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 11px; color: var(--muted); }
+.account-panel strong { display: block; color: var(--ink); font-size: 14px; overflow-wrap: anywhere; }
+.account-panel a { display: flex; justify-content: space-between; padding: 10px 12px; font-size: 13px; text-decoration: none; border-radius: 6px; }
+.account-panel a:hover { background: #e9f1eb; }
+.account-panel form { margin: 0; }
+.account-panel button { width: 100%; padding: 10px 12px; margin: 0; border: 0; background: none; border-radius: 6px; text-align: left; color: #973f36; font-size: 13px; }
+.account-panel button:hover { background: #fff2ed; }
+.admin-nav-wrap { border-top: 1px solid #edf0ea; background: #fafbf8; }
+.admin-navigation { display: flex; align-items: center; gap: 8px; overflow-x: auto; scrollbar-width: thin; }
+.admin-nav-label { padding-right: 20px; color: var(--muted); font-size: 9px; font-weight: 750; letter-spacing: 1.5px; white-space: nowrap; }
+.admin-navigation a { padding: 13px 16px; border-bottom: 2px solid transparent; color: var(--muted); font-size: 13px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.admin-navigation a:hover { color: var(--teal); }
+.admin-navigation a[aria-current="page"] { color: var(--teal); border-bottom-color: var(--teal); }
+.menu-toggle { align-items: center; gap: 7px; padding: 9px 12px; border-color: var(--line); background: white; color: var(--teal); border-radius: 7px; font-size: 12px; }
+.menu-toggle:not([hidden]) { display: none; }
+.menu-toggle:hover { background: #e9f1eb; color: var(--teal); }
+html { scroll-padding-top: 155px; }
+.skip:focus { z-index: 30; }
+@media (max-width: 760px) {
+    .header-main { min-height: 80px; flex-wrap: wrap; gap: 0; padding-top: 13px; padding-bottom: 13px; }
+    .brand-mark { width: 44px; height: 44px; font-size: 23px; border-radius: 12px 12px 4px 12px; }
+    .brand-name { font-size: 12px; }
+    .brand-name small { font-size: 9px; }
+    .menu-toggle:not([hidden]) { display: inline-flex; }
+    .site-navigation { width: 100%; align-items: stretch; flex-direction: column; gap: 5px; padding-top: 16px; margin-top: 12px; border-top: 1px solid var(--line); }
+    .site-header.menu-ready .site-navigation:not(.is-open) { display: none; }
+    .site-navigation .nav-link { padding: 12px 14px; }
+    .nav-divider { display: none; }
+    .admin-login { margin-top: 4px; padding: 12px 14px; }
+    .account-menu { margin: 5px 0 0; }
+    .account-menu summary { border-radius: 8px; padding: 7px; }
+    .account-panel { position: static; margin-top: 7px; min-width: 0; box-shadow: none; }
+    .admin-nav-label { display: none; }
+    .admin-navigation { gap: 0; }
+    .admin-navigation a { padding: 11px 13px; font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .site-navigation .nav-link { transition: none; }
+}

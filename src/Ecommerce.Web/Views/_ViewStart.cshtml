@@ -1,1 +1,4 @@
-@{ Layout = "_Layout"; }
+@{
+    string controller = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+    Layout = controller == "Admin" || controller == "Account" ? "_AdminLayout" : "_Layout";
+}

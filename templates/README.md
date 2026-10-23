@@ -7,7 +7,6 @@
 - Repository cụ thể: Repositories/CategoryRepository.cs, ProductRepository.cs, OrderRepository.cs và AnalyticsRepository.cs (không có interface Repository).
 - Read-model mẫu: backend/Feature.cs.txt.
 - Fake và HTTP test: tests/Ecommerce.UnitTests/.
-- JSON request/response mẫu: contracts/examples/.
 - Mongo validator/seed/index/explain: database/; data/: Extended JSON mẫu.
 - Feature specification: documentation/feature.md.
 

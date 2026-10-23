@@ -14,15 +14,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Tai nghe EC 01",
+    "name": "Tai nghe EC Tech Essential USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "115000"
     },
     "sku": "ELECTRONICS-001",
     "stock": {
       "$numberInt": "100"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -39,15 +40,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Loa Bluetooth EC 02",
+    "name": "Loa Bluetooth Nova Essential Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "130000"
     },
     "sku": "ELECTRONICS-002",
     "stock": {
       "$numberInt": "101"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -64,15 +66,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Bàn phím EC 03",
+    "name": "Bàn phím Soundly Essential USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "145000"
     },
     "sku": "ELECTRONICS-003",
     "stock": {
       "$numberInt": "102"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -89,15 +92,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Chuột không dây EC 04",
+    "name": "Chuột không dây EC Tech Essential Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "160000"
     },
     "sku": "ELECTRONICS-004",
     "stock": {
       "$numberInt": "103"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -114,15 +118,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Đèn màn hình EC 05",
+    "name": "Đèn màn hình Nova Essential USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "175000"
     },
     "sku": "ELECTRONICS-005",
     "stock": {
       "$numberInt": "104"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -139,15 +144,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Tai nghe EC 06",
+    "name": "Tai nghe Soundly Everyday Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "190000"
     },
     "sku": "ELECTRONICS-006",
     "stock": {
       "$numberInt": "105"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -164,15 +170,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Loa Bluetooth EC 07",
+    "name": "Loa Bluetooth EC Tech Everyday USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "205000"
     },
     "sku": "ELECTRONICS-007",
     "stock": {
       "$numberInt": "106"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -189,15 +196,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Bàn phím EC 08",
+    "name": "Bàn phím Nova Everyday Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "220000"
     },
     "sku": "ELECTRONICS-008",
     "stock": {
       "$numberInt": "107"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -214,15 +222,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Chuột không dây EC 09",
+    "name": "Chuột không dây Soundly Everyday USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "235000"
     },
     "sku": "ELECTRONICS-009",
     "stock": {
       "$numberInt": "108"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -239,15 +248,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Đèn màn hình EC 10",
+    "name": "Đèn màn hình EC Tech Everyday Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "250000"
     },
     "sku": "ELECTRONICS-010",
     "stock": {
       "$numberInt": "109"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -264,15 +274,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Tai nghe EC 11",
+    "name": "Tai nghe Nova Studio USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "265000"
     },
     "sku": "ELECTRONICS-011",
     "stock": {
       "$numberInt": "110"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -289,15 +300,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Loa Bluetooth EC 12",
+    "name": "Loa Bluetooth Soundly Studio Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "280000"
     },
     "sku": "ELECTRONICS-012",
     "stock": {
       "$numberInt": "111"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -314,15 +326,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Bàn phím EC 13",
+    "name": "Bàn phím EC Tech Studio USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "295000"
     },
     "sku": "ELECTRONICS-013",
     "stock": {
       "$numberInt": "112"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -339,15 +352,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Chuột không dây EC 14",
+    "name": "Chuột không dây Nova Studio Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "310000"
     },
     "sku": "ELECTRONICS-014",
     "stock": {
       "$numberInt": "113"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -364,15 +378,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Đèn màn hình EC 15",
+    "name": "Đèn màn hình Soundly Studio USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "325000"
     },
     "sku": "ELECTRONICS-015",
     "stock": {
       "$numberInt": "114"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -389,15 +404,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Tai nghe EC 16",
+    "name": "Tai nghe EC Tech Urban Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "340000"
     },
     "sku": "ELECTRONICS-016",
     "stock": {
       "$numberInt": "115"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -414,15 +430,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Loa Bluetooth EC 17",
+    "name": "Loa Bluetooth Nova Urban USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "355000"
     },
     "sku": "ELECTRONICS-017",
     "stock": {
       "$numberInt": "116"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -439,15 +456,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Bàn phím EC 18",
+    "name": "Bàn phím Soundly Urban Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "370000"
     },
     "sku": "ELECTRONICS-018",
     "stock": {
       "$numberInt": "117"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -464,15 +482,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Chuột không dây EC 19",
+    "name": "Chuột không dây EC Tech Urban USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "385000"
     },
     "sku": "ELECTRONICS-019",
     "stock": {
       "$numberInt": "118"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -489,15 +508,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Đèn màn hình EC 20",
+    "name": "Đèn màn hình Nova Urban Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "400000"
     },
     "sku": "ELECTRONICS-020",
     "stock": {
       "$numberInt": "119"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -514,15 +534,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Tai nghe EC 21",
+    "name": "Tai nghe Soundly Comfort USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "415000"
     },
     "sku": "ELECTRONICS-021",
     "stock": {
       "$numberInt": "120"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -539,15 +560,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Loa Bluetooth EC 22",
+    "name": "Loa Bluetooth EC Tech Comfort Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "430000"
     },
     "sku": "ELECTRONICS-022",
     "stock": {
       "$numberInt": "121"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -564,15 +586,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Bàn phím EC 23",
+    "name": "Bàn phím Nova Comfort USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "445000"
     },
     "sku": "ELECTRONICS-023",
     "stock": {
       "$numberInt": "122"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -589,15 +612,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Chuột không dây EC 24",
+    "name": "Chuột không dây Soundly Comfort Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "460000"
     },
     "sku": "ELECTRONICS-024",
     "stock": {
       "$numberInt": "123"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -614,15 +638,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Đèn màn hình EC 25",
+    "name": "Đèn màn hình EC Tech Comfort USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "475000"
     },
     "sku": "ELECTRONICS-025",
     "stock": {
       "$numberInt": "124"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -639,15 +664,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Tai nghe EC 26",
+    "name": "Tai nghe Nova Classic Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "490000"
     },
     "sku": "ELECTRONICS-026",
     "stock": {
       "$numberInt": "125"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -664,15 +690,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Loa Bluetooth EC 27",
+    "name": "Loa Bluetooth Soundly Classic USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "505000"
     },
     "sku": "ELECTRONICS-027",
     "stock": {
       "$numberInt": "126"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -689,15 +716,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Bàn phím EC 28",
+    "name": "Bàn phím EC Tech Classic Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "520000"
     },
     "sku": "ELECTRONICS-028",
     "stock": {
       "$numberInt": "127"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -714,15 +742,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Chuột không dây EC 29",
+    "name": "Chuột không dây Nova Classic USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "535000"
     },
     "sku": "ELECTRONICS-029",
     "stock": {
       "$numberInt": "128"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -739,15 +768,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Đèn màn hình EC 30",
+    "name": "Đèn màn hình Soundly Classic Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "550000"
     },
     "sku": "ELECTRONICS-030",
     "stock": {
       "$numberInt": "129"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -764,15 +794,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Tai nghe EC 31",
+    "name": "Tai nghe EC Tech Modern USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "565000"
     },
     "sku": "ELECTRONICS-031",
     "stock": {
       "$numberInt": "100"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -789,15 +820,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Loa Bluetooth EC 32",
+    "name": "Loa Bluetooth Nova Modern Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "580000"
     },
     "sku": "ELECTRONICS-032",
     "stock": {
       "$numberInt": "101"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -814,15 +846,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Bàn phím EC 33",
+    "name": "Bàn phím Soundly Modern USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "595000"
     },
     "sku": "ELECTRONICS-033",
     "stock": {
       "$numberInt": "102"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -839,15 +872,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Chuột không dây EC 34",
+    "name": "Chuột không dây EC Tech Modern Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "610000"
     },
     "sku": "ELECTRONICS-034",
     "stock": {
       "$numberInt": "103"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -864,15 +898,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Đèn màn hình EC 35",
+    "name": "Đèn màn hình Nova Modern USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "625000"
     },
     "sku": "ELECTRONICS-035",
     "stock": {
       "$numberInt": "104"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -889,15 +924,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Tai nghe EC 36",
+    "name": "Tai nghe Soundly Premium Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "640000"
     },
     "sku": "ELECTRONICS-036",
     "stock": {
       "$numberInt": "105"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -914,15 +950,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Loa Bluetooth EC 37",
+    "name": "Loa Bluetooth EC Tech Premium USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "655000"
     },
     "sku": "ELECTRONICS-037",
     "stock": {
       "$numberInt": "106"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -939,15 +976,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Bàn phím EC 38",
+    "name": "Bàn phím Nova Premium Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "670000"
     },
     "sku": "ELECTRONICS-038",
     "stock": {
       "$numberInt": "107"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -964,15 +1002,16 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Chuột không dây EC 39",
+    "name": "Chuột không dây Soundly Premium USB-C",
+    "imageUrl": "",
     "price": {
       "$numberLong": "685000"
     },
     "sku": "ELECTRONICS-039",
     "stock": {
       "$numberInt": "108"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -989,245 +1028,486 @@
       "$oid": "000000000000000000000001"
     },
     "isActive": true,
-    "kind": "electronics",
-    "name": "Đèn màn hình EC 40",
+    "name": "Đèn màn hình EC Tech Premium Bluetooth",
+    "imageUrl": "",
     "price": {
       "$numberLong": "700000"
     },
     "sku": "ELECTRONICS-040",
     "stock": {
       "$numberInt": "109"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
       "$oid": "00000000000000000000008c"
     },
     "attributes": {
-      "color": "Đen",
-      "material": "Cotton",
-      "size": "S"
+      "material": "Cotton"
     },
     "categoryId": {
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo thun EC 01",
-    "price": {
-      "$numberLong": "215000"
-    },
-    "sku": "FASHION-001",
-    "stock": {
-      "$numberInt": "100"
-    }
+    "name": "Áo thun Cotton Essential",
+    "imageUrl": "",
+    "variants": [
+      {
+        "id": "original",
+        "sku": "FASHION-001",
+        "options": {
+          "color": "Đen",
+          "size": "S"
+        },
+        "price": {
+          "$numberLong": "215000"
+        },
+        "stock": {
+          "$numberInt": "50"
+        },
+        "isActive": true
+      },
+      {
+        "id": "alternate",
+        "sku": "FASHION-001-ALT",
+        "options": {
+          "color": "Trắng",
+          "size": "M"
+        },
+        "price": {
+          "$numberLong": "225000"
+        },
+        "stock": {
+          "$numberInt": "50"
+        },
+        "isActive": true
+      }
+    ],
+    "sku": "FASHION-001"
   },
   {
     "_id": {
       "$oid": "00000000000000000000008d"
     },
     "attributes": {
-      "color": "Trắng",
-      "material": "Denim",
-      "size": "M"
+      "material": "Denim"
     },
     "categoryId": {
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần dài EC 02",
-    "price": {
-      "$numberLong": "230000"
-    },
-    "sku": "FASHION-002",
-    "stock": {
-      "$numberInt": "101"
-    }
+    "name": "Quần dài Denim Essential",
+    "imageUrl": "",
+    "variants": [
+      {
+        "id": "original",
+        "sku": "FASHION-002",
+        "options": {
+          "color": "Trắng",
+          "size": "M"
+        },
+        "price": {
+          "$numberLong": "230000"
+        },
+        "stock": {
+          "$numberInt": "51"
+        },
+        "isActive": true
+      },
+      {
+        "id": "alternate",
+        "sku": "FASHION-002-ALT",
+        "options": {
+          "color": "Đen",
+          "size": "L"
+        },
+        "price": {
+          "$numberLong": "240000"
+        },
+        "stock": {
+          "$numberInt": "50"
+        },
+        "isActive": true
+      }
+    ],
+    "sku": "FASHION-002"
   },
   {
     "_id": {
       "$oid": "00000000000000000000008e"
     },
     "attributes": {
-      "color": "Xanh",
-      "material": "Linen",
-      "size": "L"
+      "material": "Linen"
     },
     "categoryId": {
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo khoác EC 03",
-    "price": {
-      "$numberLong": "245000"
-    },
-    "sku": "FASHION-003",
-    "stock": {
-      "$numberInt": "102"
-    }
+    "name": "Áo khoác Linen Essential",
+    "imageUrl": "",
+    "variants": [
+      {
+        "id": "original",
+        "sku": "FASHION-003",
+        "options": {
+          "color": "Xanh",
+          "size": "L"
+        },
+        "price": {
+          "$numberLong": "245000"
+        },
+        "stock": {
+          "$numberInt": "51"
+        },
+        "isActive": true
+      },
+      {
+        "id": "alternate",
+        "sku": "FASHION-003-ALT",
+        "options": {
+          "color": "Đen",
+          "size": "M"
+        },
+        "price": {
+          "$numberLong": "255000"
+        },
+        "stock": {
+          "$numberInt": "51"
+        },
+        "isActive": true
+      }
+    ],
+    "sku": "FASHION-003"
   },
   {
     "_id": {
       "$oid": "00000000000000000000008f"
     },
     "attributes": {
-      "color": "Đen",
-      "material": "Cotton",
-      "size": "XL"
+      "material": "Cotton"
     },
     "categoryId": {
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Váy EC 04",
-    "price": {
-      "$numberLong": "260000"
-    },
-    "sku": "FASHION-004",
-    "stock": {
-      "$numberInt": "103"
-    }
+    "name": "Váy Cotton Essential",
+    "imageUrl": "",
+    "variants": [
+      {
+        "id": "original",
+        "sku": "FASHION-004",
+        "options": {
+          "color": "Đen",
+          "size": "XL"
+        },
+        "price": {
+          "$numberLong": "260000"
+        },
+        "stock": {
+          "$numberInt": "52"
+        },
+        "isActive": true
+      },
+      {
+        "id": "alternate",
+        "sku": "FASHION-004-ALT",
+        "options": {
+          "color": "Trắng",
+          "size": "M"
+        },
+        "price": {
+          "$numberLong": "270000"
+        },
+        "stock": {
+          "$numberInt": "51"
+        },
+        "isActive": true
+      }
+    ],
+    "sku": "FASHION-004"
   },
   {
     "_id": {
       "$oid": "000000000000000000000090"
     },
     "attributes": {
-      "color": "Trắng",
-      "material": "Denim",
-      "size": "S"
+      "material": "Denim"
     },
     "categoryId": {
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần ngắn EC 05",
-    "price": {
-      "$numberLong": "275000"
-    },
-    "sku": "FASHION-005",
-    "stock": {
-      "$numberInt": "104"
-    }
+    "name": "Quần ngắn Denim Essential",
+    "imageUrl": "",
+    "variants": [
+      {
+        "id": "original",
+        "sku": "FASHION-005",
+        "options": {
+          "color": "Trắng",
+          "size": "S"
+        },
+        "price": {
+          "$numberLong": "275000"
+        },
+        "stock": {
+          "$numberInt": "52"
+        },
+        "isActive": true
+      },
+      {
+        "id": "alternate",
+        "sku": "FASHION-005-ALT",
+        "options": {
+          "color": "Đen",
+          "size": "M"
+        },
+        "price": {
+          "$numberLong": "285000"
+        },
+        "stock": {
+          "$numberInt": "52"
+        },
+        "isActive": true
+      }
+    ],
+    "sku": "FASHION-005"
   },
   {
     "_id": {
       "$oid": "000000000000000000000091"
     },
     "attributes": {
-      "color": "Xanh",
-      "material": "Linen",
-      "size": "M"
+      "material": "Linen"
     },
     "categoryId": {
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo thun EC 06",
-    "price": {
-      "$numberLong": "290000"
-    },
-    "sku": "FASHION-006",
-    "stock": {
-      "$numberInt": "105"
-    }
+    "name": "Áo thun Linen Everyday",
+    "imageUrl": "",
+    "variants": [
+      {
+        "id": "original",
+        "sku": "FASHION-006",
+        "options": {
+          "color": "Xanh",
+          "size": "M"
+        },
+        "price": {
+          "$numberLong": "290000"
+        },
+        "stock": {
+          "$numberInt": "53"
+        },
+        "isActive": true
+      },
+      {
+        "id": "alternate",
+        "sku": "FASHION-006-ALT",
+        "options": {
+          "color": "Đen",
+          "size": "L"
+        },
+        "price": {
+          "$numberLong": "300000"
+        },
+        "stock": {
+          "$numberInt": "52"
+        },
+        "isActive": true
+      }
+    ],
+    "sku": "FASHION-006"
   },
   {
     "_id": {
       "$oid": "000000000000000000000092"
     },
     "attributes": {
-      "color": "Đen",
-      "material": "Cotton",
-      "size": "L"
+      "material": "Cotton"
     },
     "categoryId": {
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần dài EC 07",
-    "price": {
-      "$numberLong": "305000"
-    },
-    "sku": "FASHION-007",
-    "stock": {
-      "$numberInt": "106"
-    }
+    "name": "Quần dài Cotton Everyday",
+    "imageUrl": "",
+    "variants": [
+      {
+        "id": "original",
+        "sku": "FASHION-007",
+        "options": {
+          "color": "Đen",
+          "size": "L"
+        },
+        "price": {
+          "$numberLong": "305000"
+        },
+        "stock": {
+          "$numberInt": "53"
+        },
+        "isActive": true
+      },
+      {
+        "id": "alternate",
+        "sku": "FASHION-007-ALT",
+        "options": {
+          "color": "Trắng",
+          "size": "M"
+        },
+        "price": {
+          "$numberLong": "315000"
+        },
+        "stock": {
+          "$numberInt": "53"
+        },
+        "isActive": true
+      }
+    ],
+    "sku": "FASHION-007"
   },
   {
     "_id": {
       "$oid": "000000000000000000000093"
     },
     "attributes": {
-      "color": "Trắng",
-      "material": "Denim",
-      "size": "XL"
+      "material": "Denim"
     },
     "categoryId": {
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo khoác EC 08",
-    "price": {
-      "$numberLong": "320000"
-    },
-    "sku": "FASHION-008",
-    "stock": {
-      "$numberInt": "107"
-    }
+    "name": "Áo khoác Denim Everyday",
+    "imageUrl": "",
+    "variants": [
+      {
+        "id": "original",
+        "sku": "FASHION-008",
+        "options": {
+          "color": "Trắng",
+          "size": "XL"
+        },
+        "price": {
+          "$numberLong": "320000"
+        },
+        "stock": {
+          "$numberInt": "54"
+        },
+        "isActive": true
+      },
+      {
+        "id": "alternate",
+        "sku": "FASHION-008-ALT",
+        "options": {
+          "color": "Đen",
+          "size": "M"
+        },
+        "price": {
+          "$numberLong": "330000"
+        },
+        "stock": {
+          "$numberInt": "53"
+        },
+        "isActive": true
+      }
+    ],
+    "sku": "FASHION-008"
   },
   {
     "_id": {
       "$oid": "000000000000000000000094"
     },
     "attributes": {
-      "color": "Xanh",
-      "material": "Linen",
-      "size": "S"
+      "material": "Linen"
     },
     "categoryId": {
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Váy EC 09",
-    "price": {
-      "$numberLong": "335000"
-    },
-    "sku": "FASHION-009",
-    "stock": {
-      "$numberInt": "108"
-    }
+    "name": "Váy Linen Everyday",
+    "imageUrl": "",
+    "variants": [
+      {
+        "id": "original",
+        "sku": "FASHION-009",
+        "options": {
+          "color": "Xanh",
+          "size": "S"
+        },
+        "price": {
+          "$numberLong": "335000"
+        },
+        "stock": {
+          "$numberInt": "54"
+        },
+        "isActive": true
+      },
+      {
+        "id": "alternate",
+        "sku": "FASHION-009-ALT",
+        "options": {
+          "color": "Đen",
+          "size": "M"
+        },
+        "price": {
+          "$numberLong": "345000"
+        },
+        "stock": {
+          "$numberInt": "54"
+        },
+        "isActive": true
+      }
+    ],
+    "sku": "FASHION-009"
   },
   {
     "_id": {
       "$oid": "000000000000000000000095"
     },
     "attributes": {
-      "color": "Đen",
-      "material": "Cotton",
-      "size": "M"
+      "material": "Cotton"
     },
     "categoryId": {
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần ngắn EC 10",
-    "price": {
-      "$numberLong": "350000"
-    },
-    "sku": "FASHION-010",
-    "stock": {
-      "$numberInt": "109"
-    }
+    "name": "Quần ngắn Cotton Everyday",
+    "imageUrl": "",
+    "variants": [
+      {
+        "id": "original",
+        "sku": "FASHION-010",
+        "options": {
+          "color": "Đen",
+          "size": "M"
+        },
+        "price": {
+          "$numberLong": "350000"
+        },
+        "stock": {
+          "$numberInt": "55"
+        },
+        "isActive": true
+      },
+      {
+        "id": "alternate",
+        "sku": "FASHION-010-ALT",
+        "options": {
+          "color": "Trắng",
+          "size": "L"
+        },
+        "price": {
+          "$numberLong": "360000"
+        },
+        "stock": {
+          "$numberInt": "54"
+        },
+        "isActive": true
+      }
+    ],
+    "sku": "FASHION-010"
   },
   {
     "_id": {
@@ -1242,15 +1522,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo thun EC 11",
+    "name": "Áo thun Denim Studio màu trắng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "365000"
     },
     "sku": "FASHION-011",
     "stock": {
       "$numberInt": "110"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1265,15 +1546,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần dài EC 12",
+    "name": "Quần dài Linen Studio màu xanh",
+    "imageUrl": "",
     "price": {
       "$numberLong": "380000"
     },
     "sku": "FASHION-012",
     "stock": {
       "$numberInt": "111"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1288,15 +1570,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo khoác EC 13",
+    "name": "Áo khoác Cotton Studio màu đen",
+    "imageUrl": "",
     "price": {
       "$numberLong": "395000"
     },
     "sku": "FASHION-013",
     "stock": {
       "$numberInt": "112"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1311,15 +1594,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Váy EC 14",
+    "name": "Váy Denim Studio màu trắng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "410000"
     },
     "sku": "FASHION-014",
     "stock": {
       "$numberInt": "113"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1334,15 +1618,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần ngắn EC 15",
+    "name": "Quần ngắn Linen Studio màu xanh",
+    "imageUrl": "",
     "price": {
       "$numberLong": "425000"
     },
     "sku": "FASHION-015",
     "stock": {
       "$numberInt": "114"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1357,15 +1642,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo thun EC 16",
+    "name": "Áo thun Cotton Urban màu đen",
+    "imageUrl": "",
     "price": {
       "$numberLong": "440000"
     },
     "sku": "FASHION-016",
     "stock": {
       "$numberInt": "115"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1380,15 +1666,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần dài EC 17",
+    "name": "Quần dài Denim Urban màu trắng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "455000"
     },
     "sku": "FASHION-017",
     "stock": {
       "$numberInt": "116"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1403,15 +1690,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo khoác EC 18",
+    "name": "Áo khoác Linen Urban màu xanh",
+    "imageUrl": "",
     "price": {
       "$numberLong": "470000"
     },
     "sku": "FASHION-018",
     "stock": {
       "$numberInt": "117"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1426,15 +1714,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Váy EC 19",
+    "name": "Váy Cotton Urban màu đen",
+    "imageUrl": "",
     "price": {
       "$numberLong": "485000"
     },
     "sku": "FASHION-019",
     "stock": {
       "$numberInt": "118"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1449,15 +1738,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần ngắn EC 20",
+    "name": "Quần ngắn Denim Urban màu trắng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "500000"
     },
     "sku": "FASHION-020",
     "stock": {
       "$numberInt": "119"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1472,15 +1762,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo thun EC 21",
+    "name": "Áo thun Linen Comfort màu xanh",
+    "imageUrl": "",
     "price": {
       "$numberLong": "515000"
     },
     "sku": "FASHION-021",
     "stock": {
       "$numberInt": "120"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1495,15 +1786,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần dài EC 22",
+    "name": "Quần dài Cotton Comfort màu đen",
+    "imageUrl": "",
     "price": {
       "$numberLong": "530000"
     },
     "sku": "FASHION-022",
     "stock": {
       "$numberInt": "121"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1518,15 +1810,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo khoác EC 23",
+    "name": "Áo khoác Denim Comfort màu trắng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "545000"
     },
     "sku": "FASHION-023",
     "stock": {
       "$numberInt": "122"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1541,15 +1834,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Váy EC 24",
+    "name": "Váy Linen Comfort màu xanh",
+    "imageUrl": "",
     "price": {
       "$numberLong": "560000"
     },
     "sku": "FASHION-024",
     "stock": {
       "$numberInt": "123"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1564,15 +1858,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần ngắn EC 25",
+    "name": "Quần ngắn Cotton Comfort màu đen",
+    "imageUrl": "",
     "price": {
       "$numberLong": "575000"
     },
     "sku": "FASHION-025",
     "stock": {
       "$numberInt": "124"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1587,15 +1882,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo thun EC 26",
+    "name": "Áo thun Denim Classic màu trắng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "590000"
     },
     "sku": "FASHION-026",
     "stock": {
       "$numberInt": "125"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1610,15 +1906,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần dài EC 27",
+    "name": "Quần dài Linen Classic màu xanh",
+    "imageUrl": "",
     "price": {
       "$numberLong": "605000"
     },
     "sku": "FASHION-027",
     "stock": {
       "$numberInt": "126"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1633,15 +1930,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo khoác EC 28",
+    "name": "Áo khoác Cotton Classic màu đen",
+    "imageUrl": "",
     "price": {
       "$numberLong": "620000"
     },
     "sku": "FASHION-028",
     "stock": {
       "$numberInt": "127"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1656,15 +1954,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Váy EC 29",
+    "name": "Váy Denim Classic màu trắng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "635000"
     },
     "sku": "FASHION-029",
     "stock": {
       "$numberInt": "128"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1679,15 +1978,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần ngắn EC 30",
+    "name": "Quần ngắn Linen Classic màu xanh",
+    "imageUrl": "",
     "price": {
       "$numberLong": "650000"
     },
     "sku": "FASHION-030",
     "stock": {
       "$numberInt": "129"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1702,15 +2002,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo thun EC 31",
+    "name": "Áo thun Cotton Modern màu đen",
+    "imageUrl": "",
     "price": {
       "$numberLong": "665000"
     },
     "sku": "FASHION-031",
     "stock": {
       "$numberInt": "100"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1725,15 +2026,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần dài EC 32",
+    "name": "Quần dài Denim Modern màu trắng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "680000"
     },
     "sku": "FASHION-032",
     "stock": {
       "$numberInt": "101"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1748,15 +2050,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo khoác EC 33",
+    "name": "Áo khoác Linen Modern màu xanh",
+    "imageUrl": "",
     "price": {
       "$numberLong": "695000"
     },
     "sku": "FASHION-033",
     "stock": {
       "$numberInt": "102"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1771,15 +2074,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Váy EC 34",
+    "name": "Váy Cotton Modern màu đen",
+    "imageUrl": "",
     "price": {
       "$numberLong": "710000"
     },
     "sku": "FASHION-034",
     "stock": {
       "$numberInt": "103"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1794,15 +2098,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần ngắn EC 35",
+    "name": "Quần ngắn Denim Modern màu trắng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "725000"
     },
     "sku": "FASHION-035",
     "stock": {
       "$numberInt": "104"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1817,15 +2122,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo thun EC 36",
+    "name": "Áo thun Linen Premium màu xanh",
+    "imageUrl": "",
     "price": {
       "$numberLong": "740000"
     },
     "sku": "FASHION-036",
     "stock": {
       "$numberInt": "105"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1840,15 +2146,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần dài EC 37",
+    "name": "Quần dài Cotton Premium màu đen",
+    "imageUrl": "",
     "price": {
       "$numberLong": "755000"
     },
     "sku": "FASHION-037",
     "stock": {
       "$numberInt": "106"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1863,15 +2170,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Áo khoác EC 38",
+    "name": "Áo khoác Denim Premium màu trắng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "770000"
     },
     "sku": "FASHION-038",
     "stock": {
       "$numberInt": "107"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1886,15 +2194,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Váy EC 39",
+    "name": "Váy Linen Premium màu xanh",
+    "imageUrl": "",
     "price": {
       "$numberLong": "785000"
     },
     "sku": "FASHION-039",
     "stock": {
       "$numberInt": "108"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1909,15 +2218,16 @@
       "$oid": "000000000000000000000002"
     },
     "isActive": true,
-    "kind": "fashion",
-    "name": "Quần ngắn EC 40",
+    "name": "Quần ngắn Cotton Premium màu đen",
+    "imageUrl": "",
     "price": {
       "$numberLong": "800000"
     },
     "sku": "FASHION-040",
     "stock": {
       "$numberInt": "109"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1934,15 +2244,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình giữ nhiệt EC 01",
+    "name": "Bình giữ nhiệt inox 1 lít Essential",
+    "imageUrl": "",
     "price": {
       "$numberLong": "315000"
     },
     "sku": "HOME-001",
     "stock": {
       "$numberInt": "100"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1959,15 +2270,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Hộp đựng thực phẩm EC 02",
+    "name": "Hộp đựng thực phẩm nhựa pp 2 lít Essential",
+    "imageUrl": "",
     "price": {
       "$numberLong": "330000"
     },
     "sku": "HOME-002",
     "stock": {
       "$numberInt": "101"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -1984,15 +2296,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Nồi inox EC 03",
+    "name": "Nồi nấu ăn thủy tinh 3 lít Essential",
+    "imageUrl": "",
     "price": {
       "$numberLong": "345000"
     },
     "sku": "HOME-003",
     "stock": {
       "$numberInt": "102"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2009,15 +2322,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Kệ bếp EC 04",
+    "name": "Kệ bếp inox Essential đa năng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "360000"
     },
     "sku": "HOME-004",
     "stock": {
       "$numberInt": "103"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2034,15 +2348,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình nước EC 05",
+    "name": "Bình nước nhựa pp 5 lít Essential",
+    "imageUrl": "",
     "price": {
       "$numberLong": "375000"
     },
     "sku": "HOME-005",
     "stock": {
       "$numberInt": "104"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2059,15 +2374,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình giữ nhiệt EC 06",
+    "name": "Bình giữ nhiệt thủy tinh 1 lít Everyday",
+    "imageUrl": "",
     "price": {
       "$numberLong": "390000"
     },
     "sku": "HOME-006",
     "stock": {
       "$numberInt": "105"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2084,15 +2400,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Hộp đựng thực phẩm EC 07",
+    "name": "Hộp đựng thực phẩm inox 2 lít Everyday",
+    "imageUrl": "",
     "price": {
       "$numberLong": "405000"
     },
     "sku": "HOME-007",
     "stock": {
       "$numberInt": "106"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2109,15 +2426,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Nồi inox EC 08",
+    "name": "Nồi nấu ăn nhựa pp 3 lít Everyday",
+    "imageUrl": "",
     "price": {
       "$numberLong": "420000"
     },
     "sku": "HOME-008",
     "stock": {
       "$numberInt": "107"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2134,15 +2452,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Kệ bếp EC 09",
+    "name": "Kệ bếp thủy tinh Everyday đa năng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "435000"
     },
     "sku": "HOME-009",
     "stock": {
       "$numberInt": "108"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2159,15 +2478,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình nước EC 10",
+    "name": "Bình nước inox 5 lít Everyday",
+    "imageUrl": "",
     "price": {
       "$numberLong": "450000"
     },
     "sku": "HOME-010",
     "stock": {
       "$numberInt": "109"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2184,15 +2504,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình giữ nhiệt EC 11",
+    "name": "Bình giữ nhiệt nhựa pp 1 lít Studio",
+    "imageUrl": "",
     "price": {
       "$numberLong": "465000"
     },
     "sku": "HOME-011",
     "stock": {
       "$numberInt": "110"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2209,15 +2530,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Hộp đựng thực phẩm EC 12",
+    "name": "Hộp đựng thực phẩm thủy tinh 2 lít Studio",
+    "imageUrl": "",
     "price": {
       "$numberLong": "480000"
     },
     "sku": "HOME-012",
     "stock": {
       "$numberInt": "111"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2234,15 +2556,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Nồi inox EC 13",
+    "name": "Nồi nấu ăn inox 3 lít Studio",
+    "imageUrl": "",
     "price": {
       "$numberLong": "495000"
     },
     "sku": "HOME-013",
     "stock": {
       "$numberInt": "112"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2259,15 +2582,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Kệ bếp EC 14",
+    "name": "Kệ bếp nhựa pp Studio đa năng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "510000"
     },
     "sku": "HOME-014",
     "stock": {
       "$numberInt": "113"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2284,15 +2608,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình nước EC 15",
+    "name": "Bình nước thủy tinh 5 lít Studio",
+    "imageUrl": "",
     "price": {
       "$numberLong": "525000"
     },
     "sku": "HOME-015",
     "stock": {
       "$numberInt": "114"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2309,15 +2634,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình giữ nhiệt EC 16",
+    "name": "Bình giữ nhiệt inox 1 lít Urban",
+    "imageUrl": "",
     "price": {
       "$numberLong": "540000"
     },
     "sku": "HOME-016",
     "stock": {
       "$numberInt": "115"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2334,15 +2660,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Hộp đựng thực phẩm EC 17",
+    "name": "Hộp đựng thực phẩm nhựa pp 2 lít Urban",
+    "imageUrl": "",
     "price": {
       "$numberLong": "555000"
     },
     "sku": "HOME-017",
     "stock": {
       "$numberInt": "116"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2359,15 +2686,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Nồi inox EC 18",
+    "name": "Nồi nấu ăn thủy tinh 3 lít Urban",
+    "imageUrl": "",
     "price": {
       "$numberLong": "570000"
     },
     "sku": "HOME-018",
     "stock": {
       "$numberInt": "117"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2384,15 +2712,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Kệ bếp EC 19",
+    "name": "Kệ bếp inox Urban đa năng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "585000"
     },
     "sku": "HOME-019",
     "stock": {
       "$numberInt": "118"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2409,15 +2738,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình nước EC 20",
+    "name": "Bình nước nhựa pp 5 lít Urban",
+    "imageUrl": "",
     "price": {
       "$numberLong": "600000"
     },
     "sku": "HOME-020",
     "stock": {
       "$numberInt": "119"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2434,15 +2764,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình giữ nhiệt EC 21",
+    "name": "Bình giữ nhiệt thủy tinh 1 lít Comfort",
+    "imageUrl": "",
     "price": {
       "$numberLong": "615000"
     },
     "sku": "HOME-021",
     "stock": {
       "$numberInt": "120"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2459,15 +2790,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Hộp đựng thực phẩm EC 22",
+    "name": "Hộp đựng thực phẩm inox 2 lít Comfort",
+    "imageUrl": "",
     "price": {
       "$numberLong": "630000"
     },
     "sku": "HOME-022",
     "stock": {
       "$numberInt": "121"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2484,15 +2816,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Nồi inox EC 23",
+    "name": "Nồi nấu ăn nhựa pp 3 lít Comfort",
+    "imageUrl": "",
     "price": {
       "$numberLong": "645000"
     },
     "sku": "HOME-023",
     "stock": {
       "$numberInt": "122"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2509,15 +2842,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Kệ bếp EC 24",
+    "name": "Kệ bếp thủy tinh Comfort đa năng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "660000"
     },
     "sku": "HOME-024",
     "stock": {
       "$numberInt": "123"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2534,15 +2868,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình nước EC 25",
+    "name": "Bình nước inox 5 lít Comfort",
+    "imageUrl": "",
     "price": {
       "$numberLong": "675000"
     },
     "sku": "HOME-025",
     "stock": {
       "$numberInt": "124"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2559,15 +2894,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình giữ nhiệt EC 26",
+    "name": "Bình giữ nhiệt nhựa pp 1 lít Classic",
+    "imageUrl": "",
     "price": {
       "$numberLong": "690000"
     },
     "sku": "HOME-026",
     "stock": {
       "$numberInt": "125"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2584,15 +2920,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Hộp đựng thực phẩm EC 27",
+    "name": "Hộp đựng thực phẩm thủy tinh 2 lít Classic",
+    "imageUrl": "",
     "price": {
       "$numberLong": "705000"
     },
     "sku": "HOME-027",
     "stock": {
       "$numberInt": "126"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2609,15 +2946,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Nồi inox EC 28",
+    "name": "Nồi nấu ăn inox 3 lít Classic",
+    "imageUrl": "",
     "price": {
       "$numberLong": "720000"
     },
     "sku": "HOME-028",
     "stock": {
       "$numberInt": "127"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2634,15 +2972,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Kệ bếp EC 29",
+    "name": "Kệ bếp nhựa pp Classic đa năng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "735000"
     },
     "sku": "HOME-029",
     "stock": {
       "$numberInt": "128"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2659,15 +2998,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình nước EC 30",
+    "name": "Bình nước thủy tinh 5 lít Classic",
+    "imageUrl": "",
     "price": {
       "$numberLong": "750000"
     },
     "sku": "HOME-030",
     "stock": {
       "$numberInt": "129"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2684,15 +3024,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình giữ nhiệt EC 31",
+    "name": "Bình giữ nhiệt inox 1 lít Modern",
+    "imageUrl": "",
     "price": {
       "$numberLong": "765000"
     },
     "sku": "HOME-031",
     "stock": {
       "$numberInt": "100"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2709,15 +3050,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Hộp đựng thực phẩm EC 32",
+    "name": "Hộp đựng thực phẩm nhựa pp 2 lít Modern",
+    "imageUrl": "",
     "price": {
       "$numberLong": "780000"
     },
     "sku": "HOME-032",
     "stock": {
       "$numberInt": "101"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2734,15 +3076,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Nồi inox EC 33",
+    "name": "Nồi nấu ăn thủy tinh 3 lít Modern",
+    "imageUrl": "",
     "price": {
       "$numberLong": "795000"
     },
     "sku": "HOME-033",
     "stock": {
       "$numberInt": "102"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2759,15 +3102,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Kệ bếp EC 34",
+    "name": "Kệ bếp inox Modern đa năng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "810000"
     },
     "sku": "HOME-034",
     "stock": {
       "$numberInt": "103"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2784,15 +3128,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình nước EC 35",
+    "name": "Bình nước nhựa pp 5 lít Modern",
+    "imageUrl": "",
     "price": {
       "$numberLong": "825000"
     },
     "sku": "HOME-035",
     "stock": {
       "$numberInt": "104"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2809,15 +3154,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình giữ nhiệt EC 36",
+    "name": "Bình giữ nhiệt thủy tinh 1 lít Premium",
+    "imageUrl": "",
     "price": {
       "$numberLong": "840000"
     },
     "sku": "HOME-036",
     "stock": {
       "$numberInt": "105"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2834,15 +3180,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Hộp đựng thực phẩm EC 37",
+    "name": "Hộp đựng thực phẩm inox 2 lít Premium",
+    "imageUrl": "",
     "price": {
       "$numberLong": "855000"
     },
     "sku": "HOME-037",
     "stock": {
       "$numberInt": "106"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2859,15 +3206,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Nồi inox EC 38",
+    "name": "Nồi nấu ăn nhựa pp 3 lít Premium",
+    "imageUrl": "",
     "price": {
       "$numberLong": "870000"
     },
     "sku": "HOME-038",
     "stock": {
       "$numberInt": "107"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2884,15 +3232,16 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Kệ bếp EC 39",
+    "name": "Kệ bếp thủy tinh Premium đa năng",
+    "imageUrl": "",
     "price": {
       "$numberLong": "885000"
     },
     "sku": "HOME-039",
     "stock": {
       "$numberInt": "108"
-    }
+    },
+    "variants": []
   },
   {
     "_id": {
@@ -2909,14 +3258,15 @@
       "$oid": "000000000000000000000003"
     },
     "isActive": true,
-    "kind": "home",
-    "name": "Bình nước EC 40",
+    "name": "Bình nước inox 5 lít Premium",
+    "imageUrl": "",
     "price": {
       "$numberLong": "900000"
     },
     "sku": "HOME-040",
     "stock": {
       "$numberInt": "109"
-    }
+    },
+    "variants": []
   }
 ]

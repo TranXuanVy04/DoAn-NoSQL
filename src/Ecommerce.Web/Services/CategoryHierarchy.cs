@@ -5,6 +5,20 @@ namespace Ecommerce.Web.Services;
 
 public static class CategoryHierarchy
 {
+    public static Category GetRoot(string categoryId, IReadOnlyList<Category> categories)
+    {
+        var visited = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        var currentId = categoryId;
+        while (true)
+        {
+            if (!visited.Add(currentId)) throw new BusinessException("Cây danh mục có vòng lặp.");
+            var current = categories.FirstOrDefault(c => string.Equals(c.Id, currentId, StringComparison.OrdinalIgnoreCase))
+                ?? throw new BusinessException("Danh mục không tồn tại.");
+            if (current.ParentId == null) return current;
+            currentId = current.ParentId;
+        }
+    }
+
     public static void ValidateParent(string? categoryId, string? parentId, IReadOnlyList<Category> categories)
     {
         if (parentId == null)
