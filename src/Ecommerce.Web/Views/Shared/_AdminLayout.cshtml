@@ -1,0 +1,99 @@
+@{
+    string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+    string currentAction = ViewContext.RouteData.Values["action"]?.ToString() ?? "";
+    bool isAdmin = User.IsInRole("Admin");
+    string? CurrentPage(string controller, string? action = null)
+    {
+        return currentController == controller && (action == null || currentAction == action) ? "page" : null;
+    }
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] · EC Market</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
+    <script src="~/js/navbar.js" asp-append-version="true" defer></script>
+    <link rel="stylesheet" href="~/css/typography.css" asp-append-version="true" />
+</head>
+<body>
+    <a class="skip" href="#main">Đến nội dung</a>
+    <header class="site-header">
+        <div class="shell header-main">
+            <a class="site-brand" asp-controller="Catalog" asp-action="Index" aria-label="EC Market — Trang chủ">
+                <span class="brand-mark" aria-hidden="true">EC<span>.</span></span>
+                <span class="brand-name">MARKET<small>Mua sắm mỗi ngày</small></span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+                <span>Menu</span>
+            </button>
+
+            <nav id="site-navigation" class="site-navigation" aria-label="Điều hướng chính">
+                <a class="nav-link" asp-controller="Catalog" asp-action="Index" aria-current="@CurrentPage("Catalog")">Khám phá sản phẩm</a>
+                <span class="nav-divider" aria-hidden="true"></span>
+                <a class="nav-link cart-link" asp-controller="Cart" asp-action="Index" aria-current="@CurrentPage("Cart")">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2l2.4 12h11.2L21 7H6M9 20h.01M18 20h.01" /></svg>
+                    Giỏ hàng
+                </a>
+
+                @if (isAdmin)
+                {
+                    <details class="account-menu">
+                        <summary>
+                            <span class="account-avatar" aria-hidden="true">A</span>
+                            <span>Tài khoản quản trị</span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
+                        </summary>
+                        <div class="account-panel">
+                            <p>Đang đăng nhập<strong>@User.Identity?.Name</strong></p>
+                            <a asp-controller="Admin" asp-action="Dashboard">Vào trang quản trị <span aria-hidden="true">↗</span></a>
+                            <form asp-controller="Account" asp-action="Logout" method="post">
+                                <button type="submit">Đăng xuất</button>
+                            </form>
+                        </div>
+                    </details>
+                }
+                else
+                {
+                    <a class="admin-login" asp-controller="Account" asp-action="Login" aria-current="@CurrentPage("Account", "Login")">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4 8 9 8 9s8-5 8-9V6l-8-3Z" /><path d="m8 12 3 3 5-6" /></svg>
+                        Quản trị
+                    </a>
+                }
+            </nav>
+        </div>
+
+        @if (isAdmin)
+        {
+            <div class="admin-nav-wrap">
+                <nav class="shell admin-navigation" aria-label="Điều hướng quản trị">
+                    <span class="admin-nav-label">QUẢN TRỊ</span>
+                    <a asp-controller="Admin" asp-action="Dashboard" aria-current="@CurrentPage("Admin", "Dashboard")">Tổng quan</a>
+                    <a asp-controller="Admin" asp-action="Products" aria-current="@(currentController == "Admin" && (currentAction == "Products" || currentAction == "ProductEdit") ? "page" : null)">Sản phẩm</a>
+                    <a asp-controller="Admin" asp-action="Categories" aria-current="@(currentController == "Admin" && (currentAction == "Categories" || currentAction == "CategoryEdit") ? "page" : null)">Danh mục</a>
+                    <a asp-controller="Admin" asp-action="Orders" aria-current="@CurrentPage("Admin", "Orders")">Đơn hàng</a>
+                </nav>
+            </div>
+        }
+    </header>
+
+    <main id="main" class="shell">
+        @if (TempData["Message"] is string message)
+        {
+            <div class="notice" role="status">@message</div>
+        }
+        @if (TempData["Error"] is string error)
+        {
+            <div class="alert" role="alert">@error</div>
+        }
+        @RenderBody()
+    </main>
+
+    <footer class="shell">EC Market <span>Điện tử · Thời trang · Gia dụng</span></footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

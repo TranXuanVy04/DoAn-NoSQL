@@ -1,8 +1,93 @@
 @model ProductPage
-@{ViewData["Title"]="Khám phá sản phẩm"; var cats=(List<Category>)ViewBag.Categories;}
-<section class="hero"><div><p class="eyebrow">MỘT ĐIỂM ĐẾN, NHIỀU LỰA CHỌN</p><h1>Những điều bạn cần,<br/>cho mỗi ngày.</h1><p>Tìm sản phẩm phù hợp từ điện tử, thời trang đến gia dụng.</p><a class="button" href="#products">Khám phá bộ sưu tập ↓</a></div><div class="hero-art" aria-hidden="true"><div>EC</div><span>Cho cuộc sống<br/>nhiều cảm hứng.</span></div></section>
-<section id="products"><div class="section-head"><div><p class="eyebrow">CHỌN THEO CÁCH CỦA BẠN</p><h2>Tất cả sản phẩm</h2></div><span>@Model.Total sản phẩm</span></div>
-<form method="get" class="filters"><label>Tìm kiếm<input name="q" value="@ViewBag.Query" placeholder="Tên sản phẩm…" maxlength="100"/></label><label>Danh mục<select name="categoryId"><option value="">Tất cả ngành hàng</option>@foreach(var c in cats){<option value="@c.Id" selected="@(c.Id==(string?)ViewBag.CategoryId)">@c.Name</option>}</select></label><button>Tìm sản phẩm</button><a asp-action="Index">Xóa lọc</a></form>
-@if(Model.Items.Count==0){<div class="empty"><h3>Chưa có sản phẩm phù hợp</h3><p>Thử từ khóa hoặc danh mục khác.</p></div>}
-<div class="grid">@foreach(var p in Model.Items){<article class="card"><a class="product-art @p.Kind" asp-action="Details" asp-route-id="@p.Id"><span aria-hidden="true">@(p.Kind=="electronics"?"◫":p.Kind=="fashion"?"✦":"◒")</span><small>@p.Kind</small></a><div class="card-body"><p class="eyebrow">@p.Sku</p><h3><a asp-action="Details" asp-route-id="@p.Id">@p.Name</a></h3><p class="price">@p.Price.ToString("N0") ₫</p><form asp-controller="Cart" asp-action="Add" method="post"><input type="hidden" name="productId" value="@p.Id"/><button disabled="@(p.Stock==0)" class="outline">@(p.Stock==0?"Tạm hết hàng":"Thêm vào giỏ +")</button></form></div></article>}</div>
-<nav class="pagination" aria-label="Phân trang">@if(Model.Page>1){<a asp-route-page="@(Model.Page-1)" asp-route-q="@ViewBag.Query" asp-route-categoryId="@ViewBag.CategoryId">← Trước</a>}<span>Trang @Model.Page / @Model.Pages</span>@if(Model.Page<Model.Pages){<a asp-route-page="@(Model.Page+1)" asp-route-q="@ViewBag.Query" asp-route-categoryId="@ViewBag.CategoryId">Tiếp →</a>}</nav></section>
+@{
+    ViewData["Title"] = "Cửa hàng";
+    var categories = (List<Category>)ViewBag.Categories;
+    bool isShop = ViewBag.IsShop == true || !string.IsNullOrWhiteSpace((string?)ViewBag.Query) || !string.IsNullOrEmpty((string?)ViewBag.CategoryId);
+    bool showDemo = Model.Items.Count == 0 && !isShop;
+    var products = showDemo ? StorefrontDemo.Products : Model.Items;
+    ViewData["ImmersiveHome"] = !isShop;
+    ViewData["CategoryShop"] = isShop;
+    var selectedCategory = categories.FirstOrDefault(c => c.Id == (string?)ViewBag.CategoryId);
+    var visibleCategories = categories.Where(c => c.ParentId == (string?)ViewBag.CategoryId).ToList();
+}
+<section class="hero ec-hero-section @(isShop ? "hero-normal" : "ec-immersive-hero")">
+    <div class="container">
+        @if (!isShop)
+        {
+			<div class="hero__item ec-home-banner">
+                <video class="ec-hero-video" autoplay muted loop playsinline preload="auto" aria-label="Video bộ sưu tập">
+                    <source src="/vendor/ogani/img/hero/1196-143842675.mp4" type="video/mp4" />
+                </video>
+                <div class="ec-hero-overlay"></div>
+				<video controls="controls">
+					<source src="~/vendor/ogani/img/hero/1196-143842675.mp4" type="video/mp4" />
+				</video>
+            </div>
+        }
+    </div>
+</section>
+@if (isShop)
+{
+    <section class="ec-shop-categories">
+        <h1>@(selectedCategory?.Name ?? "Danh mục sản phẩm") <small>(@Model.Total sản phẩm)</small></h1>
+        <div class="ec-category-grid">
+            @foreach (var category in visibleCategories)
+            {
+                <a class="ec-category-tile" asp-action="Shop" asp-route-categoryId="@category.Id">
+                    <div class="ec-category-art"><i class="fa @(category.Name.Contains("Điện") ? "fa-headphones" : category.Name.Contains("Thời") ? "fa-shopping-bag" : "fa-cube")" aria-hidden="true"></i></div>
+                    <h2>@category.Name</h2>
+                </a>
+            }
+        </div>
+    </section>
+}
+<section class="featured spad @(!isShop ? "ec-collection-section" : "")" id="products">
+    <div class="@(isShop ? "ec-products-content" : "container")">
+            @if (!isShop)
+            {
+                <div class="section-title"><h2>Sản phẩm nổi bật</h2></div>
+            }
+            @if (products.Count == 0)
+            { <div class="ec-empty"><i class="fa fa-search" aria-hidden="true"></i><h4>Chưa có sản phẩm phù hợp</h4><p>Hãy thử từ khóa hoặc danh mục khác.</p><a class="primary-btn" asp-action="Shop">XEM TẤT CẢ</a></div> }
+            @if (showDemo) { <p class="ec-demo-note">Bộ sưu tập minh họa — nội dung sẽ được cập nhật.</p> }
+            @if (isShop)
+            {
+            <div class="ec-list-toolbar">
+                <button type="button" class="ec-filter-toggle" aria-expanded="false" aria-controls="product-filters">Sắp xếp và lọc <i class="fa fa-sliders" aria-hidden="true"></i></button>
+            </div>
+            <dialog id="product-filters" class="ec-filter-drawer" aria-labelledby="filter-title">
+                <button type="button" class="ec-filter-close" aria-label="Đóng bộ lọc">&times;</button>
+                <h2 id="filter-title">Sắp xếp và lọc</h2>
+                <form asp-action="Shop" method="get" id="category-filter-form">
+                    @if (!string.IsNullOrWhiteSpace((string?)ViewBag.Query)) { <input type="hidden" name="q" value="@ViewBag.Query" /> }
+                    <details class="ec-filter-group" open>
+                        <summary>Sắp xếp <span>Trên trang hiện tại</span></summary>
+                        <label class="sr-only" for="page-sort">Sắp xếp sản phẩm</label>
+                        <select id="page-sort"><option value="default">Mặc định</option><option value="asc">Tên A–Z</option><option value="desc">Tên Z–A</option></select>
+                    </details>
+                    <details class="ec-filter-group" open>
+                        <summary>Danh mục</summary>
+                        <label class="ec-filter-option"><input type="radio" name="categoryId" value="" checked="@(string.IsNullOrEmpty((string?)ViewBag.CategoryId))" />Tất cả danh mục</label>
+                        @foreach (var category in categories)
+                        {
+                            <label class="ec-filter-option"><input type="radio" name="categoryId" value="@category.Id" checked="@(category.Id == (string?)ViewBag.CategoryId)" />@category.Name</label>
+                        }
+                    </details>
+                    <div class="ec-filter-footer"><a asp-action="Shop">Xóa bộ lọc</a><button type="submit">Áp dụng</button></div>
+                </form>
+            </dialog>
+            }
+            <div class="ec-product-grid" aria-label="Danh sách sản phẩm">
+                @foreach (var product in products)
+                { <div class="ec-product-column" data-stock="@product.Stock" data-name="@product.Name"><partial name="_ProductCard" model="product" /></div> }
+            </div>
+            @if (!showDemo && Model.Pages > 1)
+            {
+                <nav class="product__pagination ec-pagination" aria-label="Phân trang">
+                    @if (Model.Page > 1) { <a asp-action="@(isShop ? "Shop" : "Index")" asp-route-page="@(Model.Page - 1)" asp-route-q="@ViewBag.Query" asp-route-categoryId="@ViewBag.CategoryId" aria-label="Trang trước"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a> }
+                    <span>Trang @Model.Page / @Model.Pages</span>
+                    @if (Model.Page < Model.Pages) { <a asp-action="@(isShop ? "Shop" : "Index")" asp-route-page="@(Model.Page + 1)" asp-route-q="@ViewBag.Query" asp-route-categoryId="@ViewBag.CategoryId" aria-label="Trang tiếp"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> }
+                </nav>
+            }
+    </div>
+</section>

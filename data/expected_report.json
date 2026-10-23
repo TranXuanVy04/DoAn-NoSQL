@@ -384,7 +384,7 @@
       "_id": {
         "$oid": "000000000000000000000069"
       },
-      "name": "Tai nghe EC 06",
+      "name": "Tai nghe Soundly Everyday Bluetooth",
       "quantity": {
         "$numberInt": "17"
       },
@@ -396,7 +396,7 @@
       "_id": {
         "$oid": "000000000000000000000065"
       },
-      "name": "Loa Bluetooth EC 02",
+      "name": "Loa Bluetooth Nova Essential Bluetooth",
       "quantity": {
         "$numberInt": "16"
       },
@@ -408,7 +408,7 @@
       "_id": {
         "$oid": "000000000000000000000064"
       },
-      "name": "Tai nghe EC 01",
+      "name": "Tai nghe EC Tech Essential USB-C",
       "quantity": {
         "$numberInt": "16"
       },
@@ -420,7 +420,7 @@
       "_id": {
         "$oid": "000000000000000000000067"
       },
-      "name": "Chuột không dây EC 04",
+      "name": "Chuột không dây EC Tech Essential Bluetooth",
       "quantity": {
         "$numberInt": "15"
       },
@@ -432,7 +432,7 @@
       "_id": {
         "$oid": "000000000000000000000066"
       },
-      "name": "Bàn phím EC 03",
+      "name": "Bàn phím Soundly Essential USB-C",
       "quantity": {
         "$numberInt": "15"
       },

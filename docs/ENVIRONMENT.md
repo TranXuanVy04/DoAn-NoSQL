@@ -1,6 +1,6 @@
 # Thiết lập môi trường
 
-Cài .NET SDK 10, Node.js 24 và MongoDB Shell (mongosh). Dùng MongoDB Atlas hoặc server MongoDB replica set do nhóm quản lý.
+Cài .NET SDK 10 và MongoDB Shell (mongosh). Node.js 24 chỉ cần nếu chạy kiểm tra dataset tùy chọn. Dùng MongoDB Atlas hoặc server MongoDB replica set do nhóm quản lý.
 
 ## Database dùng chung
 
@@ -37,18 +37,8 @@ Dùng URI có database hoặc quyền truy cập ecommerce_dev phù hợp. Scrip
 dotnet run --project src/Ecommerce.Web --urls http://localhost:5080
 ```
 
-Terminal khác:
-
-```powershell
-cd src/storefront
-npm ci
-Copy-Item .env.local.example .env.local
-npm run dev
-```
-
-Storefront http://localhost:3000; MVC/API http://localhost:5080; Admin login tại /Account/Login. Mock mặc định true, catalog mock không cần backend. Đổi NEXT_PUBLIC_USE_MOCK_API=false và restart Next.js để gọi API thật.
-CORS chỉ cho origin cụ thể trong Cors:AllowedOrigins; browser gửi credentials include. Không đặt connection string/mật khẩu trong biến NEXT_PUBLIC_. Next.js checkout/Admin auth còn chưa triển khai.
+Giao diện Razor và Web API cùng chạy trên địa chỉ backend; Admin đăng nhập tại /Account/Login. Không cần chạy thêm giao diện riêng.
 
 ## Dùng file .env cho backend
 
-Mở src/Ecommerce.Web/.env, điền Mongo__ConnectionString bằng URI Atlas mới, Mongo__Database=ecommerce_dev và Admin__Password bằng mật khẩu riêng ít nhất 12 ký tự. Không đặt URI trong frontend. File .env đã được Git ignore. Restart backend sau mỗi lần đổi env. File .env.example là mẫu không chứa secrets.
+Mở src/Ecommerce.Web/.env, điền Mongo__ConnectionString bằng URI Atlas mới, Mongo__Database=ecommerce_dev và Admin__Password bằng mật khẩu riêng ít nhất 12 ký tự. Không đưa URI vào trình duyệt hoặc View. File .env đã được Git ignore. Restart backend sau mỗi lần đổi env. File .env.example là mẫu không chứa secrets.

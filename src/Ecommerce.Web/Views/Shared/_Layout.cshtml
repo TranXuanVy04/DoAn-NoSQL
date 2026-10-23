@@ -1,8 +1,91 @@
 <!DOCTYPE html>
-<html lang="vi"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>@ViewData["Title"] · EC Market</title><link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/></head>
-<body><a class="skip" href="#main">Đến nội dung</a><header><div class="shell nav"><a class="brand" asp-controller="Catalog" asp-action="Index">EC<span>MARKET</span></a><nav aria-label="Điều hướng chính"><a asp-controller="Catalog" asp-action="Index">Khám phá</a><a asp-controller="Cart" asp-action="Index">Giỏ hàng</a>
-@if(User.Identity?.IsAuthenticated==true){<a asp-controller="Admin" asp-action="Dashboard">Dashboard</a><a asp-controller="Admin" asp-action="Products">Sản phẩm</a><a asp-controller="Admin" asp-action="Categories">Danh mục</a><a asp-controller="Admin" asp-action="Orders">Đơn hàng</a><form asp-controller="Account" asp-action="Logout" method="post"><button class="text-button">Đăng xuất</button></form>}
-else {<a asp-controller="Account" asp-action="Login">Quản trị</a>}</nav></div></header>
-<main id="main" class="shell">@if(TempData["Message"] is string message){<div class="notice" role="status">@message</div>}@if(TempData["Error"] is string error){<div class="alert" role="alert">@error</div>}@RenderBody()</main>
-<footer class="shell">EC Market <span>Điện tử · Thời trang · Gia dụng</span></footer></body></html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] · EC Market</title>
+    <link rel="stylesheet" href="~/vendor/ogani/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/vendor/ogani/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/vendor/ogani/css/elegant-icons.css" />
+    <link rel="stylesheet" href="~/vendor/ogani/css/nice-select.css" />
+    <link rel="stylesheet" href="~/vendor/ogani/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="~/vendor/ogani/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="~/vendor/ogani/css/slicknav.min.css" />
+    <link rel="stylesheet" href="~/vendor/ogani/css/style.css" />
+    <link rel="stylesheet" href="~/css/ogani-app.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/typography.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/hero.css" asp-append-version="true" />
+</head>
+<body class="ec-ogani @(ViewData["ImmersiveHome"] as bool? == true ? "ec-immersive-home" : ViewData["CategoryShop"] as bool? == true ? "ec-immersive-home ec-category-shop" : "")">
+    <a class="ec-skip" href="#main">Đến nội dung</a>
+    @await Component.InvokeAsync("StorefrontHeader")
+    <div class="container" role="status" aria-live="polite">
+        @if (TempData["Message"] is string message)
+        { <div class="alert alert-success">@message</div> }
+        @if (TempData["Error"] is string error)
+        { <div class="alert alert-danger">@error</div> }
+    </div>
+    <main id="main">@RenderBody()</main>
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo"><a class="ec-logo" asp-controller="Catalog" asp-action="Index">EC<span>MARKET</span><b>.</b></a></div>
+                        <ul><li>TP. Hồ Chí Minh, Việt Nam</li><li>Điện thoại: 1900 0000</li><li>Email: hello@example.com</li></ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Khám phá EC Market</h6>
+                        <ul>
+                            <li><a asp-controller="Catalog" asp-action="Index">Trang chủ</a></li>
+                            <li><a asp-controller="Catalog" asp-action="Shop">Cửa hàng</a></li>
+                            <li><a asp-controller="Cart" asp-action="Index">Giỏ hàng</a></li>
+                        </ul>
+                        <ul>
+                            <li><a asp-controller="Storefront" asp-action="Blog">Góc chia sẻ</a></li>
+                            <li><a asp-controller="Storefront" asp-action="Contact">Liên hệ</a></li>
+                            <li><a asp-controller="Account" asp-action="Login">Quản trị</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Nhận tin mới từ EC Market</h6>
+                        <p>Gợi ý mua sắm và những bộ sưu tập mới, gửi đến bạn mỗi tuần.</p>
+                        <form data-demo-form="Tính năng đăng ký nhận tin đang được chuẩn bị.">
+                            <label class="sr-only" for="newsletter-email">Email</label>
+                            <input id="newsletter-email" type="email" placeholder="Nhập địa chỉ email" required />
+                            <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <button type="button" class="ec-social" data-demo-action="Kênh Facebook đang được cập nhật." aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                            <button type="button" class="ec-social" data-demo-action="Kênh Instagram đang được cập nhật." aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                            <button type="button" class="ec-social" data-demo-action="Kênh Pinterest đang được cập nhật." aria-label="Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"><div class="col-lg-12"><div class="footer__copyright">
+                <div class="footer__copyright__text">
+                    <!-- Original Ogani template attribution retained. -->
+                    <p>Copyright &copy; @DateTime.UtcNow.Year All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a></p>
+                </div>
+                <div class="footer__copyright__payment"><img src="~/vendor/ogani/img/payment-item.png" alt="Minh họa các phương thức thanh toán" /></div>
+            </div></div></div>
+        </div>
+    </footer>
+    <div class="ec-toast" role="status" aria-live="polite" hidden></div>
+    <script src="~/vendor/ogani/js/jquery-3.3.1.min.js"></script>
+    <script src="~/vendor/ogani/js/bootstrap.min.js"></script>
+    <script src="~/vendor/ogani/js/jquery.nice-select.min.js"></script>
+    <script src="~/vendor/ogani/js/jquery-ui.min.js"></script>
+    <script src="~/vendor/ogani/js/jquery.slicknav.js"></script>
+    <script src="~/vendor/ogani/js/mixitup.min.js"></script>
+    <script src="~/vendor/ogani/js/owl.carousel.min.js"></script>
+    <script src="~/vendor/ogani/js/main.js"></script>
+    <script src="~/js/ogani-app.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,43 +1,37 @@
 # E-commerce đa ngành hàng
 
-ASP.NET Core .NET 10 + MongoDB Driver 3.12, Next.js 16 + React + TypeScript.
-Backend hiện có MVC hoàn chỉnh và API GET catalog/analytics. Next.js hiện có catalog skeleton; checkout/Admin mới nằm trong task board.
+ASP.NET Core MVC + Razor Views, .NET 10, MongoDB Driver 3.12.0 và MongoDB Atlas.
+Ứng dụng render HTML bằng Razor; Controller gọi Service và Repository trực tiếp.
 
-## Bắt đầu
+## Chạy dự án
 
-Xem [hướng dẫn môi trường](docs/ENVIRONMENT.md). Cài .NET 10, Node.js 24, MongoDB Shell và dùng MongoDB Atlas hoặc MongoDB replica set đã có.
-Connection string lưu bằng User Secrets hoặc biến môi trường. Ba máy muốn dùng chung dữ liệu cần cùng cluster và database; nhóm thống nhất một người nạp seed.
+Cấu hình src/Ecommerce.Web/.env theo [ENVIRONMENT](docs/ENVIRONMENT.md), sau đó:
+
+```powershell
+dotnet run --project src/Ecommerce.Web
+```
+
+Visual Studio: mở Ecommerce.slnx, chọn Ecommerce.Web làm Startup Project rồi F5.
+Catalog tại /Catalog, giỏ hàng /Cart, đăng nhập quản trị /Account/Login. Báo cáo tại /Admin/Dashboard (yêu cầu đăng nhập).
 
 ## Cấu trúc
 
-```text
-Ecommerce.slnx              solution chứa projects và file repo
-src/Ecommerce.Web/         MVC + API + Mongo services
-src/storefront/            Next.js, mock và Node tests
-contracts/                 OpenAPI và JSON examples
-database/                  mongosh seed, index, explain, validator
-data/                      3 danh mục, 120 sản phẩm, 72 hóa đơn
-tests/Ecommerce.UnitTests/  xUnit và HTTP tests với fake
-docs/                      kiến trúc, workflow, task board
-templates/                 mẫu tái sử dụng
-.github/                   CI và PR/issue templates
-```
+- src/Ecommerce.Web/: Controllers, Razor Views, Models, Services, Repositories.
+- tests/Ecommerce.UnitTests/: xUnit và HTTP tests bằng fake.
+- tests/data/: kiểm tra JSON dataset độc lập bằng Node.js, không cần cài package.
+- database/: mongosh seed, validator, indexes và explain.
+- data/: 3 danh mục, 120 sản phẩm, 72 hóa đơn.
+- docs/, templates/: tài liệu nhóm và mẫu code.
 
 ## Kiểm tra
 
 ```powershell
-dotnet test Ecommerce.slnx -c Release
-cd src/storefront
-npm ci
-npm run contract:types
-npm run typecheck
-npm run lint
-npm test
-npm run build
+dotnet test tests/Ecommerce.UnitTests -c Release
+# Tùy chọn, cần Node.js 24 để kiểm tra dataset:
+node --test tests/data/*.test.mjs
 ```
 
-- [Phân công](docs/TASK_BOARD.md), [workflow](docs/TEAM_WORKFLOW.md), [kiến trúc](docs/ARCHITECTURE.md).
-- [MongoDB](docs/MONGODB_SCHEMA.md), [Compass](docs/COMPASS.md), [dữ liệu mẫu](docs/DUMMY_DATA.md).
-- [Kết quả kiểm tra và giới hạn](docs/TEST_REPORT.md).
+Tiền VND nguyên BSON Int64; checkout dùng transaction trên Atlas/replica set. Doanh thu hiện tính đơn Completed theo snapshot; chưa tích hợp cổng thanh toán.
+Xem [TASK_BOARD](docs/TASK_BOARD.md) và [TEST_REPORT](docs/TEST_REPORT.md) cho trạng thái thực tế.
 
-Giá là VND nguyên BSON Int64. Checkout cần transaction; không dùng MongoDB standalone. Doanh thu hiện tính trạng thái Completed theo snapshot; đây chưa phải tích hợp cổng thanh toán.
+Giao diện bán hàng dùng template Ogani do nhóm cung cấp. Xem docs/OGANI_TEMPLATE.md cho route, dữ liệu mock và cách thay ảnh/nội dung.

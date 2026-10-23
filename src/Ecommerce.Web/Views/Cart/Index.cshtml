@@ -1,5 +1,134 @@
 @model CartView
-@{ViewData["Title"]="Giỏ hàng";}
-<p class="eyebrow">LỰA CHỌN CỦA BẠN</p><h1>Giỏ hàng</h1>
-@if(Model.Rows.Count==0){<div class="empty"><h2>Giỏ hàng đang trống</h2><a class="button" asp-controller="Catalog" asp-action="Index">Bắt đầu mua sắm</a></div>}
-else{<div class="table-wrap"><table><thead><tr><th>Sản phẩm</th><th>Đơn giá hiện tại</th><th>Số lượng</th><th>Thành tiền</th><th></th></tr></thead><tbody>@foreach(var row in Model.Rows){<tr><td><a asp-controller="Catalog" asp-action="Details" asp-route-id="@row.Product.Id">@row.Product.Name</a>@if(!row.Product.IsActive || row.Product.Stock<row.Quantity){<p class="field-validation-error">Ngừng bán hoặc không đủ tồn kho</p>}</td><td>@row.Product.Price.ToString("N0") ₫</td><td><form asp-action="Update" method="post" class="inline"><input type="hidden" name="productId" value="@row.Product.Id"/><input type="number" aria-label="Số lượng @row.Product.Name" name="quantity" value="@row.Quantity" min="1" max="99"/><button class="small">Cập nhật</button></form></td><td>@row.Total.ToString("N0") ₫</td><td><form asp-action="Update" method="post"><input type="hidden" name="productId" value="@row.Product.Id"/><input type="hidden" name="quantity" value="0"/><button class="text-button">Bỏ</button></form></td></tr>}</tbody></table></div><div class="checkout-summary"><p>Tổng tạm tính <strong>@Model.Total.ToString("N0") ₫</strong></p><p class="muted">Giá và tồn kho được kiểm tra lại khi đặt hàng.</p><a class="button" asp-action="Checkout">Tiếp tục thanh toán →</a></div>}
+@{
+    ViewData["Title"] = "Giỏ hàng";
+    ViewData["CategoryShop"] = true;
+    var totalQuantity = Model.Rows.Sum(r => r.Quantity);
+}
+
+<section class="shoping-cart spad ec-cart-page">
+    <div class="container">
+        @if (Model.Rows.Count == 0)
+        {
+            <div class="ec-empty ec-cart-empty">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                <h3>Giỏ hàng của bạn đang trống</h3>
+                <p>Khám phá cửa hàng và chọn những sản phẩm yêu thích.</p>
+                <a class="primary-btn" asp-controller="Catalog" asp-action="Shop">BẮT ĐẦU MUA SẮM</a>
+            </div>
+        }
+        else
+        {
+            <div class="ec-cart-page-header">
+                <div class="ec-cart-title-wrap">
+                    <h1 class="ec-cart-title">Giỏ hàng của bạn</h1>
+                    <span class="ec-cart-count">(@totalQuantity sản phẩm)</span>
+                </div>
+                <a asp-controller="Catalog" asp-action="Shop" class="ec-cart-back-link">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i> Tiếp tục mua sắm
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="ec-cart-table-wrapper ec-table-scroll">
+                        <table class="ec-cart-table">
+                            <thead>
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th>Đơn giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Thành tiền</th>
+                                    <th><span class="sr-only">Thao tác</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var row in Model.Rows)
+                                {
+                                    <tr>
+                                        <td>
+                                            <div class="ec-cart-item-col">
+                                                <a class="ec-cart-item-img" asp-controller="Catalog" asp-action="Details" asp-route-id="@row.Product.Id">
+                                                    <img src="@StorefrontDemo.ProductImage(row.Product)" alt="@row.Product.Name" loading="lazy" />
+                                                </a>
+                                                <div class="ec-cart-item-info">
+                                                    <h2 class="ec-cart-item-name">
+                                                        <a asp-controller="Catalog" asp-action="Details" asp-route-id="@row.Product.Id">@row.Product.Name</a>
+                                                    </h2>
+                                                    <span class="ec-cart-item-sku">Mã: @row.Product.Sku</span>
+                                                    @if (row.VariantLabel != null)
+                                                    {
+                                                        <span class="ec-cart-variant-tag">@row.VariantLabel</span>
+                                                    }
+                                                    @if (!row.Product.IsActive || row.Product.Stock < row.Quantity)
+                                                    {
+                                                        <p class="text-danger small mb-0">Ngừng bán hoặc không đủ tồn kho</p>
+                                                    }
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="ec-cart-unit-price">@row.Product.Price.ToString("N0") VND</span>
+                                        </td>
+                                        <td>
+                                            <form asp-action="Update" method="post" class="ec-cart-qty-form">
+                                                <input type="hidden" name="productId" value="@row.Product.Id" />
+                                                <input type="hidden" name="variantId" value="@row.VariantId" />
+                                                <div class="ec-quantity">
+                                                    <button type="button" data-quantity-change="-1" aria-label="Giảm số lượng">−</button>
+                                                    <input type="number" name="quantity" value="@row.Quantity" min="1" max="99" aria-label="Số lượng @row.Product.Name" />
+                                                    <button type="button" data-quantity-change="1" aria-label="Tăng số lượng">+</button>
+                                                </div>
+                                                <button class="ec-update-btn" type="submit" title="Cập nhật số lượng">Cập nhật</button>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <span class="ec-cart-row-total">@row.Total.ToString("N0") VND</span>
+                                        </td>
+                                        <td>
+                                            <form asp-action="Update" method="post" class="d-inline">
+                                                <input type="hidden" name="productId" value="@row.Product.Id" />
+                                                <input type="hidden" name="variantId" value="@row.VariantId" />
+                                                <input type="hidden" name="quantity" value="0" />
+                                                <button class="ec-cart-remove-btn" type="submit" aria-label="Xóa @row.Product.Name" title="Xóa khỏi giỏ hàng">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="ec-cart-summary-card">
+                        <h2 class="ec-cart-summary-title">Tóm tắt đơn hàng</h2>
+                        <div class="ec-cart-summary-row">
+                            <span>Tạm tính (@totalQuantity sản phẩm)</span>
+                            <span>@Model.Total.ToString("N0") VND</span>
+                        </div>
+                        <div class="ec-cart-summary-row">
+                            <span>Phí vận chuyển</span>
+                            <span class="text-success">Miễn phí</span>
+                        </div>
+                        <div class="ec-cart-summary-total">
+                            <span>Tổng cộng</span>
+                            <span class="ec-total-amount">@Model.Total.ToString("N0") VND</span>
+                        </div>
+                        <p class="ec-cart-note">Giá và tồn kho sản phẩm sẽ được kiểm tra lại ở bước đặt hàng.</p>
+                        <a asp-action="Checkout" class="ec-cart-checkout-btn">TIẾN HÀNH ĐẶT HÀNG</a>
+
+                        <div class="ec-cart-coupon">
+                            <h6>Mã ưu đãi</h6>
+                            <form data-demo-form="Mã ưu đãi chưa được áp dụng trong phiên bản này.">
+                                <input aria-label="Mã ưu đãi" placeholder="Nhập mã ưu đãi" />
+                                <button type="submit">ÁP DỤNG</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>

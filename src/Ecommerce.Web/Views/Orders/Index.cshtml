@@ -1,0 +1,22 @@
+@model OrderPage
+@{ ViewData["Title"]="Đơn hàng của tôi"; ViewData["CategoryShop"]=true; }
+<section class="container py-5">
+    <h1 class="mb-4">Đơn hàng của tôi</h1>
+    @if(Model.Items.Count == 0) {
+        <p>Bạn chưa có đơn hàng trong phiên mua sắm này.</p>
+        <a asp-controller="Catalog" asp-action="Shop">Khám phá sản phẩm</a>
+    } else {
+        <div class="table-responsive"><table class="table">
+            <thead><tr><th>Mã đơn</th><th>Ngày đặt</th><th>Trạng thái</th><th>Tổng tiền</th><th></th></tr></thead>
+            <tbody>@foreach(var order in Model.Items) {
+                var status=order.Status switch {"Pending"=>"Chờ xử lý","Completed"=>"Hoàn tất","Cancelled"=>"Đã hủy",_=>order.Status};
+                <tr><td>@order.Number</td><td>@order.CreatedAt.AddHours(7).ToString("dd/MM/yyyy HH:mm")</td><td>@status</td><td>@order.Total.ToString("N0") VND</td><td><a asp-action="Details" asp-route-id="@order.Id">Xem chi tiết</a></td></tr>
+            }</tbody>
+        </table></div>
+        <nav class="d-flex mt-4" aria-label="Phân trang đơn hàng" style="gap:20px">
+            @if(Model.Page>1){<a asp-route-page="@(Model.Page-1)">Trước</a>}
+            <span>Trang @Model.Page / @Model.Pages</span>
+            @if(Model.Page<Model.Pages){<a asp-route-page="@(Model.Page+1)">Tiếp</a>}
+        </nav>
+    }
+</section>

@@ -1,9 +1,9 @@
-// Copy to Modules/Inventory/InventoryService.cs; adapt contract first.
+// Copy to Services/InventoryService.cs; adapt the MVC feature first.
 // Uses existing MongoDB.Driver; register IInventoryReader -> MongoInventoryReader in DI.
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-namespace Ecommerce.Web.Modules.Inventory;
+namespace Ecommerce.Web.Services;
 public sealed class StockDocument {
     [BsonId, BsonRepresentation(BsonType.ObjectId)] public string Id { get; set; } = "";
     [BsonElement("stock")] public int Stock { get; set; }

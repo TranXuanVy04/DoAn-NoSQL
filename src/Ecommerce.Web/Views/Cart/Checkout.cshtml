@@ -1,3 +1,77 @@
 @model CheckoutForm
-@{ViewData["Title"]="Thanh toán";var cart=(CartView)ViewBag.Cart;}
-<a class="back" asp-action="Index">← Giỏ hàng</a><h1>Thông tin nhận hàng</h1><div class="detail-grid"><form method="post" class="panel"><div asp-validation-summary="All" class="alert validation"></div><input asp-for="CheckoutKey" type="hidden"/><label asp-for="Name">Họ tên</label><input asp-for="Name" autocomplete="name" required maxlength="100"/><label asp-for="Phone">Số điện thoại</label><input asp-for="Phone" autocomplete="tel" required/><label asp-for="Address">Địa chỉ</label><textarea asp-for="Address" autocomplete="street-address" required minlength="10" maxlength="300"></textarea><button>Đặt hàng</button><p class="muted">Thanh toán khi nhận hàng. Không có phí giao hàng trong bản demo.</p></form><section class="panel"><h2>Đơn hàng của bạn</h2>@foreach(var r in cart.Rows){<p>@r.Product.Name × @r.Quantity <strong>@r.Total.ToString("N0") ₫</strong></p>}<hr/><p>Tổng cộng <strong>@cart.Total.ToString("N0") ₫</strong></p></section></div>
+@{
+    ViewData["Title"] = "Thanh toán";
+    ViewData["CategoryShop"] = true;
+    var cart = (CartView)ViewBag.Cart;
+}
+
+<section class="checkout spad ec-checkout-page">
+    <div class="container">
+        <div class="ec-cart-page-header">
+            <div class="ec-cart-title-wrap">
+                <h1 class="ec-cart-title">Thanh toán đơn hàng</h1>
+            </div>
+            <a asp-action="Index" class="ec-cart-back-link">
+                <i class="fa fa-angle-left" aria-hidden="true"></i> Quay lại giỏ hàng
+            </a>
+        </div>
+
+        <div class="checkout__form">
+            <form asp-action="Checkout" method="post">
+                <div asp-validation-summary="All" class="alert alert-danger"></div>
+                <input asp-for="CheckoutKey" type="hidden" />
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <h4>Thông tin nhận hàng</h4>
+                        <div class="checkout__input">
+                            <label asp-for="Name">Họ và tên <span>*</span></label>
+                            <input asp-for="Name" autocomplete="name" required maxlength="100" placeholder="Nguyễn Văn A" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="checkout__input">
+                            <label asp-for="Phone">Số điện thoại <span>*</span></label>
+                            <input asp-for="Phone" autocomplete="tel" required placeholder="0901234567" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+                        <div class="checkout__input">
+                            <label asp-for="Address">Địa chỉ nhận hàng <span>*</span></label>
+                            <input asp-for="Address" autocomplete="street-address" required minlength="10" maxlength="300" placeholder="Số nhà, đường, phường/xã, tỉnh/thành" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+                        <div class="ec-checkout-info">
+                            <i class="fa fa-shield" aria-hidden="true"></i>
+                            <div>
+                                <h6>Thông tin đơn hàng được lưu an toàn</h6>
+                                <p>Tên sản phẩm và giá được xác nhận tại thời điểm đặt hàng. Giá trong đơn cũ không thay đổi khi giá bán được cập nhật.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="checkout__order">
+                            <h4>Đơn hàng của bạn</h4>
+                            <div class="checkout__order__products">Sản phẩm <span>Thành tiền</span></div>
+                            <ul>
+                                @foreach (var row in cart.Rows)
+                                {
+                                    <li>
+                                        <span>@row.Total.ToString("N0") VND</span>
+                                        @row.Product.Name
+                                        @if (row.VariantLabel != null)
+                                        {
+                                            <small class="d-block text-muted">(@row.VariantLabel)</small>
+                                        }
+                                        × @row.Quantity
+                                    </li>
+                                }
+                            </ul>
+                            <div class="checkout__order__subtotal">Tạm tính <span>@cart.Total.ToString("N0") VND</span></div>
+                            <div class="checkout__order__total">Tổng cộng <span>@cart.Total.ToString("N0") VND</span></div>
+                            <p><i class="fa fa-money" aria-hidden="true"></i> Thanh toán khi nhận hàng (COD). Bản demo không tính phí giao hàng.</p>
+                            <button type="submit" class="site-btn">ĐẶT HÀNG</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,3 +1,91 @@
 @model Product
-@{ViewData["Title"]=Model.Name;}
-<a asp-action="Index" class="back">← Tất cả sản phẩm</a><div class="detail-grid"><div class="product-art detail-art @Model.Kind" aria-hidden="true">@(Model.Kind=="electronics"?"◫":Model.Kind=="fashion"?"✦":"◒")</div><section><p class="eyebrow">@Model.Sku · @Model.Kind</p><h1>@Model.Name</h1><p class="price large">@Model.Price.ToString("N0") ₫</p><p>Còn @Model.Stock sản phẩm</p><dl>@foreach(var a in Model.Attributes){<dt>@a.Name</dt><dd>@a.Value</dd>}</dl><form asp-controller="Cart" asp-action="Add" method="post"><input type="hidden" name="productId" value="@Model.Id"/><label>Số lượng<input name="quantity" type="number" value="1" min="1" max="99"/></label><button disabled="@(Model.Stock==0)">Thêm vào giỏ hàng</button></form></section></div>
+@{
+    ViewData["Title"] = Model.Name;
+    var variants = Model.Variants.Where(v => v.IsActive).ToList();
+    bool hasVariants = Model.Variants.Count > 0;
+    bool isDemo = StorefrontDemo.IsDemo(Model);
+    ViewData["CategoryShop"] = true;
+}
+<section class="product-details spad ec-detail-page"><div class="container"><div class="row">
+    <div class="col-lg-6 col-md-6">
+        <div class="product__details__pic">
+            <div class="product__details__pic__item">
+                <img class="product__details__pic__item--large" src="@StorefrontDemo.ProductImage(Model)" alt="@Model.Name" />
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6"><div class="product__details__text">
+        <h3>@Model.Name</h3>
+        <div class="product__details__price mb-lg-4" id="selected-price">@(hasVariants ? (variants.Count > 0 ? "Từ " + variants.Min(v => v.Price).ToString("N0") + " VND" : "Tạm ngừng bán") : Model.Price.ToString("N0") + " VND")</div>
+
+      
+        @if (hasVariants)
+        {
+            <div class="ec-variant-options">
+                @foreach (var key in variants.SelectMany(v => v.Options.Keys).Distinct())
+                {
+                    <fieldset class="ec-variant-picker" data-option-group="@key">
+                        <legend>@(key == "color" ? "Màu sắc" : key == "size" ? "Kích cỡ" : key)<small data-selected-option="@key"></small></legend>
+                        @foreach (var value in variants.Where(v => v.Options.ContainsKey(key)).Select(v => v.Options[key]).Distinct())
+                        {
+                            <label class="ec-variant-choice">
+                                <input type="radio" name="option-@key" value="@value" data-variant-option="@key" />
+                                <span>
+                                    @if (key == "color")
+                                    {
+                                        var swatch = value.ToLowerInvariant() switch { "đen" => "#252525", "trắng" => "#fff", "xanh" => "#6a8298", "đỏ" => "#b85858", "be" => "#d5c4aa", "nâu" => "#82634d", "xám" => "#999", _ => "#ddd" };
+                                        <i class="ec-color-dot" style="background-color:@swatch" aria-hidden="true"></i>
+                                    }
+                                    @value
+                                </span>
+                            </label>
+                        }
+                    </fieldset>
+                }
+                <select id="variant-data" hidden aria-hidden="true" tabindex="-1">
+                    @foreach (var variant in variants)
+                    {
+                        <option value="@variant.Id" data-options="@System.Text.Json.JsonSerializer.Serialize(variant.Options)" data-price="@variant.Price" data-stock="@variant.Stock" data-sku="@variant.Sku">@variant.Label</option>
+                    }
+                </select>
+            </div>
+        }
+        <p class="ec-detail-stock" id="selected-stock" aria-live="polite">@(hasVariants ? "Chọn màu sắc và kích cỡ để xem tồn kho" : Model.Stock > 0 ? "Còn " + Model.Stock + " sản phẩm" : "Tạm hết hàng")</p>
+        <form id="product-add-form" asp-controller="Cart" asp-action="Add" method="post" class="ec-add-form">
+                <input type="hidden" name="productId" value="@Model.Id" />
+                @if (hasVariants) { <input type="hidden" name="variantId" id="selected-variant" /> }
+                <div class="ec-quantity"><button type="button" data-quantity-change="-1" aria-label="Giảm số lượng">−</button><input type="number" name="quantity" value="1" min="1" max="@(hasVariants ? 99 : Math.Min(99, Math.Max(1, Model.Stock)))" aria-label="Số lượng" /><button type="button" data-quantity-change="1" aria-label="Tăng số lượng">+</button></div>
+                <button id="product-buy" class="primary-btn ec-button" disabled="@(hasVariants || Model.Stock == 0 || isDemo)">@(hasVariants ? "CHỌN PHIÊN BẢN" : Model.Stock == 0 ? "TẠM HẾT HÀNG" : "THÊM VÀO GIỎ")</button>
+            </form>
+        <div class="ec-detail-meta">Mã sản phẩm <span id="selected-sku">@Model.Sku</span></div>
+    </div></div>
+    <div class="col-lg-12">
+        <section class="ec-product-specs" aria-labelledby="product-specs-title">
+            <h2 id="product-specs-title">Thông tin sản phẩm</h2>
+            <div class="ec-specs-content">
+                <h3>Thông số chi tiết</h3>
+                @if (Model.Attributes.ElementCount == 0)
+                {
+                    <p>Thông tin đang được cập nhật.</p>
+                }
+                else
+                {
+                    <table class="ec-specs-table">
+                        <tbody>
+                            @foreach (var field in Model.Attributes)
+                            {
+                                var label = field.Name switch {
+                                    "brand" => "Thương hiệu", "connectivity" => "Kết nối",
+                                    "warrantyMonths" => "Bảo hành (tháng)", "material" => "Chất liệu",
+                                    "origin" => "Xuất xứ", "capacityLiters" => "Dung tích (lít)",
+                                    "size" => "Kích cỡ", "color" => "Màu sắc", _ => field.Name
+                                };
+                                <tr><th scope="row">@label</th><td>@field.Value</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+            </div>
+        </section>
+    </div>
+</div></div></section>

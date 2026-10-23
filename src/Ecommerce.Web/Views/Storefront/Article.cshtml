@@ -1,0 +1,7 @@
+@model StorefrontArticle
+@{ ViewData["Title"] = "Góc chia sẻ"; }
+<partial name="_StorefrontBreadcrumb" />
+<section class="blog-details spad"><div class="container"><div class="row justify-content-center"><article class="col-lg-9">
+    <div class="blog__details__text"><img src="/vendor/ogani/img/blog/@Model.Image" alt="Ảnh minh họa bài viết" /><p class="ec-demo-note">Bài viết mẫu · 22/10/2026</p><h2>@Model.Title</h2><p>@Model.Description</p><p>Hãy bắt đầu từ những nhu cầu thực tế của bạn: một sản phẩm hữu ích, một không gian gọn gàng và những thói quen đơn giản mỗi ngày. Ưu tiên sự phù hợp trước khi lựa chọn thêm một món đồ mới.</p><h3>Chọn điều phù hợp với bạn</h3><p>Kiểm tra thông tin sản phẩm, so sánh công năng và dành thời gian cân nhắc. Nội dung này được chuẩn bị để minh họa bố cục blog và sẽ được cập nhật sau.</p></div>
+    <a class="primary-btn" asp-action="Blog">← TẤT CẢ BÀI VIẾT</a>
+</article></div></div></section>

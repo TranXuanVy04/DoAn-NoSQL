@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 namespace Ecommerce.Web.Controllers;
 
-[Authorize] public sealed class AdminController(ICatalogService catalog,IOrderService orders,IDashboardService dashboard) : Controller {
+[Authorize(Roles = "Admin")] public sealed class AdminController(ICatalogService catalog,IOrderService orders,IDashboardService dashboard) : Controller {
     [HttpGet] public async Task<IActionResult> Products(string? q,string? categoryId,int page=1) {
         ViewBag.Categories=await catalog.Categories(); ViewBag.Query=q; ViewBag.CategoryId=categoryId;
         try { return View(await catalog.Products(q,categoryId,page,true)); } catch(BusinessException ex) {return BadRequest(ex.Message);}
@@ -27,11 +27,13 @@ namespace Ecommerce.Web.Controllers;
     }
     [HttpGet] public async Task<IActionResult> Categories() => View(await catalog.Categories());
     [HttpGet] public async Task<IActionResult> CategoryEdit(string? id) {
+        ViewBag.Categories = await catalog.Categories();
         if(id is null)return View(new CategoryForm());
         var c=(await catalog.Categories()).FirstOrDefault(x=>x.Id==id);
-        return c is null ? NotFound() : View(new CategoryForm{Id=c.Id,Name=c.Name,Kind=c.Kind});
+        return c is null ? NotFound() : View(new CategoryForm{Id=c.Id,Name=c.Name,ParentId=c.ParentId});
     }
     [HttpPost] public async Task<IActionResult> CategoryEdit(CategoryForm f) {
+        ViewBag.Categories = await catalog.Categories();
         if(ModelState.IsValid) try {await catalog.SaveCategory(f);return RedirectToAction(nameof(Categories));}
         catch(BusinessException ex){ModelState.AddModelError("",ex.Message);}
         catch(MongoWriteException ex) when(ex.WriteError.Category==ServerErrorCategory.DuplicateKey){ModelState.AddModelError("","Tên danh mục trùng.");}

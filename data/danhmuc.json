@@ -3,21 +3,21 @@
     "_id": {
       "$oid": "000000000000000000000001"
     },
-    "kind": "electronics",
-    "name": "Điện tử"
+    "name": "Điện tử",
+    "parentId": null
   },
   {
     "_id": {
       "$oid": "000000000000000000000002"
     },
-    "kind": "fashion",
-    "name": "Thời trang"
+    "name": "Thời trang",
+    "parentId": null
   },
   {
     "_id": {
       "$oid": "000000000000000000000003"
     },
-    "kind": "home",
-    "name": "Gia dụng"
+    "name": "Gia dụng",
+    "parentId": null
   }
 ]

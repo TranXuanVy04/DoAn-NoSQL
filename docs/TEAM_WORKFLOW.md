@@ -1,16 +1,11 @@
-# Workflow cho ba sinh viên
+# Workflow ba thành viên
 
-Phase 0: cả nhóm review contract, tiền tệ, trạng thái, schema và quyền truy cập trước implementation ghi. Contract đã có GET thực tế, các operation planned không được coi đã chạy.
-
-| Người | Sở hữu | Dependency thay thế |
+| Người | Phạm vi | Cách làm độc lập |
 |---|---|---|
-| SV1 | Categories/Products/Orders + BSON | xUnit fake và JSON examples; không chờ Next.js |
-| SV2 | Analytics, index và explain | 72 invoices seed + expected_report; không chờ Orders API |
-| SV3 | Next.js, mocks, seed, E2E | mockProducts + fixture cho module mới; không chờ API |
+| SV1 | Models, validation, Categories/Products/Orders services và API | Interface, fake và JSON fixtures |
+| SV2 | Analytics, pipeline, index/explain | Seed và expected_report, fake dashboard |
+| SV3 | Razor Views, UX, JavaScript, dataset, E2E và demo | ViewModel/interface và fake services |
 
-Phase 1 chạy đồng thời theo task board. Phase 2 thay env mock=false, kiểm tra contract/CSRF/session/checkout/snapshot. Phase 3 build, DB integration, benchmark và rehearsal.
-
-`main` → `feature/<feature>` → PR → review → squash merge; Conventional Commits. Không push main hoặc force-push branch người khác.
-Shared files Program.cs, Models/Domain.cs, Services/Contracts.cs, contracts/, database/validators.json cần trưởng nhóm và người bị ảnh hưởng review.
-CODEOWNERS hiện có alias mẫu trong comment để tránh gán sai GitHub account. Trưởng nhóm điền account thật và bật ruleset: PR bắt buộc, >=1 approval, dismiss stale approvals, require code-owner review, block force-push/delete, checks backend/frontend/integration phải pass, resolve conversations.
-Không coi file CI là đã bật branch protection trên GitHub; thao tác remote này chưa thực hiện.
+Controller/View cùng gọi interface service; không chờ Mongo implementation hoàn thành mới làm Razor. Fake chỉ đăng ký trong môi trường test.
+Chốt API contract/model chung trước breaking change. Program.cs, Models, Contracts và validator cần review của người bị ảnh hưởng.
+main → feature/<feature> → PR → review → merge; Conventional Commits. Không force-push branch người khác. Trưởng nhóm bật branch protection và required checks khi có CI tương ứng; repo hiện chưa có workflow CI.
