@@ -1,14 +1,19 @@
 @model ProductForm
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
 @{ ViewData["Title"] = Model.Id == null ? "Thêm sản phẩm" : "Sửa sản phẩm"; var categories = (List<Category>)ViewBag.Categories; }
 <a class="back" asp-action="Products">← Quản lý sản phẩm</a>
 <h1>@ViewData["Title"]</h1>
-<form method="post" class="panel form-wide" id="product-editor">
+<form method="post" enctype="multipart/form-data" class="panel form-wide" id="product-editor">
     <div asp-validation-summary="All" class="alert validation"></div>
     <input asp-for="Id" type="hidden" />
     <input asp-for="OriginalRevision" type="hidden" />
     <label asp-for="Sku">SKU sản phẩm</label><input asp-for="Sku" required maxlength="40" />
     <label asp-for="Name">Tên sản phẩm</label><input asp-for="Name" required maxlength="160" />
-    <label asp-for="ImageUrl">Đường dẫn ảnh</label><input asp-for="ImageUrl" type="url" maxlength="2000" placeholder="https://example.com/anh.jpg" />
+    <label for="image-file">Ảnh sản phẩm</label>
+    <input id="image-file" name="imageFile" type="file" accept="image/jpeg,image/png,image/webp" />
+    <small>Chọn JPG, PNG hoặc WebP, tối đa 5 MB. Ảnh mới sẽ thay thế ảnh hiện tại.</small>
+    <img id="image-preview" src="@Model.ImageUrl" alt="Ảnh xem trước" hidden="@(string.IsNullOrWhiteSpace(Model.ImageUrl))" style="max-width:220px;max-height:180px;object-fit:contain;margin:12px 0" />
+    <details><summary>Hoặc dùng đường dẫn ảnh</summary><label asp-for="ImageUrl">Đường dẫn ảnh</label><input asp-for="ImageUrl" maxlength="2000" placeholder="https://example.com/anh.jpg" /></details>
     <label asp-for="CategoryId">Danh mục</label>
     <select asp-for="CategoryId" required><option value="">Chọn danh mục</option>@foreach (var category in categories) { <option value="@category.Id">@category.Name</option> }</select>
     <label class="check"><input asp-for="IsActive" /> Đang bán</label>
@@ -43,9 +48,13 @@
         </div>
         <button type="button" id="add-variant">+ Thêm biến thể</button>
     </section>
-    <label asp-for="AttributesJson">Thuộc tính chung (JSON)</label>
+    <h2>Thông tin sản phẩm</h2>
+    <p id="attribute-hint">Chọn danh mục để nhập thông số phù hợp. Màu và kích cỡ của biến thể nhập ở từng dòng phía trên.</p>
+    <div id="attribute-fields" class="two-col"></div>
+    <details id="attribute-advanced"><summary>Thuộc tính nâng cao (JSON)</summary>
+    <label asp-for="AttributesJson">Thuộc tính chung</label>
     <textarea asp-for="AttributesJson" rows="5" maxlength="6000" required spellcheck="false"></textarea>
-    <small>Ví dụ áo có biến thể: {"material":"Cotton"}. Màu và size nhập ở từng biến thể.</small>
+    <small>Các thuộc tính bổ sung được giữ lại khi sửa thông tin. Không nhập màu và size chung nếu sản phẩm có biến thể.</small></details>
     <div class="actions"><button type="submit">Lưu sản phẩm</button><a asp-action="Products">Hủy</a></div>
 </form>
 <template id="variant-row-template">
@@ -60,4 +69,9 @@
         <button type="button" class="text-button" data-remove-variant>Xóa dòng</button>
     </div>
 </template>
-@section Scripts { <script src="~/js/product-editor.js" asp-append-version="true"></script> }
+@section Scripts {
+<script type="application/json" id="attribute-config">@Html.Raw(System.Text.Json.JsonSerializer.Serialize(new {
+    categories = categories.Select(c => new { id = c.Id, parentId = c.ParentId }),
+    rules = Configuration.GetSection("CategoryAttributeRules").GetChildren().ToDictionary(s => s.Key, s => s.GetChildren().ToDictionary(p => p.Key, p => p.Value))
+}))</script>
+<script src="~/js/product-editor.js" asp-append-version="true"></script> }

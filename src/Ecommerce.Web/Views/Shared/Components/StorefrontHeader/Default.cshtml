@@ -12,10 +12,7 @@
     <div class="ec-mobile-categories">
         <h6>Danh mục sản phẩm</h6>
         <a asp-controller="Catalog" asp-action="Shop">Tất cả sản phẩm</a>
-        @foreach (var category in Model.Categories)
-        {
-            <a asp-controller="Catalog" asp-action="Shop" asp-route-categoryId="@category.Id">@category.Name</a>
-        }
+        <partial name="_CategoryTree" model="Model.Categories.ToList()" />
     </div>
     @if (User.IsInRole("Admin"))
     {

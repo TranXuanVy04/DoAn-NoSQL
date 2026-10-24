@@ -13,3 +13,4 @@ coverage/
 !.env.example
 appsettings.*.local.json
 TestResults/
+src/Ecommerce.Web/wwwroot/uploads/products/

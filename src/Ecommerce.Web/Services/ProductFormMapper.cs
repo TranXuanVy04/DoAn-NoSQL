@@ -17,7 +17,8 @@ public static class ProductFormMapper
         if (existing != null && (existing.Variants.Count > 0) != form.HasVariants)
             throw new BusinessException("Không đổi loại sản phẩm sau khi tạo. Hãy tạo sản phẩm mới để giữ đúng đơn hàng cũ.");
         string image = form.ImageUrl?.Trim() ?? "";
-        if (image.Length > 2000 || image.Length > 0 && (!Uri.TryCreate(image, UriKind.Absolute, out var uri) || uri.Scheme is not ("http" or "https")))
+        bool localImage = Regex.IsMatch(image, @"^/uploads/products/[a-f0-9]{32}\.(jpg|png|webp)$");
+        if (image.Length > 2000 || image.Length > 0 && !localImage && (!Uri.TryCreate(image, UriKind.Absolute, out var uri) || uri.Scheme is not ("http" or "https")))
             throw new BusinessException("Đường dẫn ảnh phải là URL http hoặc https hợp lệ.");
         BsonDocument attributes;
         try { attributes = BsonDocument.Parse(form.AttributesJson ?? ""); }
