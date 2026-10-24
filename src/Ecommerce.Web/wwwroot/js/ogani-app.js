@@ -142,3 +142,11 @@
         button.setAttribute('aria-expanded', String(button.getAttribute('aria-expanded') !== 'true'));
     });
 })();
+document.addEventListener('click', event => {
+    const button = event.target.closest('.ec-category-toggle');
+    if (!button) return;
+    const expanded = button.getAttribute('aria-expanded') !== 'true';
+    button.setAttribute('aria-expanded', String(expanded));
+    const children = document.getElementById(button.getAttribute('aria-controls'));
+    if (children) children.hidden = !expanded;
+});

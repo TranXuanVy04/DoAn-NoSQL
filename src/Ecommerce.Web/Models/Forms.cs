@@ -12,7 +12,7 @@ public sealed class CategoryForm {
     public string? ParentId { get; set; }
 }
 public sealed class ProductForm {
-    [StringLength(2000), RegularExpression(@"https?://[^\s]+", ErrorMessage = "Đường dẫn ảnh phải bắt đầu bằng http:// hoặc https://.")]
+    [StringLength(2000)]
     public string? ImageUrl { get; set; }
     public string? Id { get; set; }
     public long OriginalRevision { get; set; }

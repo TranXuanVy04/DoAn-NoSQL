@@ -11,6 +11,39 @@ using Xunit;
 
 public class ProductAdminFlowTests
 {
+    [Theory]
+    [InlineData(true)]
+    [InlineData(false)]
+    public async Task UploadChecksFileContentAndStoresLocalImage(bool valid)
+    {
+        using var factory = new ProductAdminFactory();
+        using var client = factory.CreateClient(new() { BaseAddress = new Uri("https://localhost"), AllowAutoRedirect = false });
+        client.DefaultRequestHeaders.Add("X-Test-Admin", "yes");
+        using var form = new MultipartFormDataContent();
+        var values = new Dictionary<string,string> {
+            ["Sku"]="UPLOAD", ["Name"]="Áo demo", ["CategoryId"]=ProductMemoryCatalog.CategoryId,
+            ["Price"]="180000", ["Stock"]="5", ["AttributesJson"]="{\"material\":\"Cotton\",\"size\":\"M\"}",
+            ["__RequestVerificationToken"]=await Token(client,"/Admin/ProductEdit")
+        };
+        foreach (var value in values) form.Add(new StringContent(value.Value), value.Key);
+        var bytes = valid ? Convert.FromBase64String("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=") : System.Text.Encoding.UTF8.GetBytes("<script>alert(1)</script>");
+        form.Add(new ByteArrayContent(bytes), "imageFile", "photo.png");
+        var response = await client.PostAsync("/Admin/ProductEdit", form);
+        var products = await factory.Services.GetRequiredService<ICatalogService>().Products(null,null,1,true);
+        if (!valid) {
+            Assert.Equal(HttpStatusCode.OK,response.StatusCode); Assert.Empty(products.Items);
+            Assert.Contains("JPG, PNG",WebUtility.HtmlDecode(await response.Content.ReadAsStringAsync()));
+            return;
+        }
+        var product = Assert.Single(products.Items);
+        var env = factory.Services.GetRequiredService<IWebHostEnvironment>();
+        var path = Path.Combine(env.WebRootPath, product.ImageUrl!.TrimStart('/').Replace('/',Path.DirectorySeparatorChar));
+        try {
+            Assert.Equal(HttpStatusCode.Redirect,response.StatusCode);
+            Assert.StartsWith("/uploads/products/",product.ImageUrl);
+            Assert.Equal(bytes,await File.ReadAllBytesAsync(path));
+        } finally { File.Delete(path); }
+    }
     private static async Task<string> Token(HttpClient client,string path)
     {
         string html=await client.GetStringAsync(path);

@@ -1,0 +1,20 @@
+@model List<Category>
+@{
+    var parentId = ViewData["TreeParent"] as string;
+    var path = ViewData["TreePath"] as HashSet<string> ?? new HashSet<string>();
+    var nodes = Model.Where(c => c.ParentId == parentId || parentId == null && !Model.Any(p => p.Id == c.ParentId)).Where(c => !path.Contains(c.Id));
+}
+<ul class="ec-category-tree">
+@foreach (var category in nodes) {
+    var nextPath = new HashSet<string>(path) { category.Id };
+    var children = Model.Any(c => c.ParentId == category.Id && !nextPath.Contains(c.Id));
+    var childData = new Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary(ViewData) { ["TreeParent"] = category.Id, ["TreePath"] = nextPath };
+    <li>
+        <div class="ec-category-tree-row">
+            <a asp-controller="Catalog" asp-action="Shop" asp-route-categoryId="@category.Id">@category.Name</a>
+            @if (children) { <button type="button" class="ec-category-toggle" aria-expanded="false" aria-controls="category-children-@category.Id" aria-label="Mở danh mục con của @category.Name"><span aria-hidden="true">⌄</span></button> }
+        </div>
+        @if (children) { <div id="category-children-@category.Id" hidden><partial name="_CategoryTree" model="Model" view-data="childData" /></div> }
+    </li>
+}
+</ul>
