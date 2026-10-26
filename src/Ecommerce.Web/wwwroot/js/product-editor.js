@@ -12,27 +12,26 @@
     const labels = { brand: 'Thương hiệu', warrantyMonths: 'Bảo hành (tháng)', connectivity: 'Kết nối', material: 'Chất liệu', size: 'Kích cỡ', origin: 'Xuất xứ', color: 'Màu sắc' };
     function hasVariants() { return checkbox.type === 'checkbox' ? checkbox.checked : checkbox.value.toLowerCase() === 'true'; }
     function readAttributes() {
-        const value = JSON.parse(json.value);
-        if (!value || Array.isArray(value) || typeof value !== 'object') throw new Error();
-        return value;
+        try {
+            const value = JSON.parse(json.value || '{}');
+            if (!value || Array.isArray(value) || typeof value !== 'object') return {};
+            return value;
+        } catch {
+            return {};
+        }
     }
     function syncAttributes() {
-        try {
-            const value = readAttributes();
-            fields.querySelectorAll('input').forEach(input => {
-                const key = input.dataset.key;
-                if (!input.value.trim()) delete value[key];
-                else value[key] = input.type === 'number' ? Number(input.value) : input.value.trim();
-            });
-            if (hasVariants()) { delete value.size; delete value.color; }
-            json.value = JSON.stringify(value, null, 2);
-            json.setCustomValidity('');
-        } catch { json.setCustomValidity('Thuộc tính phải là JSON object hợp lệ.'); }
+        const value = readAttributes();
+        fields.querySelectorAll('input').forEach(input => {
+            const key = input.dataset.key;
+            if (!input.value.trim()) delete value[key];
+            else value[key] = input.type === 'number' ? Number(input.value) : input.value.trim();
+        });
+        if (hasVariants()) { delete value.size; delete value.color; }
+        json.value = JSON.stringify(value);
     }
     function renderAttributes() {
-        let value;
-        try { value = readAttributes(); json.setCustomValidity(''); }
-        catch { document.getElementById('attribute-advanced').open = true; return; }
+        const value = readAttributes();
         let root = config.categories.find(c => c.id === category.value);
         const visited = new Set();
         while (root?.parentId && !visited.has(root.id)) {
@@ -60,10 +59,8 @@
     }
     category.addEventListener('change', renderAttributes);
     checkbox.addEventListener('change', () => { renderAttributes(); syncAttributes(); });
-    json.addEventListener('change', renderAttributes);
-    editor.addEventListener('submit', event => {
+    editor.addEventListener('submit', () => {
         syncAttributes();
-        if (!json.checkValidity()) { event.preventDefault(); document.getElementById('attribute-advanced').open = true; json.reportValidity(); }
     });
     const imageFile = document.getElementById('image-file');
     const preview = document.getElementById('image-preview');
